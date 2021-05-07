@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+// VARIABLES START
+$themeColor: #077bc3;
+// VARIABLES END
+
+/* GLOBAL CLASSES START */
+html {
+	width: 100%;
+	overflow-x: hidden;
+	font-size: 62.5%;
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 60.5%;
+	}
+}
+@media screen and (max-width: 668px) {
+	html {
+		font-size: 58.5%;
+	}
+}
+@media screen and (max-width: 575px) {
+	html {
+		font-size: 56.5%;
+	}
+}
+@media screen and (max-width: 475px) {
+	html {
+		font-size: 52.5%;
+	}
+}
+@media screen and (max-width: 380px) {
+	html {
+		font-size: 50.5%;
+	}
+}
+@media screen and (max-width: 280px) {
+	html {
+		font-size: 46.5%;
+	}
+}
+/* GLOBAL CLASSES END */
+
+body {
+	background: #000;
+	height: 200vh;
+}
+
+// UPPER HEADER START
+.upperHeader_container {
+	background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+
+	.inner_container {
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+// UPPER HEADER END
+
+/* ==== TOP NAVBAR START ==== */
+.NavbarContainer {
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	padding: 4.5rem 6.6rem;
+	padding-bottom: 1.6rem;
+	transition: 0.7s;
+	z-index: 10000;
+	box-shadow: 1px -1px 10px #ccc;
+
+	.column1 {
+		width: 29%;
+	}
+	.column2 {
+		width: 36%;
+		background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+		border-radius: 15px;
+
+		.form-control {
+			border-left: none;
+			border-top-right-radius: 15px !important;
+			border-bottom-right-radius: 15px !important;
+			height: 45px;
+		}
+
+		.input-group {
+			height: 45px;
+
+			.input-group-prepend {
+				.input-group-text {
+					background-color: #fff;
+					border-top-left-radius: 15px;
+					border-bottom-left-radius: 15px;
+				}
+			}
+			.input-group-append {
+				.input-group-text {
+					background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+					border-left: none;
+					border-top-right-radius: 15px !important;
+					border-bottom-right-radius: 15px !important;
+				}
+			}
+		}
+	}
+	.column3 {
+		width: 35%;
+	}
+
+	.headerCategory {
+		background: linear-gradient(0deg, #dce5ec, #dce5ec), #c4c4c4;
+		border-radius: 4px;
+		padding: 0.4rem 0.8rem;
+		font-size: 1.6rem;
+		border: none;
+		color: $themeColor;
+	}
+
+	.headerPoster {
+		background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+		border-radius: 4px;
+		padding: 0.4rem 0.8rem;
+		font-size: 1.6rem;
+		border: none;
+		color: #fff;
+	}
+
+	.headerHeart {
+		background: transparent;
+		padding: 0.4rem 0.8rem;
+		font-size: 1.6rem;
+		border: none;
+	}
+
+	.userInfoDD {
+		position: absolute;
+		top: 155%;
+		right: 0%;
+		width: 350%;
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 0px 0px 10px rgb(231, 231, 231);
+
+		li {
+			font-size: 1.4rem;
+			padding: 0.6rem 1.5rem;
+			cursor: pointer;
+			transition: 0.8s all;
+
+			&:hover {
+				color: $themeColor;
+			}
+		}
+
+		li:nth-last-child(1) {
+			background: #209edb;
+			color: #fff;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+	}
+
+	.logo_container {
+		cursor: pointer;
+		img {
+			transition: 0.7s;
+		}
+
+		@media screen and (max-width: 330px) {
+			img {
+				width: 150px;
+			}
+		}
+	}
+}
+
+.NavbarContainer.sticky {
+	padding: 1.2rem 6.6rem;
+	padding-bottom: 1.2rem;
+	box-shadow: 1px -1px 10px #ccc;
+	background-color: #fff;
+}
+
+.hamburgerContainer {
+	img {
+		width: 30px;
+		height: auto;
+		cursor: pointer;
+	}
+
+	@media screen and (max-width: 330px) {
+		img {
+			width: 25px;
+		}
+	}
+}
+
+.HideClass {
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.NavbarContainer,
+	.NavbarContainer.sticky {
+		padding: 4.5rem 1.6rem;
+		padding-bottom: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 952px) {
+	.HideClass {
+		display: block;
+	}
+	.NavbarContainer.sticky .HideClass i {
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.NavbarContainer,
+	.NavbarContainer.sticky {
+		padding: 4.5rem 1.6rem;
+		padding-bottom: 1.6rem;
+	}
+}
+/* ==== TOP NAVBAR END ==== */

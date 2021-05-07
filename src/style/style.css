@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* GLOBAL CLASSES START */
+html {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 60.5%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 46.5%;
+  }
+}
+
+/* GLOBAL CLASSES END */
+body {
+  background: #000;
+  height: 200vh;
+}
+
+.upperHeader_container {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+}
+
+.upperHeader_container .inner_container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==== TOP NAVBAR START ==== */
+.NavbarContainer {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.5rem 6.6rem;
+  padding-bottom: 1.6rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  z-index: 10000;
+  -webkit-box-shadow: 1px -1px 10px #ccc;
+          box-shadow: 1px -1px 10px #ccc;
+}
+
+.NavbarContainer .column1 {
+  width: 29%;
+}
+
+.NavbarContainer .column2 {
+  width: 36%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4dbcef), to(#077bc3));
+  background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+  border-radius: 15px;
+}
+
+.NavbarContainer .column2 .form-control {
+  border-left: none;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  height: 45px;
+}
+
+.NavbarContainer .column2 .input-group {
+  height: 45px;
+}
+
+.NavbarContainer .column2 .input-group .input-group-prepend .input-group-text {
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.NavbarContainer .column2 .input-group .input-group-append .input-group-text {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4dbcef), to(#077bc3));
+  background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+  border-left: none;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.NavbarContainer .column3 {
+  width: 35%;
+}
+
+.NavbarContainer .headerCategory {
+  background: -webkit-gradient(linear, left bottom, left top, from(#dce5ec), to(#dce5ec)), #c4c4c4;
+  background: linear-gradient(0deg, #dce5ec, #dce5ec), #c4c4c4;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+  color: #077bc3;
+}
+
+.NavbarContainer .headerPoster {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+  color: #fff;
+}
+
+.NavbarContainer .headerHeart {
+  background: transparent;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+}
+
+.NavbarContainer .userInfoDD {
+  position: absolute;
+  top: 155%;
+  right: 0%;
+  width: 350%;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px #e7e7e7;
+          box-shadow: 0px 0px 10px #e7e7e7;
+}
+
+.NavbarContainer .userInfoDD li {
+  font-size: 1.4rem;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.NavbarContainer .userInfoDD li:hover {
+  color: #077bc3;
+}
+
+.NavbarContainer .userInfoDD li:nth-last-child(1) {
+  background: #209edb;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.NavbarContainer .logo_container {
+  cursor: pointer;
+}
+
+.NavbarContainer .logo_container img {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 330px) {
+  .NavbarContainer .logo_container img {
+    width: 150px;
+  }
+}
+
+.NavbarContainer.sticky {
+  padding: 1.2rem 6.6rem;
+  padding-bottom: 1.2rem;
+  -webkit-box-shadow: 1px -1px 10px #ccc;
+          box-shadow: 1px -1px 10px #ccc;
+  background-color: #fff;
+}
+
+.hamburgerContainer img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 330px) {
+  .hamburgerContainer img {
+    width: 25px;
+  }
+}
+
+.HideClass {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .NavbarContainer,
+  .NavbarContainer.sticky {
+    padding: 4.5rem 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .HideClass {
+    display: block;
+  }
+  .NavbarContainer.sticky .HideClass i {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .NavbarContainer,
+  .NavbarContainer.sticky {
+    padding: 4.5rem 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+/* ==== TOP NAVBAR END ==== */
+/*# sourceMappingURL=Style.css.map */
