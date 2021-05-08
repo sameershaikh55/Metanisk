@@ -23,7 +23,7 @@ const MainHeader = () => {
 	return (
 		<>
 			{/* UPPER HEADER START */}
-			<div className="upperHeader_container">
+			<div className="upperHeader_container d-none d-lg-block">
 				<div className="inner_container">
 					<div className="container-fluid">
 						<div className="row justify-content-center">
@@ -38,14 +38,17 @@ const MainHeader = () => {
 			{/* UPPER HEADER END */}
 
 			{/* <!-- ======== NAVBAR START =========== --> */}
-			<div className="NavbarContainer">
-				<div className="column1 d-flex">
-					<div className="mr-4" onClick={() => history.push("/")}>
-						<img style={{ width: "100%" }} src={Logo} alt="logo" />
+			<div className="NavbarContainer d-none d-lg-flex">
+				<div className="column1 d-flex mr-2">
+					<div
+						className="logo_container mr-2 mr-lg-4"
+						onClick={() => history.push("/")}
+					>
+						<img src={Logo} alt="logo" />
 					</div>
 					<button className="headerCategory d-flex align-items-center justify-content-center">
 						<img
-							style={{ width: "20%" }}
+							style={{ width: "18%" }}
 							src={category}
 							className="mr-2"
 							alt="category"
@@ -54,7 +57,7 @@ const MainHeader = () => {
 					</button>
 				</div>
 
-				<div className="column2 d-flex justify-content-center mx-3">
+				<div className="column2 d-flex justify-content-center mx-2 mx-lg-3">
 					<div className="input-group">
 						<div className="input-group-prepend">
 							<span className="input-group-text">
@@ -65,6 +68,7 @@ const MainHeader = () => {
 							type="text"
 							className="form-control"
 							aria-label="Amount (to the nearest dollar)"
+							placeholder="Chercher"
 						/>
 						<div className="input-group-append">
 							<span className="input-group-text px-3">
@@ -75,7 +79,7 @@ const MainHeader = () => {
 				</div>
 
 				<div className="column3 d-flex justify-content-end">
-					<button className="headerPoster d-flex align-items-center justify-content-center mr-3">
+					<button className="headerPoster d-flex align-items-center justify-content-center mr-1 mr-lg-3">
 						<img
 							style={{ width: "12%" }}
 							src={add}
@@ -84,7 +88,7 @@ const MainHeader = () => {
 						/>
 						Poster une annonce
 					</button>
-					<button className="headerHeart d-flex align-items-center justify-content-center mr-3">
+					<button className="headerHeart d-flex align-items-center justify-content-center mr-1 mr-lg-3">
 						<img
 							style={{ width: "20%" }}
 							src={heart}
@@ -93,7 +97,7 @@ const MainHeader = () => {
 						/>
 						Favoris
 					</button>
-					<div className="position-relative">
+					<div className="placeholderImg position-relative">
 						<img
 							onClick={() => setUser(!user)}
 							src={placeholder}
