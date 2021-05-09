@@ -85,9 +85,11 @@ const Footer = () => {
 			<hr className="mx-5" />
 			<br />
 			<div className="footerText">
-				<h4 className="text-secondary">
-					© 2021 Makitiplus SAS. Tous droits réservés.
-				</h4>
+				<div className="container-fluid">
+					<h4 className="text-secondary">
+						© 2021 Makitiplus SAS. Tous droits réservés.
+					</h4>
+				</div>
 			</div>
 		</div>
 	);

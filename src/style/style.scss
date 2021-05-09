@@ -71,7 +71,7 @@ html {
 	z-index: 11111;
 
 	.inner_container {
-		max-width: 1070px;
+		max-width: 1090px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -84,13 +84,18 @@ html {
 	left: 0%;
 	top: 0%;
 	width: 100%;
-	display: flex;
-	padding: 4.5rem 6.6rem;
+	padding: 4.5rem 0rem;
 	padding-bottom: 1.6rem;
 	transition: 0.7s;
 	z-index: 10000;
 	box-shadow: 1px -1px 10px #ccc;
 	background-color: #fff;
+
+	.innerNavbar {
+		max-width: 1090px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.column1 {
 		width: 29%;
@@ -220,10 +225,15 @@ html {
 }
 
 .NavbarContainer.sticky {
-	padding: 1.2rem 6.6rem;
-	padding-bottom: 1.2rem;
+	padding: 1.2rem 0rem;
 	box-shadow: 1px -1px 10px #ccc;
 	background-color: #fff;
+
+	.innerNavbar {
+		max-width: 1090px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -282,7 +292,7 @@ html {
 	background: #fff;
 	box-shadow: 1px 1px 10px #ccc;
 	border-radius: 8px;
-	width: 188px;
+	width: 182px;
 
 	h5 {
 		color: $themeColor;
@@ -333,6 +343,7 @@ html {
 	.cardBtns {
 		button {
 			border: none;
+			font-size: 1.3rem;
 		}
 		button:nth-child(1) {
 			background: linear-gradient(270deg, #e66f01 0%, #ff9501 100%), #c4c4c4;
