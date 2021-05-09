@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import { Route, Switch } from "react-router";
 import Home from "./pages/Home";
 import SearchList from "./pages/SearchList";
+import SearchMap from "./pages/SearchMap";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/searchList" component={SearchList} />
+				<Route exact path="/searchMap" component={SearchMap} />
 			</Switch>
 		</Provider>
 	);

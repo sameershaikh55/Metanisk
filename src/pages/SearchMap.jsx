@@ -1,12 +1,13 @@
 import React from "react";
-import MainHeader from "../components/MainHeader";
-import searchBanner from "../assets/searchBanner.svg";
-import searchBanner1 from "../assets/searchBanner1.svg";
 import Category from "../components/Category";
-import ProductList from "../components/ProductList";
 import Footer from "../components/Footer";
+import MainHeader from "../components/MainHeader";
+import searchBanner1 from "../assets/searchBanner1.svg";
+import searchBanner from "../assets/searchBanner.svg";
+import MapSection from "../components/MapSection";
+import UnderProductList from "../components/UnderProductList";
 
-const SearchList = () => {
+const SearchMap = () => {
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -31,7 +32,8 @@ const SearchList = () => {
 								</div>
 							</div>
 							<div className="col-9">
-								<ProductList />
+								<MapSection />
+								<UnderProductList />
 							</div>
 						</div>
 					</div>
@@ -40,7 +42,6 @@ const SearchList = () => {
 				<Footer />
 			</div>
 			{/* DESKTOP END */}
-
 			{/* MOBILE START */}
 			<div className="home_container d-block d-lg-none">
 				<MainHeader />
@@ -50,4 +51,4 @@ const SearchList = () => {
 	);
 };
 
-export default SearchList;
+export default SearchMap;

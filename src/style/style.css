@@ -50,6 +50,30 @@ html {
   }
 }
 
+.themeBtn {
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+  padding: 0.7rem 4.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 12px #ccc;
+          box-shadow: 1px 1px 12px #ccc;
+}
+
+.themeBtn2 {
+  border: none;
+  outline: none;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 12px #ccc;
+          box-shadow: 1px 1px 12px #ccc;
+  padding: 0.7rem 4.2rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+}
+
 /* GLOBAL CLASSES END */
 .mainBody {
   max-width: 1100px;
@@ -342,10 +366,8 @@ html {
   height: 83px;
 }
 
-.featureCard h4 {
+.featureCard h5 {
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* ==== FEATURE SECTION END ==== */
@@ -443,6 +465,56 @@ html {
 }
 
 /* ==== FOOTER END ==== */
+/* ==== SEARCH LIST BANNER START ==== */
+.searchBanner_container {
+  margin-top: 12rem;
+}
+
+.searchTags div {
+  padding: 0.4rem 1.7rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+.searchTags div img {
+  position: absolute;
+  top: -28%;
+  right: -6%;
+}
+
+/* ==== SEARCH LIST BANNER END ==== */
+/* ==== SEARCH CATEGORY START ==== */
+.searchCategory_container {
+  background-color: #fff;
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.searchCategory_container .inpContainer input {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.searchCategory_container .inpContainer .searchIcon {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+
+.searchCategory_container .rangeInp input {
+  height: 3.2rem;
+  padding: 0.7rem;
+  font-size: 1.8rem;
+}
+
+/* ==== SEARCH CATEGORY END ==== */
 .homeMobile_container {
   background: url(../assets/bluredBg.jpg);
   height: 400px;

@@ -95,7 +95,7 @@ const FeatureSection = () => {
 														alt="feature"
 														className="mr-2"
 													/>
-													<h4> {prev.title} </h4>
+													<h5 className="text-break"> {prev.title} </h5>
 												</div>
 											</div>
 										);
