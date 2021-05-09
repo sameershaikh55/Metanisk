@@ -59,39 +59,75 @@ const FeatureSection = () => {
 		},
 	];
 	return (
-		<div className="feature_containerMain">
-			<div className="feature_container d-none d-lg-block">
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col-6">
-							<div className="row">
-								{data.map((prev, i) => {
-									return (
-										<div key={i} className="col-4">
-											<div
-												className="featureCard d-flex justify-content-center align-items-center p-2 m-1"
-												style={{
-													background: prev.bg,
-												}}
-											>
-												<img
-													style={{ width: "45%" }}
-													src={prev.img}
-													alt="feature"
-													className="mr-2"
-												/>
-												<h4> {prev.title} </h4>
+		<>
+			{/* DESKTOP START */}
+			<div className="feature_containerMain d-none d-lg-block">
+				<div className="feature_container">
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col-6">
+								<div className="row">
+									{data.map((prev, i) => {
+										return (
+											<div key={i} className="col-4">
+												<div
+													className="featureCard d-flex justify-content-center align-items-center p-2 m-1"
+													style={{
+														background: prev.bg,
+													}}
+												>
+													<img
+														style={{ width: "45%" }}
+														src={prev.img}
+														alt="feature"
+														className="mr-2"
+													/>
+													<h4> {prev.title} </h4>
+												</div>
 											</div>
-										</div>
-									);
-								})}
+										);
+									})}
+								</div>
 							</div>
+							<div className="col-6"></div>
 						</div>
-						<div className="col-6"></div>
 					</div>
 				</div>
 			</div>
-		</div>
+			{/* DESKTOP END */}
+
+			{/* MOBILE START */}
+			<div className="featureMobile_container">
+				<div className="container-fluid d-block d-lg-none">
+					<div className="row">
+						{data.map((prev, i) => {
+							return (
+								<div
+									key={i}
+									style={{
+										borderLeft: (i === 6 && "none") || (i === 3 && "none"),
+										borderTopRightRadius: i === 2 && "6px",
+										borderTopLeftRadius: i === 0 && "6px",
+										borderBottomLeftRadius: i === 6 && "6px",
+										borderBottomRightRadius: i === 8 && "6px",
+									}}
+									className="mobileFeatureCard col-4 bg-white text-center"
+								>
+									<img
+										style={{ width: "68%" }}
+										src={prev.img}
+										alt="feature"
+										className="mr-2"
+									/>
+									<h5 className="h4 text-break">{prev.title}</h5>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+			</div>
+			{/* MOBILE END */}
+		</>
 	);
 };
 

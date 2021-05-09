@@ -5,31 +5,53 @@ import banner from "../assets/mainBodyImg.svg";
 import TopAnnonces from "../components/TopAnnonces";
 import AnnoncesRecentes from "../components/AnnoncesRecentes";
 import Footer from "../components/Footer";
+import BottomNav from "../components/BottomNav.jsx";
 
 const Home = () => {
 	return (
-		<div className="home_container">
-			<MainHeader />
-			<FeatureSection />
-			{/* BODY START */}
-			<div className="mainBody d-none d-lg-block">
-				<div className="container-fluid">
-					<div className="row">
-						<div style={{ marginTop: "4rem" }} className="col-3">
-							<img src={banner} alt="banner" />
-						</div>
-						<div className="col-9">
-							<TopAnnonces />
-							<br />
-							<br />
-							<AnnoncesRecentes />
+		<>
+			{/* DESKTOP START */}
+			<div className="home_container d-none d-lg-block">
+				<MainHeader />
+				<FeatureSection />
+				{/* BODY START */}
+				<div className="mainBody d-none d-lg-block">
+					<div className="container-fluid">
+						<div className="row">
+							<div style={{ marginTop: "4rem" }} className="col-3">
+								<img src={banner} alt="banner" />
+							</div>
+							<div className="col-9">
+								<TopAnnonces />
+								<br />
+								<br />
+								<AnnoncesRecentes />
+							</div>
 						</div>
 					</div>
 				</div>
+				{/* BODY END */}
+				<Footer />
 			</div>
-			{/* BODY END */}
-			<Footer />
-		</div>
+			{/* DESKTOP END */}
+
+			{/* MOBILE START */}
+			<div className="homeMobile_container d-block d-lg-none">
+				<MainHeader />
+				<FeatureSection />
+				<br />
+				<br />
+				<TopAnnonces />
+				<br />
+				<AnnoncesRecentes />
+				<br />
+				<br />
+				<br />
+				<br />
+				<BottomNav />
+			</div>
+			{/* MOBILE END */}
+		</>
 	);
 };
 

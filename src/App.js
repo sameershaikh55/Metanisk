@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Switch } from "react-router";
 import Home from "./pages/Home";
+import SearchList from "./pages/SearchList";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<ScrollToTop />
 			<Switch>
 				<Route exact path="/" component={Home} />
+				<Route exact path="/searchList" component={SearchList} />
 			</Switch>
 		</Provider>
 	);

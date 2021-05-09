@@ -151,7 +151,7 @@ html {
 		width: 35%;
 	}
 
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1050px) {
 		.column3 {
 			width: 40%;
 		}
@@ -376,3 +376,230 @@ html {
 	margin-right: auto;
 }
 /* ==== FOOTER END ==== */
+
+// ================= MOBILE STYLING START ========================
+.homeMobile_container {
+	background: url(../assets/bluredBg.jpg);
+	height: 400px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.mobileNavbar_container {
+	padding: 1.5rem 1rem;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 350px) {
+	.mobileNavbar_container {
+		img {
+			width: 36px;
+			height: auto;
+		}
+		.logoContainer {
+			img {
+				width: 110px;
+			}
+		}
+	}
+}
+
+// SEARCH FIELD START
+.searchField {
+	margin: 1.5rem 1rem;
+	background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+	border-radius: 10px;
+
+	.form-control {
+		border-top-right-radius: 10px !important;
+		border-bottom-right-radius: 10px !important;
+		height: 38px;
+		font-size: 1.6rem;
+		border: none;
+
+		&:focus {
+			color: none;
+			background-color: none;
+			border-color: none;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+
+	.input-group {
+		height: 38px;
+
+		.input-group-prepend {
+			.input-group-text {
+				background-color: #fff;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				border: none;
+			}
+		}
+		.input-group-append {
+			.input-group-text {
+				background: none;
+				border-left: none;
+				border-top-right-radius: 10px !important;
+				border-bottom-right-radius: 10px !important;
+				border: none;
+			}
+		}
+	}
+}
+// SEARCH FIELD END
+
+// HEADER BANNER START
+.banner_container {
+	margin: 1rem 1rem 1.4rem 1rem;
+	background-color: #067ac2;
+	border-radius: 8px;
+}
+// HEADER BANNER END
+
+// FEATURE SECTION MOBILE START
+.featureMobile_container {
+	margin: 1rem;
+	box-shadow: 0px 1px 10px #ccc;
+
+	.mobileFeatureCard {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-left: 1px solid rgba(0, 0, 0, 0.1);
+	}
+}
+// FEATURE SECTION MOBILE END
+
+// ANNONCES CARD MOBILE START
+.annoncesCardMobile {
+	background: #fff;
+	box-shadow: 1px 1px 10px #ccc;
+	border-radius: 8px;
+
+	h5 {
+		color: $themeColor;
+	}
+
+	.imgContainer {
+		position: relative;
+
+		.productImg {
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+
+		.heartOnImg {
+			position: absolute;
+			top: 2%;
+			right: 2%;
+			padding: 1rem 0.4rem 0.8rem 0.4rem;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 50%;
+		}
+
+		.titleOnImg {
+			position: absolute;
+			bottom: 3%;
+			left: 4%;
+			padding: 0.4rem 1.8rem;
+			background: rgba(0, 0, 0, 0.4);
+			border-radius: 10px;
+		}
+
+		.musicOnImg {
+			position: absolute;
+			bottom: -13%;
+			right: 2%;
+			padding: 1rem 0.9rem;
+			background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%),
+				#c4c4c4;
+			border-radius: 50%;
+
+			img {
+				width: 30px;
+				height: auto;
+			}
+		}
+	}
+
+	.cardBtns {
+		button {
+			border: none;
+			font-size: 1.3rem;
+		}
+		button:nth-child(1) {
+			background: linear-gradient(270deg, #e66f01 0%, #ff9501 100%), #c4c4c4;
+			border-bottom-left-radius: 8px;
+		}
+		button:nth-child(2) {
+			background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+			border-bottom-right-radius: 8px;
+		}
+	}
+}
+// ANNONCES CARD MOBILE END
+
+// BOTTOM NAVIGATION START
+.bottomNav_container {
+	position: fixed;
+	width: 100%;
+	left: 0%;
+	bottom: 0%;
+
+	.main_container {
+		position: relative;
+		width: 100%;
+	}
+
+	.main_div {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 2rem;
+		padding: 1rem 0rem 0.5rem 0rem;
+		background: #fff;
+		box-shadow: 0px 0px 10px #ccc;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+
+		.each_navigation {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.NavIcon {
+				color: #007bff;
+				padding: 0.4rem;
+				border-radius: 50%;
+				font-size: 3.5rem;
+			}
+
+			h6 {
+				font-size: 1.4rem;
+				color: #000;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.addBtn {
+		position: absolute;
+		top: -20%;
+		left: 50%;
+		width: fit-content;
+		transform: translate(-50%);
+
+		span {
+			background-color: #007bff;
+			padding: 10px 14px 14px 13px;
+			border-radius: 50%;
+			font-size: 2.5rem;
+			color: #fff;
+		}
+	}
+}
+// BOTTOM NAVIGATION END
+
+// ================= MOBILE STYLING END ========================
