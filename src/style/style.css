@@ -283,9 +283,63 @@ html {
   border-radius: 8px;
 }
 
+.feature_container .slick-prev:before {
+  content: url("../assets/left.svg");
+  font-weight: 900;
+  background-color: #fff;
+  height: 30px;
+  width: 28px;
+}
+
+.feature_container .slick-next:before {
+  content: url("../assets/right.svg");
+  color: black;
+  font-weight: 900;
+  font-size: 2rem;
+  background-color: #fff;
+  height: 30px;
+  width: 28px;
+}
+
+.feature_container .slick-prev {
+  left: -1%;
+}
+
+.feature_container .slick-next {
+  right: -8px;
+}
+
+.feature_container .slick-prev,
+.feature_container .slick-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 11;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 30px;
+  width: 28px;
+  -webkit-box-shadow: 1px 1px 10px #e0e0e0;
+          box-shadow: 1px 1px 10px #e0e0e0;
+}
+
+.feature_container .slick-prev:hover,
+.feature_container .slick-next:hover {
+  background-color: #fff;
+  height: 30px;
+  width: 28px;
+}
+
 .featureCard {
   border-radius: 8px;
   width: 114%;
+  height: 83px;
 }
 
 .featureCard h4 {
@@ -395,7 +449,6 @@ html {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .mobileNavbar_container {

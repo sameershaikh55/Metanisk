@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import feature1 from "../assets/feature1.svg";
 import feature2 from "../assets/feature2.svg";
 import feature3 from "../assets/feature3.svg";
@@ -8,6 +9,7 @@ import feature6 from "../assets/feature6.svg";
 import feature7 from "../assets/feature7.svg";
 import feature8 from "../assets/feature8.svg";
 import feature9 from "../assets/feature9.svg";
+import homeSlider from "../assets/homeSlider.svg";
 
 const FeatureSection = () => {
 	const data = [
@@ -58,6 +60,17 @@ const FeatureSection = () => {
 			bg: "linear-gradient(72.83deg, #E2DECF 11.8%, #F4EFDD 88.2%), #FFFFFF",
 		},
 	];
+
+	var settings = {
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		initialSlide: 0,
+		autoplay: true,
+		speed: 800,
+		autoplaySpeed: 2000,
+	};
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -89,7 +102,15 @@ const FeatureSection = () => {
 									})}
 								</div>
 							</div>
-							<div className="col-6"></div>
+							<div className="col-6 py-1 slider_container">
+								<Slider {...settings}>
+									<img src={homeSlider} alt="slider" />
+									<img src={homeSlider} alt="slider" />
+									<img src={homeSlider} alt="slider" />
+									<img src={homeSlider} alt="slider" />
+									<img src={homeSlider} alt="slider" />
+								</Slider>
+							</div>
 						</div>
 					</div>
 				</div>

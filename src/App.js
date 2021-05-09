@@ -2,6 +2,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import "./style/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Switch } from "react-router";
 import Home from "./pages/Home";
