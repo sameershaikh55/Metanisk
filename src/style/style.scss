@@ -68,6 +68,21 @@ html {
 	font-size: 1.4rem;
 	border-radius: 6px;
 }
+
+.themeBtn3 {
+	border: none;
+	outline: none;
+	background: linear-gradient(270deg, #209edb 0%, #4dbcef 100%), #c4c4c4;
+	box-shadow: 1px 1px 12px #ccc;
+	padding: 0.7rem 4.2rem;
+	font-size: 1.4rem;
+	border-radius: 6px;
+	color: #fff;
+}
+
+.themeColor {
+	color: $themeColor;
+}
 /* GLOBAL CLASSES END */
 
 .mainBody {
@@ -496,6 +511,37 @@ html {
 	}
 }
 /* ==== SEARCH CATEGORY END ==== */
+
+/* ==== PRODUCT DETAILS START ==== */
+.infoList {
+	li:nth-child(odd) {
+		background-color: #e6e6e6;
+	}
+}
+
+.userBtn {
+	button {
+		border: none;
+		font-size: 1.5rem;
+		border-radius: 6px;
+		box-shadow: 1px 1px 10px rgb(230, 230, 230);
+	}
+	button:nth-child(1) {
+		background: linear-gradient(270deg, #e66f01 0%, #ff9501 100%), #c4c4c4;
+	}
+	button:nth-child(2) {
+		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+	}
+}
+
+.eyeBtn {
+	span:nth-child(2) {
+		background-color: #ccc;
+		padding: 0.4rem 1rem;
+		border-radius: 8px;
+	}
+}
+/* ==== PRODUCT DETAILS END ==== */
 
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {

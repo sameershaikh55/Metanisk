@@ -74,6 +74,23 @@ html {
   border-radius: 6px;
 }
 
+.themeBtn3 {
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right top, left top, from(#209edb), to(#4dbcef)), #c4c4c4;
+  background: linear-gradient(270deg, #209edb 0%, #4dbcef 100%), #c4c4c4;
+  -webkit-box-shadow: 1px 1px 12px #ccc;
+          box-shadow: 1px 1px 12px #ccc;
+  padding: 0.7rem 4.2rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.themeColor {
+  color: #077bc3;
+}
+
 /* GLOBAL CLASSES END */
 .mainBody {
   max-width: 1100px;
@@ -515,6 +532,36 @@ html {
 }
 
 /* ==== SEARCH CATEGORY END ==== */
+/* ==== PRODUCT DETAILS START ==== */
+.infoList li:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.userBtn button {
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 10px #e6e6e6;
+          box-shadow: 1px 1px 10px #e6e6e6;
+}
+
+.userBtn button:nth-child(1) {
+  background: -webkit-gradient(linear, right top, left top, from(#e66f01), to(#ff9501)), #c4c4c4;
+  background: linear-gradient(270deg, #e66f01 0%, #ff9501 100%), #c4c4c4;
+}
+
+.userBtn button:nth-child(2) {
+  background: -webkit-gradient(linear, left top, right top, from(#4dbcef), color-stop(98.04%, #1b8acc)), #ffffff;
+  background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+}
+
+.eyeBtn span:nth-child(2) {
+  background-color: #ccc;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+}
+
+/* ==== PRODUCT DETAILS END ==== */
 .homeMobile_container {
   background: url(../assets/bluredBg.jpg);
   height: 400px;

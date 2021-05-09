@@ -9,6 +9,7 @@ import { Route, Switch } from "react-router";
 import Home from "./pages/Home";
 import SearchList from "./pages/SearchList";
 import SearchMap from "./pages/SearchMap";
+import AdDetails from "./pages/AdDetails";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/searchList" component={SearchList} />
 				<Route exact path="/searchMap" component={SearchMap} />
+				<Route exact path="/adDetails" component={AdDetails} />
 			</Switch>
 		</Provider>
 	);
