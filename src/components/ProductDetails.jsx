@@ -1,5 +1,11 @@
 import React from "react";
+import ImageGalleryC from "react-image-gallery";
 import map2 from "../assets/map2.svg";
+import "react-image-gallery/styles/css/image-gallery.css";
+import annonces1 from "../assets/annonces1.svg";
+import annonces2 from "../assets/annonces2.svg";
+import annonces3 from "../assets/annonces3.svg";
+import annonces4 from "../assets/annonces4.svg";
 
 const ProductDetails = () => {
 	const data = [
@@ -10,11 +16,46 @@ const ProductDetails = () => {
 		{ left: "Autres", right: "......" },
 	];
 
+	const images = [
+		{
+			original: annonces1,
+			thumbnail: annonces1,
+		},
+		{
+			original: annonces2,
+			thumbnail: annonces2,
+		},
+		{
+			original: annonces3,
+			thumbnail: annonces3,
+		},
+		{
+			original: "https://picsum.photos/id/1018/1000/600/",
+			thumbnail: "https://picsum.photos/id/1018/250/150/",
+		},
+		{
+			original: "https://picsum.photos/id/1015/1000/600/",
+			thumbnail: "https://picsum.photos/id/1015/250/150/",
+		},
+		{
+			original: "https://picsum.photos/id/1019/1000/600/",
+			thumbnail: "https://picsum.photos/id/1019/250/150/",
+		},
+	];
+
 	return (
-		<div>
+		<>
 			{/* IMAGES SECTION START */}
 			<div>
-				<div className="mt-2 bg-white w-100" style={{ height: "450px" }}></div>
+				<div className="imageGalleryContainer mt-2 w-100">
+					<ImageGalleryC
+						autoPlay={false}
+						showIndex={true}
+						showPlayButton={false}
+						items={images}
+						allowFullScreen={true}
+					/>
+				</div>
 				<div className="mt-5 bg-white p-4 rounded">
 					<h2 className="font-weight-bold">Description</h2>
 					<h3>
@@ -43,12 +84,23 @@ const ProductDetails = () => {
 				</div>
 				<div className="bg-white mt-5 p-4 rounded">
 					<h2 className="font-weight-bold">Emplacement</h2>
-					<img className="w-100" src={map2} alt="map" />
+					<div style={{ width: "100%" }}>
+						<iframe
+							title="map"
+							width="100%"
+							height="260"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+							src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+						></iframe>
+					</div>{" "}
 				</div>
 			</div>
 
 			{/* IMAGES SECTION END */}
-		</div>
+		</>
 	);
 };
 

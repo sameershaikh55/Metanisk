@@ -1,5 +1,4 @@
 import React from "react";
-import map from "../assets/map.svg";
 import cross from "../assets/cross.svg";
 import location from "../assets/location2.svg";
 import sort from "../assets/sort.svg";
@@ -58,6 +57,7 @@ const MapSection = () => {
 			<div className="mt-4">
 				<div style={{ width: "100%" }}>
 					<iframe
+						title="map"
 						width="100%"
 						height="560"
 						frameborder="0"

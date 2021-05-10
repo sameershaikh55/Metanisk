@@ -459,7 +459,14 @@ html {
 
 /* ==== SEARCH LIST BANNER START ==== */
 .searchBanner_container {
-	margin-top: 12rem;
+	padding-top: 12rem;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	img {
+		width: 100%;
+	}
 }
 .searchTags {
 	div {
@@ -704,6 +711,44 @@ html {
 		border-radius: 8px;
 	}
 }
+
+.imageGalleryContainer {
+	.image-gallery {
+		box-shadow: 1px 1px 10px rgb(230, 230, 230);
+		border-radius: 6px;
+		background-color: #fff;
+	}
+	.image-gallery-image,
+	.image-gallery-index,
+	.image-gallery-thumbnail .image-gallery-thumbnail-image {
+		border-radius: 6px;
+	}
+
+	.image-gallery-thumbnail.active,
+	.image-gallery-thumbnail:hover,
+	.image-gallery-thumbnail:focus {
+		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+	}
+
+	.image-gallery-thumbnail {
+		border-radius: 10px;
+	}
+
+	.image-gallery-slide .image-gallery-image {
+		object-fit: fill;
+	}
+
+	.image-gallery-thumbnail .image-gallery-thumbnail-image {
+		height: 82px;
+	}
+
+	.image-gallery-content .image-gallery-slide .image-gallery-image {
+		max-height: 450px;
+		height: 450px;
+		background-color: #fff;
+	}
+}
+
 /* ==== PRODUCT DETAILS END ==== */
 
 // ================= MOBILE STYLING START ========================
