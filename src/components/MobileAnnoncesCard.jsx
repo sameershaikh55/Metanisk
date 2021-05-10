@@ -2,11 +2,17 @@ import React from "react";
 import heart from "../assets/heartIcon.svg";
 import music from "../assets/music.svg";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useHistory } from "react-router-dom";
 
 const MobileAnnoncesCard = ({ prev }) => {
+	let history = useHistory();
+
 	return (
 		<>
-			<div className="annoncesCardMobile">
+			<div
+				onClick={() => history.push("/adDetails")}
+				className="annoncesCardMobile"
+			>
 				<div className="imgContainer">
 					<img
 						style={{ width: "100%" }}

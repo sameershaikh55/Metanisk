@@ -140,6 +140,29 @@ html {
   margin-right: auto;
 }
 
+.NavbarContainer .innerNavbar .categoriesList_container {
+  margin-top: 3rem;
+}
+
+.NavbarContainer .innerNavbar .categoriesList_container .categoryCard {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 10px #e2e2e2;
+          box-shadow: 1px 1px 10px #e2e2e2;
+  border-radius: 10px;
+}
+
+.NavbarContainer .innerNavbar .categoriesList_container .categoryCard div:nth-child(1) {
+  width: 60%;
+}
+
+.NavbarContainer .innerNavbar .categoriesList_container .categoryCard div:nth-child(2) {
+  width: 30%;
+}
+
+.NavbarContainer .innerNavbar .categoriesList_container .categoryCard h4 {
+  color: #077bc3;
+}
+
 .NavbarContainer .column1 {
   width: 29%;
 }
@@ -203,7 +226,7 @@ html {
   background: -webkit-gradient(linear, left bottom, left top, from(#dce5ec), to(#dce5ec)), #c4c4c4;
   background: linear-gradient(0deg, #dce5ec, #dce5ec), #c4c4c4;
   border-radius: 4px;
-  padding: 0.4rem 0.8rem;
+  padding: 1rem 0.8rem;
   font-size: 1.6rem;
   border: none;
   color: #077bc3;
@@ -402,6 +425,7 @@ html {
 }
 
 .annoncesCard .imgContainer {
+  cursor: pointer;
   position: relative;
 }
 
@@ -484,7 +508,14 @@ html {
 /* ==== FOOTER END ==== */
 /* ==== SEARCH LIST BANNER START ==== */
 .searchBanner_container {
-  margin-top: 12rem;
+  padding-top: 12rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchBanner_container img {
+  width: 100%;
 }
 
 .searchTags div {
@@ -505,7 +536,7 @@ html {
 .searchCategory_container {
   background-color: #fff;
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 1.2rem 1.5rem;
 }
 
 .searchCategory_container .inpContainer input {
@@ -529,6 +560,175 @@ html {
   height: 3.2rem;
   padding: 0.7rem;
   font-size: 1.8rem;
+}
+
+.searchCategory_container .MuiSlider-rail {
+  background: #d0dcff;
+  height: 6px;
+}
+
+.searchCategory_container .MuiSlider-track {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+  height: 6px;
+}
+
+.searchCategory_container .MuiSlider-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 10px #ccc;
+          box-shadow: 1px 1px 10px #ccc;
+  border: 1px solid #ccc;
+  margin-top: -7px;
+}
+
+.searchCategory_container .PrivateValueLabel-circle-4 {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+  font-size: 1.2rem;
+}
+
+.searchCategory_container .MuiSlider-valueLabel {
+  left: calc(-30% - 4px);
+}
+
+.searchCategory_container .vendeurBtn {
+  /* The container */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+
+.searchCategory_container .vendeurBtn .containerRadio {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.searchCategory_container .vendeurBtn .containerRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.searchCategory_container .vendeurBtn .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.searchCategory_container .vendeurBtn .containerRadio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.searchCategory_container .vendeurBtn .containerRadio input:checked ~ .checkmark {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+}
+
+.searchCategory_container .vendeurBtn .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.searchCategory_container .vendeurBtn .containerRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.searchCategory_container .vendeurBtn .containerRadio .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.searchCategory_container .classementBtn {
+  /* The container */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.searchCategory_container .classementBtn .containerSelect {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.searchCategory_container .classementBtn .containerSelect input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.searchCategory_container .classementBtn .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+.searchCategory_container .classementBtn .containerSelect:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.searchCategory_container .classementBtn .containerSelect input:checked ~ .checkmark {
+  background: -webkit-gradient(linear, right top, left top, from(#067ac2), to(#209edb)), #c4c4c4;
+  background: linear-gradient(270deg, #067ac2 0%, #209edb 100%), #c4c4c4;
+  border-radius: 4px;
+}
+
+.searchCategory_container .classementBtn .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.searchCategory_container .classementBtn .containerSelect input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.searchCategory_container .classementBtn .containerSelect .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* ==== SEARCH CATEGORY END ==== */
@@ -559,6 +759,45 @@ html {
   background-color: #ccc;
   padding: 0.4rem 1rem;
   border-radius: 8px;
+}
+
+.imageGalleryContainer .image-gallery {
+  -webkit-box-shadow: 1px 1px 10px #e6e6e6;
+          box-shadow: 1px 1px 10px #e6e6e6;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.imageGalleryContainer .image-gallery-image,
+.imageGalleryContainer .image-gallery-index,
+.imageGalleryContainer .image-gallery-thumbnail .image-gallery-thumbnail-image {
+  border-radius: 6px;
+}
+
+.imageGalleryContainer .image-gallery-thumbnail.active,
+.imageGalleryContainer .image-gallery-thumbnail:hover,
+.imageGalleryContainer .image-gallery-thumbnail:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#4dbcef), color-stop(98.04%, #1b8acc)), #ffffff;
+  background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+}
+
+.imageGalleryContainer .image-gallery-thumbnail {
+  border-radius: 10px;
+}
+
+.imageGalleryContainer .image-gallery-slide .image-gallery-image {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.imageGalleryContainer .image-gallery-thumbnail .image-gallery-thumbnail-image {
+  height: 82px;
+}
+
+.imageGalleryContainer .image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 450px;
+  height: 450px;
+  background-color: #fff;
 }
 
 /* ==== PRODUCT DETAILS END ==== */
@@ -658,6 +897,7 @@ html {
 
 .annoncesCardMobile .imgContainer {
   position: relative;
+  cursor: pointer;
 }
 
 .annoncesCardMobile .imgContainer .productImg {

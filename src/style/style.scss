@@ -131,6 +131,27 @@ html {
 		max-width: 1090px;
 		margin-left: auto;
 		margin-right: auto;
+
+		.categoriesList_container {
+			margin-top: 3rem;
+
+			.categoryCard {
+				background-color: #fff;
+				box-shadow: 1px 1px 10px rgb(226, 226, 226);
+				border-radius: 10px;
+
+				div:nth-child(1) {
+					width: 60%;
+				}
+				div:nth-child(2) {
+					width: 30%;
+				}
+
+				h4 {
+					color: $themeColor;
+				}
+			}
+		}
 	}
 
 	.column1 {
@@ -196,7 +217,7 @@ html {
 	.headerCategory {
 		background: linear-gradient(0deg, #dce5ec, #dce5ec), #c4c4c4;
 		border-radius: 4px;
-		padding: 0.4rem 0.8rem;
+		padding: 1rem 0.8rem;
 		font-size: 1.6rem;
 		border: none;
 		color: $themeColor;
@@ -379,6 +400,7 @@ html {
 	}
 
 	.imgContainer {
+		cursor: pointer;
 		position: relative;
 
 		.productImg {
@@ -856,6 +878,7 @@ html {
 
 	.imgContainer {
 		position: relative;
+		cursor: pointer;
 
 		.productImg {
 			border-top-left-radius: 8px;

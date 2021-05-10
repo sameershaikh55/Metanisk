@@ -11,9 +11,11 @@ import { AiOutlineUser, AiOutlineStar, AiOutlineShop } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
 import { BsFillMicFill, BsSearch } from "react-icons/bs";
+import CategoriesList from "./CategoriesList";
 
 const MainHeader = () => {
 	const [user, setUser] = useState(false);
+	const [categories, setCategories] = useState(false);
 	let history = useHistory();
 	// FOR NAVBAR SCROLLING EFFECT START
 	window.addEventListener("scroll", function () {
@@ -49,7 +51,10 @@ const MainHeader = () => {
 							>
 								<img src={Logo} alt="logo" />
 							</div>
-							<button className="headerCategory d-flex align-items-center justify-content-center">
+							<button
+								onClick={() => setCategories(!categories)}
+								className="headerCategory d-flex align-items-center justify-content-center"
+							>
 								<img
 									style={{ width: "18%" }}
 									src={category}
@@ -145,52 +150,12 @@ const MainHeader = () => {
 							</div>
 						</div>
 					</div>
+					{categories && <CategoriesList />}
 				</div>
 			</div>
 			{/* <!-- ======== NAVBAR END =========== --> */}
 
 			{/* MOBILE START */}
-			<div className="mobileNavbar_container d-block d-lg-none">
-				<div className="d-flex justify-content-between align-items-center">
-					<div className="mr-2">
-						<img src={hamburger} alt="person" />
-					</div>
-					<div className="logoContainer mx-2">
-						<img src={Logo} alt="logo" />
-					</div>
-					<div className="ml-2">
-						<img src={placeholder} alt="person" />
-					</div>
-				</div>
-			</div>
-
-			<div className="searchField d-block d-lg-none">
-				<div className="d-flex justify-content-center mx-lg-3">
-					<div className="input-group">
-						<div className="input-group-prepend">
-							<span className="input-group-text">
-								<BsSearch fontSize="20px" />
-							</span>
-						</div>
-						<input
-							type="text"
-							className="form-control"
-							aria-label="Amount (to the nearest dollar)"
-							placeholder="Chercher"
-						/>
-						<div className="input-group-append">
-							<span className="input-group-text px-3">
-								<BsFillMicFill fontSize="20px" color="white" />
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="banner_container d-block d-lg-none">
-				<img style={{ width: "100%" }} src={banner} alt="banner" />
-			</div>
-			{/* MOBILE END */}
 		</>
 	);
 };
