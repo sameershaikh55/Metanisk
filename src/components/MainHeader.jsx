@@ -23,6 +23,7 @@ const MainHeader = () => {
 		header.classList.toggle("sticky", window.scrollY > 1);
 	});
 	// FOR NAVBAR SCROLLING EFFECT END
+
 	return (
 		<>
 			{/* UPPER HEADER START */}
@@ -114,7 +115,10 @@ const MainHeader = () => {
 								{user && (
 									<div className="userInfoDD">
 										<ul className="list-unstyled mb-0">
-											<li className="d-flex align-items-center">
+											<li
+												onClick={() => history.push("/menuprofile")}
+												className="d-flex align-items-center"
+											>
 												<AiOutlineUser className="mr-2" /> Profile
 											</li>
 											<li className="d-flex align-items-center">

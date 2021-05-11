@@ -7,9 +7,31 @@ import filledStar from "../assets/filledStar.svg";
 import { AiOutlineShop, AiOutlineStar, AiOutlineUser } from "react-icons/ai";
 import { BiBell, BiMessageDetail, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
-import { NavLink } from "react-router-dom";
 
-const ProfileLeft = () => {
+const ProfileLeft = ({
+	profile,
+	message,
+	favoris,
+	setProfile,
+	setMessage,
+	setFavoris,
+}) => {
+	const profileFunc = () => {
+		setProfile(true);
+		setMessage(false);
+		setFavoris(false);
+	};
+	const messageFunc = () => {
+		setMessage(true);
+		setProfile(false);
+		setFavoris(false);
+	};
+	const favorisFunc = () => {
+		setFavoris(true);
+		setMessage(false);
+		setProfile(false);
+	};
+
 	return (
 		<div>
 			{/* PROFILE TITLE START */}
@@ -46,74 +68,55 @@ const ProfileLeft = () => {
 			{/* PROFILE TITLE END */}
 			<div className="userInfoDD2 bg-white py-4">
 				<ul className="list-unstyled mb-0">
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/menuprofile"
-						>
-							<AiOutlineUser className="mr-2" /> Profile
-						</NavLink>
+					<li
+						onClick={profileFunc}
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
+							(profile && "themeColor") || ""
+						}`}
+					>
+						<AiOutlineUser className="mr-2" /> Profile
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<BiMessageDetail className="mr-2" />
-							Messages
-						</NavLink>
+					<li
+						onClick={messageFunc}
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
+							(message && "themeColor") || ""
+						}`}
+					>
+						<BiMessageDetail className="mr-2" />
+						Messages
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<AiOutlineStar className="mr-2" />
-							Favoris
-						</NavLink>
+					<li
+						onClick={favorisFunc}
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
+							(favoris && "themeColor") || ""
+						}`}
+					>
+						<AiOutlineStar className="mr-2" />
+						Favoris
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<BiBell className="mr-2" />
-							Notifications
-						</NavLink>
+					<li
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+					>
+						<BiBell className="mr-2" />
+						Notifications
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<MdViewDay className="mr-2" />
-							Mes Annonces
-						</NavLink>
+					<li
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+					>
+						<MdViewDay className="mr-2" />
+						Mes Annonces
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<AiOutlineShop className="mr-2" />
-							Ma Boutique
-						</NavLink>
+					<li
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+					>
+						<AiOutlineShop className="mr-2" />
+						Ma Boutique
 					</li>
-					<li className="d-flex align-items-center py-3 px-5 h4">
-						<NavLink
-							activeClassName="profileActive"
-							className="text-dark font-weight-bold"
-							to="/"
-						>
-							<BiSliderAlt className="mr-2" />
-							Paramètres
-						</NavLink>
+					<li
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+					>
+						<BiSliderAlt className="mr-2" />
+						Paramètres
 					</li>
 				</ul>
 			</div>

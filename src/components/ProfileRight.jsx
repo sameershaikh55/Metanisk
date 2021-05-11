@@ -86,7 +86,7 @@ const ProfileRight = () => {
 							{data2.map((prev, i) => {
 								const { title, desc } = prev;
 								return (
-									<div className="col-6 mt-3">
+									<div key={i} className="col-6 mt-3">
 										<h5 className="themeColor font-weight-bold"> {title} </h5>
 										<h4> {desc} </h4>
 									</div>
@@ -109,7 +109,7 @@ const ProfileRight = () => {
 						<div className="row languageCheckboxes">
 							{data3.map((prev, i) => {
 								return (
-									<div className="col-4 mt-3 ">
+									<div key={i} className="col-4 mt-3 ">
 										<label class="container">
 											{prev}
 											<input type="checkbox" checked />
@@ -136,10 +136,10 @@ const ProfileRight = () => {
 						title="map"
 						width="100%"
 						height="260"
-						frameborder="0"
+						frameBorder="0"
 						scrolling="no"
-						marginheight="0"
-						marginwidth="0"
+						marginHeight="0"
+						marginWidth="0"
 						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 					></iframe>
 				</div>

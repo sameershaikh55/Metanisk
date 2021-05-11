@@ -7,6 +7,7 @@ import AnnoncesRecentes from "../components/AnnoncesRecentes";
 import UserDetails from "../components/UserDetails";
 import filledHeart from "../assets/heartFilled.svg";
 import { NavLink } from "react-router-dom";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 const AdDetails = () => {
 	return (
@@ -24,19 +25,30 @@ const AdDetails = () => {
 						<div className="row mt-5">
 							<div className="col-7">
 								{/* BREADCRUMB START */}
-								<div>
-									<NavLink className="h4" to="/">
-										Acceuil
-									</NavLink>
-									<NavLink className="h4" to="/">
-										Categorie
-									</NavLink>
-									<NavLink className="h4" to="/">
-										Sous-Categorie
-									</NavLink>
-									<NavLink className="h4" to="/">
-										Type d’article
-									</NavLink>
+								<div className="d-flex align-items-center">
+									<div>
+										<NavLink className="h4 mr-2 text-decoration-none" to="/">
+											Acceuil
+										</NavLink>
+									</div>
+									<RiArrowRightSLine fontSize="1.7rem" />
+									<div>
+										<NavLink className="h4 mr-2 text-decoration-none" to="/">
+											Categorie
+										</NavLink>
+									</div>
+									<RiArrowRightSLine fontSize="1.7rem" />
+									<div>
+										<NavLink className="h4 mr-2 text-decoration-none" to="/">
+											Sous-Categorie
+										</NavLink>
+									</div>
+									<RiArrowRightSLine fontSize="1.7rem" />
+									<div>
+										<NavLink className="h4 mr-2 text-decoration-none" to="/">
+											Type d’article
+										</NavLink>
+									</div>
 								</div>
 								{/* BREADCRUMB END */}
 
