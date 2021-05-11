@@ -4,8 +4,6 @@ import Logo from "../assets/logo.svg";
 import category from "../assets/categoryIcon.svg";
 import add from "../assets/addIcon.svg";
 import heart from "../assets/heartIcon.svg";
-import banner from "../assets/homeBanner.svg";
-import hamburger from "../assets/hamburger.svg";
 import placeholder from "../assets/placeholderPerson.svg";
 import { AiOutlineUser, AiOutlineStar, AiOutlineShop } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";

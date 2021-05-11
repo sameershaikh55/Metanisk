@@ -98,6 +98,18 @@ html {
   margin-right: auto;
 }
 
+.withPadding {
+  padding-top: 13rem;
+}
+
+.borderRounded {
+  border-radius: 8px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .home_container {
   background: #f1f1f1;
 }
@@ -801,6 +813,261 @@ html {
 }
 
 /* ==== PRODUCT DETAILS END ==== */
+/* ==== USER DETAILS CARD START ==== */
+.userCard .userBg {
+  position: relative;
+}
+
+.userCard .userBg img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.userCard .userBg .cameraDiv {
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  padding: 5px 8px;
+  font-size: 15px;
+  color: #077bc3;
+  -webkit-box-shadow: 1px 1px 10px #ccc;
+          box-shadow: 1px 1px 10px #ccc;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.userCard .userBg .userImage {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30%;
+  left: 5%;
+}
+
+.userCard .userBg .userImage img {
+  width: 70px;
+  height: 70px;
+}
+
+.userCard .userBg .userImage .cameraDiv2 {
+  position: absolute;
+  left: 2%;
+  bottom: -2%;
+  padding: 3px 7px;
+  font-size: 15px;
+  color: #077bc3;
+  -webkit-box-shadow: 1px 1px 10px #ccc;
+          box-shadow: 1px 1px 10px #ccc;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.userInfoDD2 {
+  border-radius: 8px;
+}
+
+.userInfoDD2 li {
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.userInfoDD2 li:hover {
+  color: #077bc3;
+}
+
+/* ==== USER DETAILS CARD END ==== */
+/* ==== STATE CARD START ==== */
+.statesCard {
+  height: 100px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 10px #9e9e9e;
+          box-shadow: 1px 1px 10px #9e9e9e;
+}
+
+.statesCard h1 {
+  font-size: 3.8rem;
+}
+
+/* ==== STATE CARD END ==== */
+/* ==== LANGUAGE START ==== */
+.languageCheckboxes {
+  /* The container */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.languageCheckboxes .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.languageCheckboxes .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.languageCheckboxes .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #077bc3;
+  border-radius: 4px;
+}
+
+.languageCheckboxes .container:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+.languageCheckboxes .container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.languageCheckboxes .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.languageCheckboxes .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.languageCheckboxes .container .checkmark:after {
+  left: 6px;
+  top: 2.4px;
+  width: 5px;
+  height: 10px;
+  border: solid #077bc3;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ==== LANGUAGE END ==== */
+/* ==== MESSAGE SECTION IN PROFILE START ==== */
+.productImgContainer {
+  position: absolute;
+  left: 20%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(204, 204, 204, 0.5)), to(white));
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.5) 0%, white 100%);
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 28px;
+}
+
+.productImgContainer img {
+  width: 50px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.productImgContainer2 {
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 28px;
+}
+
+.productImgContainer2 img {
+  width: 50px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.incomingMessage {
+  border-radius: 0px 8px 8px 8px;
+}
+
+.outGoingMessage {
+  border-radius: 8px 0px 8px 8px;
+}
+
+.messagesBody {
+  height: 580px;
+  overflow: auto;
+}
+
+.messagesBody::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.messagesBody::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+.messagesBody::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #077bc3;
+}
+
+.sendMessageSec {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f0f0f0;
+}
+
+.sendMessageSec div:nth-child(1) {
+  width: 80%;
+}
+
+.sendMessageSec div:nth-child(2) {
+  width: 20%;
+}
+
+.sendMessageSec .icon {
+  position: absolute;
+  left: 4%;
+  top: 22%;
+}
+
+.sendMessageSec input {
+  height: 3.5rem;
+  border: none;
+  border-radius: 12px;
+  padding-left: 3.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  width: 100%;
+}
+
+.sendMessageSec input:focus {
+  outline: none;
+}
+
+/* ==== MESSAGE SECTION IN PROFILE END ==== */
 .homeMobile_container {
   background: url(../assets/bluredBg.jpg);
   height: 400px;

@@ -1,11 +1,9 @@
 import React from "react";
 import ImageGalleryC from "react-image-gallery";
-import map2 from "../assets/map2.svg";
 import "react-image-gallery/styles/css/image-gallery.css";
 import annonces1 from "../assets/annonces1.svg";
 import annonces2 from "../assets/annonces2.svg";
 import annonces3 from "../assets/annonces3.svg";
-import annonces4 from "../assets/annonces4.svg";
 
 const ProductDetails = () => {
 	const data = [
