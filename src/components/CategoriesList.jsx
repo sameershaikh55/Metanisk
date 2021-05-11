@@ -175,6 +175,9 @@ const CategoriesList = () => {
 						})}
 					</div>
 					<div className="col-4">
+						<h2 className="mb-4 font-weight-bold">
+							Smartphone, Tablettes, Objets...
+						</h2>
 						{data3.map((prev, i) => {
 							return (
 								<div key={i} className="col-12 px-0 mb-4">
