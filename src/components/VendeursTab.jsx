@@ -76,7 +76,9 @@ const VendeursTab = () => {
 																<h4 className="m-0 font-weight-bold">
 																	800 000 FG
 																</h4>
-																<h5>Chaussure Nike a vendre</h5>
+																<h5 className="themeColor">
+																	Chaussure Nike a vendre
+																</h5>
 															</div>
 														</div>
 													</div>

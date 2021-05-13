@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import category from "../assets/categoryIcon.svg";
+import banner from "../assets/homeBanner.svg";
+import hamburger from "../assets/hamburger.svg";
 import add from "../assets/addIcon.svg";
 import heart from "../assets/heartIcon.svg";
 import placeholder from "../assets/placeholderPerson.svg";
@@ -10,10 +12,14 @@ import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
 import { BsFillMicFill, BsSearch } from "react-icons/bs";
 import CategoriesList from "./CategoriesList";
+import Connector from "./Connector";
+import RegisterModal from "./RegisterModal";
 
 const MainHeader = () => {
 	const [user, setUser] = useState(false);
 	const [categories, setCategories] = useState(false);
+	const [openConnector, setOpenConnector] = useState(false);
+	const [openRegister, setOpenRegister] = useState(false);
 	let history = useHistory();
 	// FOR NAVBAR SCROLLING EFFECT START
 	window.addEventListener("scroll", function () {
@@ -22,8 +28,26 @@ const MainHeader = () => {
 	});
 	// FOR NAVBAR SCROLLING EFFECT END
 
+	const handleClickOpenConnector = () => {
+		setOpenConnector(true);
+	};
+	const handleClickOpenRegister = () => {
+		setOpenConnector(true);
+	};
+
 	return (
 		<>
+			{/* MODALS START */}
+			<Connector
+				openConnector={openConnector}
+				setOpenConnector={setOpenConnector}
+			/>
+			<RegisterModal
+				openRegister={openRegister}
+				setOpenRegister={setOpenRegister}
+			/>
+			{/* MODALS END */}
+
 			{/* UPPER HEADER START */}
 			<div className="upperHeader_container d-none d-lg-block">
 				<div className="inner_container">
@@ -31,7 +55,13 @@ const MainHeader = () => {
 						<div className="row justify-content-center">
 							<div className="col-6 text-left h4 pt-2 text-white">Contact</div>
 							<div className="col-6 text-right h4 pt-2 text-white">
-								Se Connecter / S’enregistrer
+								<span className="pointer" onClick={handleClickOpenConnector}>
+									Se Connecter
+								</span>
+								/
+								<span className="pointer" onClick={handleClickOpenRegister}>
+									S’enregistrer
+								</span>
 							</div>
 						</div>
 					</div>
@@ -158,6 +188,47 @@ const MainHeader = () => {
 			{/* <!-- ======== NAVBAR END =========== --> */}
 
 			{/* MOBILE START */}
+			<div className="mobileNavbar_container d-block d-lg-none">
+				<div className="d-flex justify-content-between align-items-center">
+					<div className="mr-2">
+						<img src={hamburger} alt="person" />
+					</div>
+					<div className="logoContainer mx-2">
+						<img src={Logo} alt="logo" />
+					</div>
+					<div className="ml-2">
+						<img src={placeholder} alt="person" />
+					</div>
+				</div>
+			</div>
+
+			<div className="searchField d-block d-lg-none">
+				<div className="d-flex justify-content-center mx-lg-3">
+					<div className="input-group">
+						<div className="input-group-prepend">
+							<span className="input-group-text">
+								<BsSearch fontSize="20px" />
+							</span>
+						</div>
+						<input
+							type="text"
+							className="form-control"
+							aria-label="Amount (to the nearest dollar)"
+							placeholder="Chercher"
+						/>
+						<div className="input-group-append">
+							<span className="input-group-text px-3">
+								<BsFillMicFill fontSize="20px" color="white" />
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="banner_container d-block d-lg-none">
+				<img style={{ width: "100%" }} src={banner} alt="banner" />
+			</div>
+			{/* MOBILE END */}
 		</>
 	);
 };

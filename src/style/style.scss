@@ -14,7 +14,6 @@ $themeColor: #077bc3;
 /* GLOBAL CLASSES START */
 html {
 	width: 100%;
-	overflow-x: hidden;
 	font-size: 62.5%;
 }
 @media screen and (max-width: 992px) {
@@ -116,7 +115,7 @@ html {
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 11111;
+	z-index: 2;
 
 	.inner_container {
 		max-width: 1090px;
@@ -135,7 +134,7 @@ html {
 	padding: 4.5rem 0rem;
 	padding-bottom: 1.6rem;
 	transition: 0.7s;
-	z-index: 10000;
+	z-index: 1;
 	box-shadow: 1px -1px 10px #ccc;
 	background-color: #fff;
 
