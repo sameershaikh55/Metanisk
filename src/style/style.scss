@@ -846,6 +846,19 @@ html {
 			color: $themeColor;
 		}
 	}
+
+	// MESSAGE BADGE START
+	.MuiBadge-anchorOriginTopRightRectangle {
+		top: 2px;
+		right: -9px;
+	}
+
+	.MuiBadge-badge {
+		height: 16px;
+		font-size: 1rem;
+		min-width: 8px;
+	}
+	// MESSAGE BADGE END
 }
 /* ==== USER DETAILS CARD END ==== */
 
@@ -1030,6 +1043,80 @@ html {
 	}
 }
 /* ==== MESSAGE SECTION IN PROFILE END ==== */
+
+/* ==== FAVORIS SECTION START ==== */
+.favorisContainer {
+	.MuiPaper-elevation4 {
+		box-shadow: none;
+		border-radius: 8px;
+	}
+	.MuiAppBar-colorDefault {
+		background-color: #fff;
+	}
+	.makeStyles-root-1 {
+		background: none;
+	}
+	.MuiTab-textColorPrimary.Mui-selected {
+		color: $themeColor;
+	}
+	.MuiTab-root {
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	.MuiTab-textColorPrimary {
+		color: #424242;
+	}
+	.PrivateTabIndicator-colorPrimary-3 {
+		background-color: $themeColor;
+		height: 4px;
+	}
+	.MuiBox-root {
+		padding: 0px;
+	}
+}
+/* ==== FAVORIS SECTION END ==== */
+
+/* ==== Vendeurs Card START ==== */
+.vendeursContainer {
+	width: 100%;
+	overflow: auto;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.vendeursContainer::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #f5f5f5;
+}
+
+.vendeursContainer::-webkit-scrollbar {
+	height: 3px;
+	background-color: #f5f5f5;
+}
+
+.vendeursContainer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: $themeColor;
+}
+
+.vendeursCard {
+	border-radius: 0px 0px 8px 8px;
+
+	img {
+		width: 100%;
+		border-radius: 8px 8px 0px 0px;
+	}
+}
+
+.dotsIcon {
+	position: absolute;
+	right: 0.7%;
+	top: 10%;
+	font-size: 1.5rem;
+}
+/* ==== Vendeurs Card END ==== */
 
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {

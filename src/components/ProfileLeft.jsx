@@ -7,6 +7,7 @@ import filledStar from "../assets/filledStar.svg";
 import { AiOutlineShop, AiOutlineStar, AiOutlineUser } from "react-icons/ai";
 import { BiBell, BiMessageDetail, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
+import { Badge } from "@material-ui/core";
 
 const ProfileLeft = ({
 	profile,
@@ -83,7 +84,9 @@ const ProfileLeft = ({
 						}`}
 					>
 						<BiMessageDetail className="mr-2" />
-						Messages
+						<Badge badgeContent={2} color="error">
+							Messages
+						</Badge>
 					</li>
 					<li
 						onClick={favorisFunc}

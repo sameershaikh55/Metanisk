@@ -879,6 +879,17 @@ html {
   color: #077bc3;
 }
 
+.userInfoDD2 .MuiBadge-anchorOriginTopRightRectangle {
+  top: 2px;
+  right: -9px;
+}
+
+.userInfoDD2 .MuiBadge-badge {
+  height: 16px;
+  font-size: 1rem;
+  min-width: 8px;
+}
+
 /* ==== USER DETAILS CARD END ==== */
 /* ==== STATE CARD START ==== */
 .statesCard {
