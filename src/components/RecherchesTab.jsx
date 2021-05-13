@@ -1,15 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import PaginationC from "./PaginationC";
 
 const RecherchesTab = () => {
+	const data = [
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+		1,
+	];
+	// FOR PAGINATION
+	const [posts, setPosts] = useState(data);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [postsPerPage] = useState(8);
+	// Get current posts
+	const indexOfLastPost = currentPage * postsPerPage;
+	const indexOfFirstPost = indexOfLastPost - postsPerPage;
+	const totalPages = Math.ceil(posts.length / postsPerPage);
+	const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+	const handleChangePage = (event, newPage) => {
+		setCurrentPage(newPage);
+	};
+
 	return (
 		<div className="container-fluid my-4">
 			<div className="d-flex justify-content-between align-items-center">
-				<h1 className="font-weight-bold">Total: 80 recherches</h1>
-				<div>pagination</div>
+				<h1 className="font-weight-bold">Total: {posts.length} recherches</h1>
+				<div>
+					<PaginationC
+						totalPages={totalPages}
+						currentPage={currentPage}
+						handleChangePage={handleChangePage}
+					/>
+				</div>
 			</div>
 			<div className="row px-4">
-				{[1, 1, 1, 1, 1].map((prev, i) => {
+				{currentPosts.map((prev, i) => {
 					return (
 						<div
 							key={i}

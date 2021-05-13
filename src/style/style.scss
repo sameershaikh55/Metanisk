@@ -1118,6 +1118,61 @@ html {
 }
 /* ==== Vendeurs Card END ==== */
 
+/* ======================== */
+/* === PAGINATION START === */
+/* ======================== */
+.MuiPaginationItem-page {
+	color: #000;
+	font-weight: 600;
+}
+
+.MuiPaginationItem-page.Mui-selected {
+	background: none !important;
+	color: $themeColor;
+	font-weight: 600;
+}
+
+.MuiPaginationItem-outlined {
+	border: none !important;
+}
+
+.MuiPagination-root .MuiPagination-ul {
+	flex-wrap: nowrap;
+	border: none !important;
+}
+
+.MuiPagination-root .MuiPagination-ul li {
+	border-left: 1px solid gray;
+	height: 16px;
+	display: flex;
+	align-items: center;
+	color: $themeColor;
+}
+
+.MuiPagination-root .MuiPagination-ul li:first-child {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-left: none;
+}
+
+.MuiPagination-root .MuiPagination-ul li:nth-child(2) {
+	border: none;
+}
+
+.MuiPagination-root .MuiPagination-ul li:last-child {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border: none;
+}
+
+/* ======================== */
+/* === PAGINATION START === */
+/* ======================== */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);

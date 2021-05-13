@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import placeholder from "../assets/placeholderPerson.svg";
 import badge from "../assets/badgeWhite.svg";
 import product from "../assets/annonces1.svg";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import PaginationC from "./PaginationC";
 
 const VendeursTab = () => {
+	const data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+	// FOR PAGINATION
+	const [posts, setPosts] = useState(data);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [postsPerPage] = useState(3);
+	// Get current posts
+	const indexOfLastPost = currentPage * postsPerPage;
+	const indexOfFirstPost = indexOfLastPost - postsPerPage;
+	const totalPages = Math.ceil(posts.length / postsPerPage);
+	const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+	const handleChangePage = (event, newPage) => {
+		setCurrentPage(newPage);
+	};
+
 	const bg = {
 		background: "linear-gradient(90deg, #4DBCEF 0%, #1B8ACC 98.04%), #FFFFFF",
 		borderTopLeftRadius: "8px",
@@ -14,11 +30,17 @@ const VendeursTab = () => {
 	return (
 		<div className="container-fluid my-4">
 			<div className="d-flex justify-content-between align-items-center">
-				<h1 className="font-weight-bold">Total: 7 Vendeurs</h1>
-				<div>pagination</div>
+				<h1 className="font-weight-bold">Total: {posts.length} Vendeurs</h1>
+				<div>
+					<PaginationC
+						totalPages={totalPages}
+						currentPage={currentPage}
+						handleChangePage={handleChangePage}
+					/>
+				</div>
 			</div>
 			<div className="row">
-				{[1, 1, 1].map((prev, i) => {
+				{currentPosts.map((prev, i) => {
 					return (
 						<div key={i} className="col-12 mb-3 shadow text-white">
 							<div className="row">
