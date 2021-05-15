@@ -32,7 +32,7 @@ const MainHeader = () => {
 		setOpenConnector(true);
 	};
 	const handleClickOpenRegister = () => {
-		setOpenConnector(true);
+		setOpenRegister(true);
 	};
 
 	return (

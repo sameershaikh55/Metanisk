@@ -1172,6 +1172,76 @@ html {
 /* === PAGINATION START === */
 /* ======================== */
 
+/* === CONNECTOR MODAL START === */
+.connectModal_container {
+	input[type="text"] {
+		width: 100%;
+		height: 40px;
+		padding: 1rem;
+		padding-left: 3rem;
+		font-size: 1.4rem;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	input[type="password"] {
+		width: 100%;
+		height: 40px;
+		padding: 1rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		font-size: 1.4rem;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	.phoneIcon {
+		position: absolute;
+		left: 3%;
+		top: 29%;
+	}
+
+	.lockIcon {
+		position: absolute;
+		left: 3%;
+		top: 29%;
+	}
+
+	.eyeIcon {
+		position: absolute;
+		right: 3%;
+		top: 29%;
+	}
+
+	.modalIcons {
+		.icon-container {
+			img {
+				width: 100%;
+				height: auto;
+				padding: 6px;
+				background: #e4e4e4;
+				border-radius: 50%;
+			}
+		}
+		.icon-container2 {
+			img {
+				width: 66%;
+				height: auto;
+				padding: 6px 5px;
+				background: #e4e4e4;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+/* === CONNECTOR MODAL END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);

@@ -10,7 +10,7 @@ const RecherchesTab = () => {
 		1,
 	];
 	// FOR PAGINATION
-	const [posts, setPosts] = useState(data);
+	const [posts] = useState(data);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [postsPerPage] = useState(8);
 	// Get current posts
