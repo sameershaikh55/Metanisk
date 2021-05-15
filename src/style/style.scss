@@ -1394,6 +1394,35 @@ html {
 }
 /* === CALL MODAL END === */
 
+/* === NOTIFICATION START === */
+.notificationContainer {
+	.imgContainer {
+		img {
+			width: 66px;
+			height: 60px;
+			border-radius: 50%;
+		}
+	}
+	.img2Container {
+		position: absolute;
+		bottom: 0%;
+		right: 0%;
+		img {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			border: 2px solid #fff;
+		}
+	}
+	.notificationIcon {
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		font-size: 2rem;
+	}
+}
+/* === NOTIFICATION END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);

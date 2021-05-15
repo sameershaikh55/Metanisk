@@ -13,22 +13,33 @@ const ProfileLeft = ({
 	profile,
 	message,
 	favoris,
+	notification,
 	setProfile,
 	setMessage,
 	setFavoris,
+	setNotification,
 }) => {
 	const profileFunc = () => {
 		setProfile(true);
 		setMessage(false);
 		setFavoris(false);
+		setNotification(false);
 	};
 	const messageFunc = () => {
 		setMessage(true);
 		setProfile(false);
 		setFavoris(false);
+		setNotification(false);
 	};
 	const favorisFunc = () => {
 		setFavoris(true);
+		setMessage(false);
+		setProfile(false);
+		setNotification(false);
+	};
+	const notificationFunc = () => {
+		setNotification(true);
+		setFavoris(false);
 		setMessage(false);
 		setProfile(false);
 	};
@@ -98,7 +109,10 @@ const ProfileLeft = ({
 						Favoris
 					</li>
 					<li
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+						onClick={notificationFunc}
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
+							(notification && "themeColor") || ""
+						}`}
 					>
 						<BiBell className="mr-2" />
 						Notifications
