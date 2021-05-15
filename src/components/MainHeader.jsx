@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import category from "../assets/categoryIcon.svg";
 import banner from "../assets/homeBanner.svg";
-import hamburger from "../assets/hamburger.svg";
 import add from "../assets/addIcon.svg";
 import heart from "../assets/heartIcon.svg";
 import placeholder from "../assets/placeholderPerson.svg";
@@ -14,6 +13,7 @@ import { BsFillMicFill, BsSearch } from "react-icons/bs";
 import CategoriesList from "./CategoriesList";
 import Connector from "./Connector";
 import RegisterModal from "./RegisterModal";
+import Sidebar from "./Sidebar";
 
 const MainHeader = () => {
 	const [user, setUser] = useState(false);
@@ -191,7 +191,7 @@ const MainHeader = () => {
 			<div className="mobileNavbar_container d-block d-lg-none">
 				<div className="d-flex justify-content-between align-items-center">
 					<div className="mr-2">
-						<img src={hamburger} alt="person" />
+						<Sidebar />
 					</div>
 					<div className="logoContainer mx-2">
 						<img src={Logo} alt="logo" />
