@@ -7,12 +7,14 @@ import ProfileRight from "../components/ProfileRight";
 import Messages from "../components/Messages";
 import Favoris from "../components/Favoris";
 import Notifications from "../components/Notifications";
+import MesAnnonces from "../components/MesAnnonces";
 
 const MenuProfile = () => {
 	const [profile, setProfile] = useState(true);
 	const [message, setMessage] = useState(false);
 	const [favoris, setFavoris] = useState(false);
 	const [notification, setNotification] = useState(false);
+	const [mesAnnonces, setMesAnnonces] = useState(false);
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -28,10 +30,12 @@ const MenuProfile = () => {
 									message={message}
 									favoris={favoris}
 									notification={notification}
+									mesAnnonces={mesAnnonces}
 									setProfile={setProfile}
 									setMessage={setMessage}
 									setFavoris={setFavoris}
 									setNotification={setNotification}
+									setMesAnnonces={setMesAnnonces}
 								/>
 							</div>
 							<div className="col-9">
@@ -39,6 +43,7 @@ const MenuProfile = () => {
 								{message && <Messages />}
 								{favoris && <Favoris />}
 								{notification && <Notifications />}
+								{mesAnnonces && <MesAnnonces />}
 							</div>
 						</div>
 					</div>

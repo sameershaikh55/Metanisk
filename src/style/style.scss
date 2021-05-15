@@ -1423,6 +1423,83 @@ html {
 }
 /* === NOTIFICATION END === */
 
+/* === MES CONTAINER START === */
+.mesContainer {
+	.inpContainer {
+		width: 100%;
+		position: relative;
+
+		input {
+			width: 100%;
+			border: 1px solid $themeColor;
+			outline: none;
+			border-radius: 6px;
+			height: 100%;
+			padding-left: 3.2rem;
+			font-size: 1.5rem;
+		}
+
+		.searchIcon {
+			position: absolute;
+			top: 24%;
+			left: 1.5%;
+			font-size: 2rem;
+		}
+	}
+	.themeBtn2 {
+		width: 20%;
+	}
+
+	.cardContainer {
+		.section1 {
+			width: 18%;
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+		.section2 {
+			width: 82%;
+		}
+
+		.booste {
+			background: linear-gradient(90deg, #38b05a 0%, #1c8202 98.04%), #ffffff;
+			border-radius: 8px;
+			color: #fff;
+			padding: 1px;
+			width: 78%;
+			text-align: center;
+			border-radius: 30px;
+			font-size: 1.4rem;
+		}
+
+		.btnContainer {
+			button {
+				height: 95px;
+				border: none;
+				outline: none;
+				padding-left: 2.5rem;
+				padding-right: 2.5rem;
+				color: #fff;
+				font-size: 1.4rem;
+			}
+			button:nth-child(1) {
+				background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+			}
+			button:nth-child(2) {
+				background: linear-gradient(270deg, #e9eaeb 0%, #e4e4e4 100%);
+				border-top-right-radius: 8px;
+				color: $themeColor;
+			}
+		}
+	}
+
+	.bottomSection {
+		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+		height: 100%;
+		border-bottom-right-radius: 8px;
+	}
+}
+/* === MES CONTAINER END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);

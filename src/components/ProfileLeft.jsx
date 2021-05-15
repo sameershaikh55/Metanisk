@@ -14,31 +14,44 @@ const ProfileLeft = ({
 	message,
 	favoris,
 	notification,
+	mesAnnonces,
 	setProfile,
 	setMessage,
 	setFavoris,
 	setNotification,
+	setMesAnnonces,
 }) => {
 	const profileFunc = () => {
 		setProfile(true);
 		setMessage(false);
 		setFavoris(false);
 		setNotification(false);
+		setMesAnnonces(false);
 	};
 	const messageFunc = () => {
 		setMessage(true);
 		setProfile(false);
 		setFavoris(false);
 		setNotification(false);
+		setMesAnnonces(false);
 	};
 	const favorisFunc = () => {
 		setFavoris(true);
 		setMessage(false);
 		setProfile(false);
 		setNotification(false);
+		setMesAnnonces(false);
 	};
 	const notificationFunc = () => {
 		setNotification(true);
+		setFavoris(false);
+		setMessage(false);
+		setProfile(false);
+		setMesAnnonces(false);
+	};
+	const annoncesFunc = () => {
+		setMesAnnonces(true);
+		setNotification(false);
 		setFavoris(false);
 		setMessage(false);
 		setProfile(false);
@@ -118,7 +131,10 @@ const ProfileLeft = ({
 						Notifications
 					</li>
 					<li
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
+						onClick={annoncesFunc}
+						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
+							(mesAnnonces && "themeColor") || ""
+						}`}
 					>
 						<MdViewDay className="mr-2" />
 						Mes Annonces
