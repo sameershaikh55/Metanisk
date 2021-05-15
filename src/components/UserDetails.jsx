@@ -1,5 +1,5 @@
-import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import placeholderPerson from "../assets/placeholderPerson.svg";
 import badge from "../assets/badge.svg";
 import ratingStar from "../assets/ratingStar.svg";
@@ -11,23 +11,58 @@ import twit2 from "../assets/twit2.svg";
 import eye from "../assets/eye.svg";
 import flag from "../assets/flag.svg";
 import message from "../assets/message2.svg";
+import UserModal from "../components/UserModal";
+import MessageModal from "./MessageModal";
+import CallModal from "./CallModal";
 
 const UserDetails = () => {
+	const [userModal, setUserModal] = useState(false);
+	const [messageModal, setMessageModal] = useState(false);
+	const [callModal, setCallModal] = useState(false);
+
+	const handleClickOpenUser = () => {
+		setUserModal(true);
+	};
+
+	const handleClickOpenMessage = () => {
+		setMessageModal(true);
+	};
+
+	const handleClickOpenCall = () => {
+		setCallModal(true);
+	};
+
 	return (
 		<>
+			{/* MODALS START */}
+			<UserModal userModal={userModal} setUserModal={setUserModal} />
+			<MessageModal
+				messageModal={messageModal}
+				setMessageModal={setMessageModal}
+			/>
+			<CallModal callModal={callModal} setCallModal={setCallModal} />
+			{/* MODALS EMD */}
+
 			<div className="bg-white p-4">
 				<div className="text-center mb-5">
-					<h2 className="m-0 font-weight-bold">ContacteR</h2>
-					<h2 className="font-weight-bold">Le vendeur</h2>
+					<h2 className="font-weight-bold text-uppercase">
+						ContacteR Le vendeur
+					</h2>
 				</div>
 
 				<div className="userBtn d-flex flex-column">
-					<button className="text-white py-2 mb-3 d-flex justify-content-center align-items-center">
+					<button
+						onClick={handleClickOpenMessage}
+						className="text-white py-2 mb-3 d-flex justify-content-center align-items-center"
+					>
 						<FaPhoneAlt className="mr-2" />
 						Appeler
 					</button>
-					<button className="text-white py-2 d-flex justify-content-center align-items-center">
-						<FaPhoneAlt className="mr-2" />
+					<button
+						onClick={handleClickOpenCall}
+						className="text-white py-2 d-flex justify-content-center align-items-center"
+					>
+						<FaTelegramPlane className="mr-2" fontSize="1.8rem" />
 						Ecrire
 					</button>
 				</div>
@@ -62,7 +97,10 @@ const UserDetails = () => {
 							<h5 className="themeColor">12 publications</h5>
 						</div>
 						<div className="d-flex justify-content-center mt-3">
-							<button className="themeBtn p-2 px-3 d-flex align-items-center h4">
+							<button
+								onClick={handleClickOpenUser}
+								className="themeBtn p-2 px-3 d-flex align-items-center h4"
+							>
 								<img src={addUser} alt="addUser" className="mr-2" />
 								S’abonner
 							</button>

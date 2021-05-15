@@ -1277,6 +1277,123 @@ html {
 
 /* === VERIFICATION MODAL END === */
 
+/* === USER MODAL START === */
+@media screen and (min-width: 1000px) {
+	.userModalContainer {
+		min-width: 530px;
+	}
+}
+.modalCloseIcon {
+	background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+	padding: 5px 7px;
+	padding-top: 3px;
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: -2%;
+	right: 1%;
+}
+/* === USER MODAL END === */
+
+/* === MESSAGE MODAL START === */
+
+.messageList {
+	min-width: 550px;
+	height: 300px;
+}
+
+.messageModalContainer {
+	.sendContainer {
+		width: 100%;
+
+		.textField {
+			width: 85%;
+		}
+		.sendIcon {
+			width: 15%;
+			text-align: center;
+		}
+	}
+
+	.btnContainer {
+		padding: 0px 8px;
+
+		button {
+			border: none;
+			outline: none;
+			background: #55acee;
+			color: #fff;
+			padding: 4px 12px;
+			border-radius: 6px;
+			font-size: 1.2rem;
+		}
+	}
+	.textField {
+		background: #fff;
+		border: 1px solid #cccc;
+		border-radius: 8px;
+		height: 70px;
+
+		input {
+			margin: 5px;
+			width: 96%;
+			height: 30px;
+			border: none;
+			font-size: 1.6rem;
+			padding-left: 5px;
+
+			&:focus {
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	.sendIcon {
+		font-size: 4.2rem;
+		color: $themeColor;
+	}
+}
+
+/* === CALL MODAL END === */
+.callModalBody {
+	.numberHead {
+		font-size: 4rem;
+	}
+	.btnContainer {
+		button {
+			border: none;
+			outline: none;
+			padding: 5px 18px;
+			font-size: 1.3rem;
+			border-radius: 30px;
+			color: #fff;
+
+			&:focus {
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	button:first-child {
+		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+	}
+	button:nth-child(2) {
+		background: linear-gradient(90deg, #f776af 0%, #fb2785 98.04%), #ffffff;
+	}
+	button:nth-child(3) {
+		background: linear-gradient(90deg, #f2794e 0%, #eea96a 98.04%), #ffffff;
+	}
+	button:nth-child(4) {
+		background: linear-gradient(90deg, #27d7da 0%, #0c9cc4 98.04%), #ffffff;
+	}
+	button:nth-child(5) {
+		background: linear-gradient(90deg, #ffcc64 0%, #f9b221 98.04%), #ffffff;
+	}
+}
+/* === CALL MODAL END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);

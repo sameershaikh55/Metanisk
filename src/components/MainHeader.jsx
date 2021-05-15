@@ -58,7 +58,7 @@ const MainHeader = () => {
 								<span className="pointer" onClick={handleClickOpenConnector}>
 									Se Connecter
 								</span>
-								/
+								&nbsp; / &nbsp;
 								<span className="pointer" onClick={handleClickOpenRegister}>
 									S’enregistrer
 								</span>

@@ -75,8 +75,8 @@ const Connector = ({ openConnector, setOpenConnector }) => {
 							</div>
 						</div>
 						<hr />
-						<div className="mt-3">
-							<h4 className="text-center">
+						<div className="mt-4">
+							<h4 className="text-center font-weight-bold">
 								<span
 									className="themeColor pointer"
 									onClick={handleCloseVerification}
@@ -125,7 +125,7 @@ const Connector = ({ openConnector, setOpenConnector }) => {
 							/>
 						</div>
 						<button
-							className="themeBtn mt-3 w-100"
+							className="themeBtn mt-4 w-100"
 							onClick={handleClickVerification}
 						>
 							S’enregistrer

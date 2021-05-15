@@ -76,7 +76,7 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 							</div>
 						</div>
 						<hr />
-						<div className="mt-3">
+						<div className="mt-4">
 							<h4 className="text-center">
 								<span
 									className="themeColor pointer"
@@ -226,7 +226,7 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 							/>
 						</div>
 						<button
-							className="themeBtn mt-3 w-100"
+							className="themeBtn mt-4 w-100"
 							onClick={handleClickVerification}
 						>
 							S’enregistrer
