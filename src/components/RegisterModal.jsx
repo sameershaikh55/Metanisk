@@ -6,6 +6,7 @@ import { AiFillEye } from "react-icons/ai";
 import connectIcon1 from "../assets/connectIcon1.svg";
 import connectIcon2 from "../assets/connectIcon2.svg";
 import connectIcon3 from "../assets/connectIcon3.svg";
+import ReactCodeInput from "react-verification-code-input";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
 	return <Slide direction="up" ref={ref} {...props} />;
@@ -13,9 +14,15 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const RegisterModal = ({ openRegister, setOpenRegister }) => {
 	const [openConnector, setOpenConnector] = useState(false);
+	const [openVerification, setOpenVerification] = useState(false);
 
 	const handleClickOpenConnector = () => {
 		setOpenConnector(true);
+		setOpenRegister(false);
+	};
+
+	const handleClickVerification = () => {
+		setOpenVerification(true);
 		setOpenRegister(false);
 	};
 
@@ -31,8 +38,59 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 		setOpenRegister(true);
 		setOpenConnector(false);
 	};
+
+	const handleCloseVerification = () => {
+		setOpenVerification(false);
+	};
+
 	return (
 		<>
+			{/* VERIFICATION MODAL START */}
+			<div>
+				<Dialog
+					open={openVerification}
+					TransitionComponent={Transition}
+					keepMounted
+					onClose={handleCloseVerification}
+					aria-labelledby="alert-dialog-slide-title"
+					aria-describedby="alert-dialog-slide-description"
+				>
+					<div className="container-fluid connectModal_container px-4s py-4">
+						<h1 className="text-center font-weight-bold mb-4">
+							Code de Vérification
+						</h1>
+						<div className="verificationModalBody d-flex justify-content-center align-items-center">
+							<div>
+								<div className="verificationCode_container">
+									<ReactCodeInput className="inputContainer" fields={4} />
+								</div>
+
+								<div className="text-center mt-3">
+									<button
+										className="themeBtn mt-3"
+										onClick={handleCloseVerification}
+									>
+										Valider
+									</button>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div className="mt-3">
+							<h4 className="text-center">
+								<span
+									className="themeColor pointer"
+									onClick={handleCloseVerification}
+								>
+									Annuler
+								</span>
+							</h4>
+						</div>
+					</div>
+				</Dialog>
+			</div>
+			{/* VERIFICATION MODAL END */}
+
 			{/* CONNECTOR MODAL START */}
 			<div>
 				<Dialog
@@ -167,7 +225,12 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 								color="#a2a2a2"
 							/>
 						</div>
-						<button className="themeBtn mt-3 w-100">S’enregistrer</button>
+						<button
+							className="themeBtn mt-3 w-100"
+							onClick={handleClickVerification}
+						>
+							S’enregistrer
+						</button>
 						<div className="mt-5 mt-4">
 							<h5 className="text-center h4">ou s’enregistrer avec</h5>
 							<div className="modalIcons d-flex justify-content-center align-content-center">

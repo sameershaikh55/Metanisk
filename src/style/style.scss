@@ -1242,6 +1242,41 @@ html {
 }
 /* === CONNECTOR MODAL END === */
 
+/* === VERIFICATION MODAL START === */
+.verificationModalBody {
+	height: 250px;
+	min-width: 280px;
+
+	.verificationCode_container {
+		width: 100%;
+
+		.inputContainer {
+			text-align: center;
+		}
+
+		.innerContainer > input {
+			margin: 0px 4px;
+			border-radius: 10px;
+			border: solid 1px $themeColor;
+			color: $themeColor;
+			font-weight: 600;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.innerContainer > input:focus {
+			border: solid 1px $themeColor;
+		}
+
+		.innerContainer > input:first-child,
+		.innerContainer > input:last-child {
+			border-radius: 10px;
+			border: solid 1px $themeColor;
+		}
+	}
+}
+
+/* === VERIFICATION MODAL END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);
