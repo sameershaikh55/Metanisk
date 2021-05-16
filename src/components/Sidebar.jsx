@@ -13,11 +13,13 @@ import {
 } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
+import { useHistory } from "react-router-dom";
 
 function Sidebar() {
 	const [windowSize, setWindowSize] = useState({
 		width: undefined,
 	});
+	let history = useHistory();
 
 	useEffect(() => {
 		// Handler to call on window resize
@@ -82,7 +84,7 @@ function Sidebar() {
 				<div className="userDDLSidebar mt-5">
 					<ul className="list-unstyled mb-0">
 						<li
-							// onClick={() => history.push("/menuprofile")}
+							onClick={() => history.push("/menuprofile")}
 							className="d-flex align-items-center"
 						>
 							<AiOutlineUser className="mr-4 icon" />

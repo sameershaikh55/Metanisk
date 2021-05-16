@@ -8,6 +8,7 @@ import Messages from "../components/Messages";
 import Favoris from "../components/Favoris";
 import Notifications from "../components/Notifications";
 import MesAnnonces from "../components/MesAnnonces";
+import MobileProfile from "../components/MobileProfile";
 
 const MenuProfile = () => {
 	const [profile, setProfile] = useState(true);
@@ -54,8 +55,8 @@ const MenuProfile = () => {
 			{/* DESKTOP END */}
 
 			{/* MOBILE START */}
-			<div className="homeMobile_container d-block d-lg-none">
-				<MainHeader />
+			<div className="d-block d-lg-none">
+				<MobileProfile />
 				<BottomNav />
 			</div>
 			{/* MOBILE END */}

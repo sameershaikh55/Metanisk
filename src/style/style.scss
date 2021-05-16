@@ -1964,4 +1964,88 @@ html {
 }
 // CATEGORIES MOBILE LIST END
 
+// PROFILE MOBILE START
+.mobilProfilContainer {
+	.userCard {
+		.userBg {
+			position: relative;
+			img {
+				border: none;
+				border-radius: 0px;
+			}
+			.cameraDiv1 {
+				position: absolute;
+				right: 3%;
+				bottom: 4%;
+				padding: 3px 8px 5px 8px;
+				font-size: 15px;
+				color: $themeColor;
+				box-shadow: 1px 1px 10px #ccc;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.9);
+				cursor: pointer;
+			}
+
+			.cameraDiv {
+				position: absolute;
+				right: 2%;
+				top: 4%;
+				padding: 6px 8px;
+				font-size: 15px;
+				color: $themeColor;
+				box-shadow: 1px 1px 10px #ccc;
+				border-radius: 4px;
+				background-color: #ffff;
+				cursor: pointer;
+			}
+
+			.userImage {
+				background-color: #fff;
+				padding: 5px;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -22%;
+				left: 5%;
+
+				img {
+					width: 95px;
+					height: 95px;
+				}
+
+				.cameraDiv2 {
+					position: absolute;
+					left: 6%;
+					bottom: 2%;
+					padding: 5px 9px;
+					font-size: 15px;
+					color: #077bc3;
+					box-shadow: 1px 1px 10px #ccc;
+					border-radius: 50%;
+					background: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+// PROFILE MOBILE END
+
+// STATES START
+.statesContainer {
+	width: 100%;
+	overflow-x: scroll;
+
+	.statesCardMobile {
+		// height: 100px;
+		width: 500px;
+		border-radius: 8px;
+		box-shadow: 1px 1px 10px rgb(158, 158, 158);
+
+		h1 {
+			font-size: 3.8rem;
+		}
+	}
+}
+// STATES END
+
 // ================= MOBILE STYLING END ========================
