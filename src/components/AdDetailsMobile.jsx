@@ -145,7 +145,7 @@ const AdDetailsMobile = () => {
 						})}
 					</ul>
 				</div>
-				<div className="mt-5">
+				<div onClick={() => history.push("/emplacement")} className="mt-5">
 					<h2 className="m-0 mb-2 font-weight-bold">Emplacement</h2>
 					<div>
 						<iframe

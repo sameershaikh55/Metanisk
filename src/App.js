@@ -11,6 +11,7 @@ import SearchList from "./pages/SearchList";
 import SearchMap from "./pages/SearchMap";
 import AdDetails from "./pages/AdDetails";
 import MenuProfile from "./pages/MenuProfile";
+import EmplacementMap from "./components/EmplacementMap";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				<Route exact path="/searchMap" component={SearchMap} />
 				<Route exact path="/adDetails" component={AdDetails} />
 				<Route exact path="/menuProfile" component={MenuProfile} />
+				<Route exact path="/emplacement" component={EmplacementMap} />
 			</Switch>
 		</Provider>
 	);
