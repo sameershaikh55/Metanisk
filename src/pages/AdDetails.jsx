@@ -8,6 +8,7 @@ import UserDetails from "../components/UserDetails";
 import filledHeart from "../assets/heartFilled.svg";
 import { NavLink } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
+import AdDetailsMobile from "../components/AdDetailsMobile";
 
 const AdDetails = () => {
 	return (
@@ -97,7 +98,7 @@ const AdDetails = () => {
 			{/* DESKTOP END */}
 			{/* MOBILE START */}
 			<div className="home_container d-block d-lg-none">
-				<MainHeader />
+				<AdDetailsMobile />
 			</div>
 			{/* MOBILE END */}
 		</>

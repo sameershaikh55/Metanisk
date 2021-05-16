@@ -24,7 +24,7 @@ const AnnoncesCard = ({ prev }) => {
 						<h4 className="text-white m-0">Conakry</h4>
 					</div>
 					<div className="musicOnImg text-center">
-						<img src={music} alt="heart" />
+						<img src={music} alt="music" />
 					</div>
 				</div>
 
