@@ -12,6 +12,9 @@ import SearchMap from "./pages/SearchMap";
 import AdDetails from "./pages/AdDetails";
 import MenuProfile from "./pages/MenuProfile";
 import EmplacementMap from "./components/EmplacementMap";
+import Categories1 from "./pages/Categories1";
+import Categories2 from "./pages/Categories2";
+import Categories3 from "./pages/Categories3";
 
 function App() {
 	return (
@@ -23,7 +26,12 @@ function App() {
 				<Route exact path="/searchMap" component={SearchMap} />
 				<Route exact path="/adDetails" component={AdDetails} />
 				<Route exact path="/menuProfile" component={MenuProfile} />
+				{/* ONLY MOBILE ROUTES START */}
 				<Route exact path="/emplacement" component={EmplacementMap} />
+				<Route exact path="/categories1" component={Categories1} />
+				<Route exact path="/categories2" component={Categories2} />
+				<Route exact path="/categories3" component={Categories3} />
+				{/* ONLY MOBILE ROUTES END */}
 			</Switch>
 		</Provider>
 	);

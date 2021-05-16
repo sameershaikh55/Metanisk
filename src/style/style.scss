@@ -151,6 +151,11 @@ html {
 				box-shadow: 1px 1px 10px rgb(226, 226, 226);
 				border-radius: 10px;
 
+				img {
+					border-top-left-radius: 8px;
+					border-bottom-left-radius: 8px;
+				}
+
 				div:nth-child(1) {
 					width: 60%;
 				}
@@ -1932,5 +1937,31 @@ html {
 	}
 }
 // PRODUCT DETAILS END
+
+// CATEGORIES MOBILE LIST START
+.categoryCard {
+	height: 64px;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px rgb(226, 226, 226);
+	border-radius: 10px;
+
+	img {
+		height: 64px;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+
+	div:nth-child(1) {
+		width: 60%;
+	}
+	div:nth-child(2) {
+		width: 30%;
+	}
+
+	h4 {
+		color: $themeColor;
+	}
+}
+// CATEGORIES MOBILE LIST END
 
 // ================= MOBILE STYLING END ========================
