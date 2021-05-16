@@ -1764,4 +1764,107 @@ html {
 }
 // SIDE BAR EMD
 
+// SEARCH HEADER START
+.searchHeaderContainer {
+	.firstRow {
+		width: 100%;
+
+		.mapIconContainer {
+			width: 70px;
+
+			h5 {
+				color: $themeColor;
+			}
+		}
+		.inpContainer {
+			width: 82%;
+		}
+	}
+
+	.inpContainer {
+		background: linear-gradient(180deg, #4dbcef 0%, #077bc3 100%);
+		border-radius: 15px;
+
+		.form-control {
+			border-left: none;
+			border-top-right-radius: 15px !important;
+			border-bottom-right-radius: 15px !important;
+			height: 45px;
+			font-size: 1.8rem;
+
+			&:focus {
+				color: none;
+				background-color: none;
+				border-color: none;
+				outline: 0;
+				box-shadow: none;
+			}
+		}
+
+		.input-group {
+			height: 45px;
+
+			.input-group-prepend {
+				.input-group-text {
+					background-color: #fff;
+					border-top-left-radius: 15px;
+					border-bottom-left-radius: 15px;
+				}
+			}
+			.input-group-append {
+				.input-group-text {
+					background: none;
+					border-left: none;
+					border-top-right-radius: 15px !important;
+					border-bottom-right-radius: 15px !important;
+				}
+			}
+		}
+
+		.heartIcon {
+			position: absolute;
+			right: 15%;
+			z-index: 1;
+			top: 25%;
+		}
+
+		@media screen and (max-width: 300px) {
+			.heartIcon {
+				right: 18%;
+				top: 25%;
+			}
+		}
+	}
+
+	.filterBtns {
+		width: 100%;
+
+		.themeBtn {
+			width: 20%;
+		}
+		.searchTagsMobile {
+			width: 80%;
+		}
+	}
+}
+
+.searchTagsMobile {
+	width: 100%;
+	div {
+		height: 26px;
+		background-color: #fff;
+		font-size: 1.3rem;
+		border-radius: 6px;
+		width: 100%;
+		font-weight: 600;
+
+		img {
+			position: absolute;
+			top: -28%;
+			right: -6%;
+		}
+	}
+}
+// SEARCH HEADER END
+
 // ================= MOBILE STYLING END ========================

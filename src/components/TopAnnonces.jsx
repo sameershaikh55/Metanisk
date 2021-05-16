@@ -39,10 +39,10 @@ const TopAnnonces = () => {
 			{/* MOBILE START */}
 			<div className="container-fluid d-block d-lg-none">
 				<h1 className="font-weight-bold mb-3">Top Annonces</h1>
-				<div className="row">
+				<div className="row px-2">
 					{dataM.map((prev, i) => {
 						return (
-							<div key={i} className="col-6 col-md-4 mb-5">
+							<div key={i} className="col-6 col-md-4 mb-5 px-2">
 								<MobileAnnoncesCard prev={prev} />
 							</div>
 						);

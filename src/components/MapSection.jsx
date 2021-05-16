@@ -7,23 +7,23 @@ const MapSection = () => {
 	return (
 		<div className="d-none d-lg-block">
 			<div className="searchTags d-flex mb-3">
-				<div className="position-relative mr-4">
+				<div className="position-relative mr-4 pointer">
 					Prix
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4">
+				<div className="position-relative mr-4 pointer">
 					Sous-Categorie
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4">
+				<div className="position-relative mr-4 pointer">
 					Condition
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4">
+				<div className="position-relative mr-4 pointer">
 					Classement
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4">
+				<div className="position-relative mr-4 pointer">
 					Vendeur
 					<img src={cross} alt="cross" />
 				</div>

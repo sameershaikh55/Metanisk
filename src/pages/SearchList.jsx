@@ -5,6 +5,9 @@ import searchBanner1 from "../assets/searchBanner1.svg";
 import Category from "../components/Category";
 import ProductList from "../components/ProductList";
 import Footer from "../components/Footer";
+import BottomNav from "../components/BottomNav";
+import SearchHeaderMobile from "../components/SearchHeaderMobile";
+import SearchListBodyMobile from "../components/SearchListBodyMobile";
 
 const SearchList = () => {
 	return (
@@ -43,7 +46,14 @@ const SearchList = () => {
 
 			{/* MOBILE START */}
 			<div className="home_container d-block d-lg-none">
-				<MainHeader />
+				<SearchHeaderMobile />
+				<SearchListBodyMobile />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<BottomNav />
 			</div>
 			{/* MOBILE END */}
 		</>
