@@ -1,12 +1,9 @@
 import React from "react";
-import BottomNav from "../components/BottomNav";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
-import ProfileRight from "../components/ProfileRight";
-import MobileProfile from "../components/MobileProfile";
 
-const MenuProfile = () => {
+const MaBoutique = () => {
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -19,9 +16,7 @@ const MenuProfile = () => {
 							<div className="col-3">
 								<ProfileLeft />
 							</div>
-							<div className="col-9">
-								<ProfileRight />
-							</div>
+							<div className="col-9">bariutuwq</div>
 						</div>
 					</div>
 				</div>
@@ -32,7 +27,7 @@ const MenuProfile = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				<MobileProfile />
+				{/* <MobileProfile />
 				<br />
 				<br />
 				<br />
@@ -41,11 +36,11 @@ const MenuProfile = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav />
+				<BottomNav /> */}
 			</div>
 			{/* MOBILE END */}
 		</>
 	);
 };
 
-export default MenuProfile;
+export default MaBoutique;

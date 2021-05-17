@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import category from "../assets/categoryIcon.svg";
 import banner from "../assets/homeBanner.svg";
@@ -143,37 +143,46 @@ const MainHeader = () => {
 								{user && (
 									<div className="userInfoDD">
 										<ul className="list-unstyled mb-0">
-											<li
-												onClick={() => history.push("/menuprofile")}
-												className="d-flex align-items-center"
-											>
-												<AiOutlineUser className="mr-2" /> Profile
-											</li>
-											<li className="d-flex align-items-center">
-												<BiMessageDetail className="mr-2" />
-												Messages
-											</li>
-											<li className="d-flex align-items-center">
-												<AiOutlineStar className="mr-2" />
-												Favoris
-											</li>
-											<li className="d-flex align-items-center">
-												<BiBell className="mr-2" />
-												Notifications
-											</li>
-											<li className="d-flex align-items-center">
-												<MdViewDay className="mr-2" />
-												Mes Annonces
-											</li>
-											<li className="d-flex align-items-center">
-												<AiOutlineShop className="mr-2" />
-												Ma Boutique
-											</li>
+											<NavLink activeClassName="active" to="/profile">
+												<li className="d-flex align-items-center">
+													<AiOutlineUser className="mr-2" /> Profile
+												</li>
+											</NavLink>
+											<NavLink activeClassName="active" to="/message">
+												<li className="d-flex align-items-center">
+													<BiMessageDetail className="mr-2" />
+													Messages
+												</li>
+											</NavLink>
+											<NavLink activeClassName="active" to="/favoris">
+												<li className="d-flex align-items-center">
+													<AiOutlineStar className="mr-2" />
+													Favoris
+												</li>
+											</NavLink>
+											<NavLink activeClassName="active" to="/notifications">
+												<li className="d-flex align-items-center">
+													<BiBell className="mr-2" />
+													Notifications
+												</li>
+											</NavLink>
+											<NavLink activeClassName="active" to="/mesAnnonces">
+												<li className="d-flex align-items-center">
+													<MdViewDay className="mr-2" />
+													Mes Annonces
+												</li>
+											</NavLink>
+											<NavLink activeClassName="active" to="/maBoutique">
+												<li className="d-flex align-items-center">
+													<AiOutlineShop className="mr-2" />
+													Ma Boutique
+												</li>
+											</NavLink>
 											<li className="d-flex align-items-center">
 												<BiSliderAlt className="mr-2" />
 												Paramètres
 											</li>
-											<li className="d-flex justify-content-center align-items-center">
+											<li className="deconnector d-flex justify-content-center align-items-center">
 												Se deconnecter
 											</li>
 										</ul>

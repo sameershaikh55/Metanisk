@@ -8,55 +8,9 @@ import { AiOutlineShop, AiOutlineStar, AiOutlineUser } from "react-icons/ai";
 import { BiBell, BiMessageDetail, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
 import { Badge } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 
-const ProfileLeft = ({
-	profile,
-	message,
-	favoris,
-	notification,
-	mesAnnonces,
-	setProfile,
-	setMessage,
-	setFavoris,
-	setNotification,
-	setMesAnnonces,
-}) => {
-	const profileFunc = () => {
-		setProfile(true);
-		setMessage(false);
-		setFavoris(false);
-		setNotification(false);
-		setMesAnnonces(false);
-	};
-	const messageFunc = () => {
-		setMessage(true);
-		setProfile(false);
-		setFavoris(false);
-		setNotification(false);
-		setMesAnnonces(false);
-	};
-	const favorisFunc = () => {
-		setFavoris(true);
-		setMessage(false);
-		setProfile(false);
-		setNotification(false);
-		setMesAnnonces(false);
-	};
-	const notificationFunc = () => {
-		setNotification(true);
-		setFavoris(false);
-		setMessage(false);
-		setProfile(false);
-		setMesAnnonces(false);
-	};
-	const annoncesFunc = () => {
-		setMesAnnonces(true);
-		setNotification(false);
-		setFavoris(false);
-		setMessage(false);
-		setProfile(false);
-	};
-
+const ProfileLeft = () => {
 	return (
 		<div>
 			{/* PROFILE TITLE START */}
@@ -93,64 +47,49 @@ const ProfileLeft = ({
 			{/* PROFILE TITLE END */}
 			<div className="userInfoDD2 bg-white py-4">
 				<ul className="list-unstyled mb-0">
-					<li
-						onClick={profileFunc}
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
-							(profile && "themeColor") || ""
-						}`}
-					>
-						<AiOutlineUser className="mr-2" /> Profile
-					</li>
-					<li
-						onClick={messageFunc}
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
-							(message && "themeColor") || ""
-						}`}
-					>
-						<BiMessageDetail className="mr-2" />
-						<Badge badgeContent={2} color="error">
-							Messages
-						</Badge>
-					</li>
-					<li
-						onClick={favorisFunc}
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
-							(favoris && "themeColor") || ""
-						}`}
-					>
-						<AiOutlineStar className="mr-2" />
-						Favoris
-					</li>
-					<li
-						onClick={notificationFunc}
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
-							(notification && "themeColor") || ""
-						}`}
-					>
-						<BiBell className="mr-2" />
-						Notifications
-					</li>
-					<li
-						onClick={annoncesFunc}
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4 ${
-							(mesAnnonces && "themeColor") || ""
-						}`}
-					>
-						<MdViewDay className="mr-2" />
-						Mes Annonces
-					</li>
-					<li
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
-					>
-						<AiOutlineShop className="mr-2" />
-						Ma Boutique
-					</li>
-					<li
-						className={`d-flex align-items-center font-weight-bold py-3 px-5 h4`}
-					>
-						<BiSliderAlt className="mr-2" />
-						Paramètres
-					</li>
+					<NavLink activeClassName="active" to="/profile">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<AiOutlineUser className="mr-2" /> Profile
+						</li>
+					</NavLink>
+					<NavLink activeClassName="active" to="/message">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<BiMessageDetail className="mr-2" />
+							<Badge badgeContent={2} color="error">
+								Messages
+							</Badge>
+						</li>
+					</NavLink>
+					<NavLink activeClassName="active" to="/favoris">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<AiOutlineStar className="mr-2" />
+							Favoris
+						</li>
+					</NavLink>
+					<NavLink activeClassName="active" to="/notifications">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<BiBell className="mr-2" />
+							Notifications
+						</li>
+					</NavLink>
+					<NavLink activeClassName="active" to="/mesAnnonces">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<MdViewDay className="mr-2" />
+							Mes Annonces
+						</li>
+					</NavLink>
+					<NavLink activeClassName="active" to="/maBoutique">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<AiOutlineShop className="mr-2" />
+							Ma Boutique
+						</li>
+					</NavLink>
+					<NavLink exact to="/">
+						<li className="d-flex align-items-center font-weight-bold py-3 px-5 h4">
+							<BiSliderAlt className="mr-2" />
+							Paramètres
+						</li>
+					</NavLink>
 				</ul>
 			</div>
 			{/* PROFILE TITLE END */}

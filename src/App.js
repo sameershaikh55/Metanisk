@@ -15,6 +15,11 @@ import EmplacementMap from "./components/EmplacementMap";
 import Categories1 from "./pages/Categories1";
 import Categories2 from "./pages/Categories2";
 import Categories3 from "./pages/Categories3";
+import Message from "./pages/Message";
+import FavorisPage from "./pages/FavorisPage";
+import NotificationsPage from "./pages/NotificationsPage";
+import MesAnnoncesPage from "./pages/MesAnnoncesPage";
+import MaBoutique from "./pages/MaBoutique";
 
 function App() {
 	return (
@@ -25,7 +30,12 @@ function App() {
 				<Route exact path="/searchList" component={SearchList} />
 				<Route exact path="/searchMap" component={SearchMap} />
 				<Route exact path="/adDetails" component={AdDetails} />
-				<Route exact path="/menuProfile" component={MenuProfile} />
+				<Route exact path="/profile" component={MenuProfile} />
+				<Route exact path="/message" component={Message} />
+				<Route exact path="/favoris" component={FavorisPage} />
+				<Route exact path="/notifications" component={NotificationsPage} />
+				<Route exact path="/mesAnnonces" component={MesAnnoncesPage} />
+				<Route exact path="/maBoutique" component={MaBoutique} />
 				{/* ONLY MOBILE ROUTES START */}
 				<Route exact path="/emplacement" component={EmplacementMap} />
 				<Route exact path="/categories1" component={Categories1} />

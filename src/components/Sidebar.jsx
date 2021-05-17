@@ -13,13 +13,12 @@ import {
 } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
-import { useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
 	const [windowSize, setWindowSize] = useState({
 		width: undefined,
 	});
-	let history = useHistory();
 
 	useEffect(() => {
 		// Handler to call on window resize
@@ -83,33 +82,42 @@ function Sidebar() {
 				</button>
 				<div className="userDDLSidebar mt-5">
 					<ul className="list-unstyled mb-0">
-						<li
-							onClick={() => history.push("/menuprofile")}
-							className="d-flex align-items-center"
-						>
-							<AiOutlineUser className="mr-4 icon" />
-							<div className="DDlName">Profile</div>
-						</li>
-						<li className="d-flex align-items-center my-5">
-							<BiMessageDetail className="mr-4 icon" />
-							<div className="DDlName">Messages</div>
-						</li>
-						<li className="d-flex align-items-center my-5">
-							<AiOutlineStar className="mr-4 icon" />
-							<div className="DDlName">Favoris</div>
-						</li>
-						<li className="d-flex align-items-center my-5">
-							<BiBell className="mr-4 icon" />
-							<div className="DDlName">Notifications</div>
-						</li>
-						<li className="d-flex align-items-center my-5">
-							<MdViewDay className="mr-4 icon" />
-							<div className="DDlName">Mes Annonces</div>
-						</li>
-						<li className="d-flex align-items-center my-5">
-							<AiOutlineShop className="mr-4 icon" />
-							<div className="DDlName">Ma Boutique</div>
-						</li>
+						<NavLink activeClassName="active" to="/profile">
+							<li className="d-flex align-items-center">
+								<AiOutlineUser className="mr-4 icon" />
+								<div className="DDlName">Profile</div>
+							</li>
+						</NavLink>
+						<NavLink activeClassName="active" to="/message">
+							<li className="d-flex align-items-center my-5">
+								<BiMessageDetail className="mr-4 icon" />
+								<div className="DDlName">Messages</div>
+							</li>
+						</NavLink>
+						<NavLink activeClassName="active" to="/favoris">
+							<li className="d-flex align-items-center my-5">
+								<AiOutlineStar className="mr-4 icon" />
+								<div className="DDlName">Favoris</div>
+							</li>
+						</NavLink>
+						<NavLink activeClassName="active" to="/notifications">
+							<li className="d-flex align-items-center my-5">
+								<BiBell className="mr-4 icon" />
+								<div className="DDlName">Notifications</div>
+							</li>
+						</NavLink>
+						<NavLink activeClassName="active" to="/mesAnnonces">
+							<li className="d-flex align-items-center my-5">
+								<MdViewDay className="mr-4 icon" />
+								<div className="DDlName">Mes Annonces</div>
+							</li>
+						</NavLink>
+						<NavLink activeClassName="active" to="/maBoutique">
+							<li className="d-flex align-items-center my-5">
+								<AiOutlineShop className="mr-4 icon" />
+								<div className="DDlName">Ma Boutique</div>
+							</li>
+						</NavLink>
 						<li className="d-flex align-items-center my-5">
 							<BiSliderAlt className="mr-4 icon" />
 							<div className="DDlName">Paramètres</div>

@@ -48,6 +48,7 @@ const Home = () => {
 				<br />
 				<br />
 				<br />
+				<br />
 				<BottomNav />
 			</div>
 			{/* MOBILE END */}

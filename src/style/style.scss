@@ -275,6 +275,26 @@ html {
 		border-radius: 4px;
 		box-shadow: 0px 0px 10px rgb(231, 231, 231);
 
+		ul {
+			.active {
+				color: $themeColor;
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			li.deconnector:nth-last-child(1) {
+				background: #209edb;
+				color: #fff;
+				border-bottom-right-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
+		}
+
 		li {
 			font-size: 1.4rem;
 			padding: 0.6rem 1.5rem;
@@ -284,13 +304,6 @@ html {
 			&:hover {
 				color: $themeColor;
 			}
-		}
-
-		li:nth-last-child(1) {
-			background: #209edb;
-			color: #fff;
-			border-bottom-right-radius: 4px;
-			border-bottom-left-radius: 4px;
 		}
 	}
 
@@ -852,6 +865,20 @@ html {
 
 .userInfoDD2 {
 	border-radius: 8px;
+
+	ul {
+		.active {
+			color: $themeColor;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 
 	li {
 		cursor: pointer;
@@ -1767,6 +1794,20 @@ html {
 	padding: 2.5rem 3.5rem;
 
 	.userDDLSidebar {
+		ul {
+			.active {
+				color: $themeColor;
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
 		.icon {
 			font-size: 3.5rem;
 		}

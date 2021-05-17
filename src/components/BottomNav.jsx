@@ -29,7 +29,7 @@ const BottomNav = () => {
 								Favoris
 							</div>
 						</NavLink>
-						<NavLink exact activeClassName="active" to="/menuProfile">
+						<NavLink exact activeClassName="active" to="/profile">
 							<div className="each_navigation">
 								<AiOutlineUser className="NavIcon" />
 								Profile

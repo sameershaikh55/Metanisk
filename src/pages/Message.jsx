@@ -1,12 +1,10 @@
 import React from "react";
-import BottomNav from "../components/BottomNav";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
-import ProfileRight from "../components/ProfileRight";
-import MobileProfile from "../components/MobileProfile";
+import Messages from "../components/Messages";
 
-const MenuProfile = () => {
+const Message = () => {
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -20,7 +18,7 @@ const MenuProfile = () => {
 								<ProfileLeft />
 							</div>
 							<div className="col-9">
-								<ProfileRight />
+								<Messages />
 							</div>
 						</div>
 					</div>
@@ -32,7 +30,7 @@ const MenuProfile = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				<MobileProfile />
+				{/* <MobileProfile />
 				<br />
 				<br />
 				<br />
@@ -41,11 +39,11 @@ const MenuProfile = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav />
+				<BottomNav /> */}
 			</div>
 			{/* MOBILE END */}
 		</>
 	);
 };
 
-export default MenuProfile;
+export default Message;
