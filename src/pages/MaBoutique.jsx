@@ -1,4 +1,5 @@
 import React from "react";
+import BoutiqueBody from "../components/BoutiqueBody";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
@@ -16,7 +17,9 @@ const MaBoutique = () => {
 							<div className="col-3">
 								<ProfileLeft />
 							</div>
-							<div className="col-9">bariutuwq</div>
+							<div className="col-9">
+								<BoutiqueBody />
+							</div>
 						</div>
 					</div>
 				</div>
