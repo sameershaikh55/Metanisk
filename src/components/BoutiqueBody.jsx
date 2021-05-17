@@ -4,11 +4,12 @@ import addIcon from "../assets/addIcon.svg";
 import placeholderPerson from "../assets/placeholderPerson.svg";
 import { NavLink } from "react-router-dom";
 import States from "./States";
+import location from "../assets/location.svg";
 
 const BoutiqueBody = () => {
 	const data2 = [
 		{ title: "Nom de la boutique", desc: "Ernest" },
-		{ title: "Secteur d’activité", desc: "Peguita" },
+		{ title: "Secteur d’activité", desc: "" },
 		{ title: "Numero de telephone", desc: "+224 666 66 66 66" },
 		{ title: "E-mail", desc: "nom@makitiplus.com" },
 	];
@@ -119,8 +120,77 @@ const BoutiqueBody = () => {
 								const { title, desc } = prev;
 								return (
 									<div key={i} className="col-6 mt-3">
-										<h5 className="themeColor font-weight-bold"> {title} </h5>
-										<h4> {desc} </h4>
+										<h5 className="themeColor font-weight-bold">
+											{i === 1 && (
+												<svg
+													width="25"
+													height="25"
+													viewBox="0 0 25 25"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M4.0625 6.875C4.4769 6.875 4.87433 6.71038 5.16735 6.41735C5.46038 6.12433 5.625 5.7269 5.625 5.3125C5.625 4.8981 5.46038 4.50067 5.16735 4.20765C4.87433 3.91462 4.4769 3.75 4.0625 3.75C3.6481 3.75 3.25067 3.91462 2.95765 4.20765C2.66462 4.50067 2.5 4.8981 2.5 5.3125C2.5 5.7269 2.66462 6.12433 2.95765 6.41735C3.25067 6.71038 3.6481 6.875 4.0625 6.875Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M8.75 5.3125C8.75 5.06386 8.84877 4.8254 9.02459 4.64959C9.2004 4.47377 9.43886 4.375 9.6875 4.375H21.5625C21.8111 4.375 22.0496 4.47377 22.2254 4.64959C22.4012 4.8254 22.5 5.06386 22.5 5.3125C22.5 5.56114 22.4012 5.7996 22.2254 5.97541C22.0496 6.15123 21.8111 6.25 21.5625 6.25H9.6875C9.43886 6.25 9.2004 6.15123 9.02459 5.97541C8.84877 5.7996 8.75 5.56114 8.75 5.3125Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M8.75 10.9375C8.75 10.6889 8.84877 10.4504 9.02459 10.2746C9.2004 10.0988 9.43886 10 9.6875 10H21.5625C21.8111 10 22.0496 10.0988 22.2254 10.2746C22.4012 10.4504 22.5 10.6889 22.5 10.9375C22.5 11.1861 22.4012 11.4246 22.2254 11.6004C22.0496 11.7762 21.8111 11.875 21.5625 11.875H9.6875C9.43886 11.875 9.2004 11.7762 9.02459 11.6004C8.84877 11.4246 8.75 11.1861 8.75 10.9375Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M9.6875 15.625C9.43886 15.625 9.2004 15.7238 9.02459 15.8996C8.84877 16.0754 8.75 16.3139 8.75 16.5625C8.75 16.8111 8.84877 17.0496 9.02459 17.2254C9.2004 17.4012 9.43886 17.5 9.6875 17.5H11.2775C11.3354 16.8573 11.4839 16.226 11.7188 15.625H9.6875Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M4.0625 12.5C4.4769 12.5 4.87433 12.3354 5.16735 12.0424C5.46038 11.7493 5.625 11.3519 5.625 10.9375C5.625 10.5231 5.46038 10.1257 5.16735 9.83265C4.87433 9.53962 4.4769 9.375 4.0625 9.375C3.6481 9.375 3.25067 9.53962 2.95765 9.83265C2.66462 10.1257 2.5 10.5231 2.5 10.9375C2.5 11.3519 2.66462 11.7493 2.95765 12.0424C3.25067 12.3354 3.6481 12.5 4.0625 12.5Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M4.0625 18.125C4.4769 18.125 4.87433 17.9604 5.16735 17.6674C5.46038 17.3743 5.625 16.9769 5.625 16.5625C5.625 16.1481 5.46038 15.7507 5.16735 15.4576C4.87433 15.1646 4.4769 15 4.0625 15C3.6481 15 3.25067 15.1646 2.95765 15.4576C2.66462 15.7507 2.5 16.1481 2.5 16.5625C2.5 16.9769 2.66462 17.3743 2.95765 17.6674C3.25067 17.9604 3.6481 18.125 4.0625 18.125Z"
+														fill="#1B8ACC"
+													/>
+													<path
+														d="M23.75 18.125C23.75 19.6168 23.1574 21.0476 22.1025 22.1025C21.0476 23.1574 19.6168 23.75 18.125 23.75C16.6332 23.75 15.2024 23.1574 14.1475 22.1025C13.0926 21.0476 12.5 19.6168 12.5 18.125C12.5 16.6332 13.0926 15.2024 14.1475 14.1475C15.2024 13.0926 16.6332 12.5 18.125 12.5C19.6168 12.5 21.0476 13.0926 22.1025 14.1475C23.1574 15.2024 23.75 16.6332 23.75 18.125ZM18.75 15.625C18.75 15.4592 18.6842 15.3003 18.5669 15.1831C18.4497 15.0658 18.2908 15 18.125 15C17.9592 15 17.8003 15.0658 17.6831 15.1831C17.5658 15.3003 17.5 15.4592 17.5 15.625V17.5H15.625C15.4592 17.5 15.3003 17.5658 15.1831 17.6831C15.0658 17.8003 15 17.9592 15 18.125C15 18.2908 15.0658 18.4497 15.1831 18.5669C15.3003 18.6842 15.4592 18.75 15.625 18.75H17.5V20.625C17.5 20.7908 17.5658 20.9497 17.6831 21.0669C17.8003 21.1842 17.9592 21.25 18.125 21.25C18.2908 21.25 18.4497 21.1842 18.5669 21.0669C18.6842 20.9497 18.75 20.7908 18.75 20.625V18.75H20.625C20.7908 18.75 20.9497 18.6842 21.0669 18.5669C21.1842 18.4497 21.25 18.2908 21.25 18.125C21.25 17.9592 21.1842 17.8003 21.0669 17.6831C20.9497 17.5658 20.7908 17.5 20.625 17.5H18.75V15.625Z"
+														fill="#1B8ACC"
+													/>
+												</svg>
+											)}{" "}
+											{title}
+										</h5>
+										<h4>
+											{i === 1 && (
+												<>
+													<div className="infoSelectBox position-relative">
+														<select className="font-weight-bold pb-1">
+															<option value="Electronique">Electronique</option>
+															<option value="Electronique">Electronique</option>
+															<option value="Electronique">Electronique</option>
+															<option value="Electronique">Electronique</option>
+														</select>{" "}
+														<svg
+															className="selectIcon"
+															width="24"
+															height="24"
+															viewBox="0 0 24 24"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M5 8L12 16L19 8H5Z"
+																fill="#22A1DC"
+															/>
+														</svg>
+													</div>
+												</>
+											)}{" "}
+											{desc}{" "}
+										</h4>
 									</div>
 								);
 							})}
@@ -129,6 +199,49 @@ const BoutiqueBody = () => {
 				</div>
 			</div>
 			{/* PROFILE (INFORMATION) END */}
+
+			{/* EMPLACEMENT MAP START */}
+			<div className="bg-white mt-5 p-3">
+				<h2 className="d-flex align-items-center font-weight-bold themeColor">
+					<img width="2%" src={location} alt="location" className="mr-2" />
+					Emplacement
+				</h2>
+				<h4 className="text-secondary">Entrer l’emplacement</h4>
+				<div>
+					<iframe
+						title="map"
+						width="100%"
+						height="260"
+						frameBorder="0"
+						scrolling="no"
+						marginHeight="0"
+						marginWidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					></iframe>
+				</div>
+			</div>
+			{/* EMPLACEMENT MAP END */}
+
+			<div className="mt-5">
+				<h3 className="font-weight-bold">Top Avis et Commentaires</h3>
+				{[1, 1].map((prev, i) => {
+					return (
+						<div
+							key={i}
+							className="topAvisContainer mt-4 d-flex justify-content-between"
+						>
+							<div className="d-flex align-items-center">
+								<img src={placeholderPerson} alt="person" />
+								<h5 className="ml-4 mb-0 w-75 font-weight-bold">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod
+								</h5>
+							</div>
+							<h6 className="m-0 themeColor pr-2 pt-2">12:00</h6>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 };
