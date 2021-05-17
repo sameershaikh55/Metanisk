@@ -57,6 +57,14 @@ const MenuProfile = () => {
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
 				<MobileProfile />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 				<BottomNav />
 			</div>
 			{/* MOBILE END */}

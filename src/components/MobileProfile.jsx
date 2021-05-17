@@ -7,8 +7,12 @@ import state1 from "../assets/state1.svg";
 import state2 from "../assets/state2.svg";
 import state3 from "../assets/state3.svg";
 import state4 from "../assets/state4.svg";
+import location from "../assets/location.svg";
+import { useHistory } from "react-router-dom";
 
 const MobileProfile = () => {
+	let history = useHistory();
+
 	const states = [
 		{
 			img: state1,
@@ -34,6 +38,17 @@ const MobileProfile = () => {
 			desc: "Commentaires",
 			bg: "linear-gradient(90deg, #FFD966 0%, #E9AF00 100%), #C4C4C4",
 		},
+	];
+	const data3 = [
+		"Français",
+		"Kpelle",
+		"Mano",
+		"Soussou",
+		"Kissi",
+		"Toma",
+		"Poular",
+		"Malinke",
+		"Autres",
 	];
 	return (
 		<div className="mobilProfilContainer">
@@ -81,32 +96,158 @@ const MobileProfile = () => {
 			{/* PROFILE TITLE END */}
 
 			{/* STATES START */}
-			<div>
-				<div className="d-flex justify-content-between">
-					<h1>Statistiques</h1>
+			<div className="mt-4">
+				<div className="d-flex justify-content-between px-4">
+					<h1 className="font-weight-bold">Statistiques</h1>
 					<h4>Voir tout</h4>
 				</div>
-				<div className="statesContainer d-flex mt-5">
-					{states.map((prev, i) => {
-						const { img, num, desc, bg } = prev;
-						return (
-							<div
-								style={{ background: bg }}
-								className="statesCardMobile mx-3 d-flex flex-column justify-content-around text-white"
-							>
-								<img width="28%" src={img} alt="state" />
-								<div>
-									<h1 className="h1 font-weight-bolder text-center   m-0">
-										{num}
-									</h1>
-									<h6 className="h5">{desc}</h6>
+				<div className="stateMobileContainer">
+					<div className="d-flex mr-5">
+						{states.map((prev, i) => {
+							const { img, num, desc, bg } = prev;
+							return (
+								<div
+									style={{ background: bg }}
+									className="statesCardMobile mx-3 d-flex flex-column justify-content-around text-white"
+								>
+									<img width="28%" src={img} alt="state" />
+									<div className="textContainer">
+										<h1 className="h1 font-weight-bolder text-center m-0">
+											{num}
+										</h1>
+										<h6 className="h5 text-center">{desc}</h6>
+									</div>
 								</div>
-							</div>
-						);
-					})}
+							);
+						})}
+					</div>
 				</div>
 			</div>
 			{/* STATES END */}
+
+			{/* INFORMATION START */}
+			<div className="mt-5 mx-3 bg-white shadow borderRounded border-gray py-4 px-4">
+				<div className="d-flex justify-content-between align-items-center">
+					<h2 className="font-weight-bold">Informations Personnelles</h2>
+					<button className="themeBtn px-4">Modifier</button>
+				</div>
+				<div className="mt-3">
+					<h4 className="themeColor font-weight-bold">Prenom</h4>
+					<h2 className="m-0">Ernest</h2>
+				</div>
+				<hr />
+				<div className="mt-4">
+					<h4 className="themeColor font-weight-bold">Nom de famille</h4>
+					<h2 className="m-0">Peguita</h2>
+				</div>
+				<hr />
+				<div className="mt-4">
+					<h4 className="themeColor font-weight-bold">E-mail</h4>
+					<h2 className="m-0">info@makitiplus.com</h2>
+				</div>
+				<hr />
+				<div className="mt-4">
+					<h4 className="themeColor font-weight-bold">Phone Number</h4>
+					<h2 className="m-0">+224 666 66 66 66</h2>
+				</div>
+			</div>
+			{/* INFORMATION END */}
+
+			{/* INFORMATION START */}
+			<div className="mt-5 mx-3 bg-white shadow borderRounded border-gray py-4 px-4">
+				<div className="d-flex justify-content-between align-items-center">
+					<h2 className="font-weight-bold">Mot de passe</h2>
+					<button className="themeBtn px-4">Modifier</button>
+				</div>
+				<div className="mt-3">
+					<h4 className="themeColor mb-5 font-weight-bold">
+						Actuel mot de passe
+					</h4>
+				</div>
+				<hr />
+				<div className="mt-4">
+					<h4 className="themeColor mb-5 font-weight-bold">
+						Nouveau mot de passe
+					</h4>
+				</div>
+				<hr />
+				<div className="mt-4">
+					<h4 className="themeColor mb-5 font-weight-bold">
+						Reprendre le nouveau mot de passe
+					</h4>
+				</div>
+				<hr />
+			</div>
+			{/* INFORMATION END */}
+
+			{/* EMPLACEMENT MAP START */}
+			<div className="mt-5 mx-3 bg-white shadow borderRounded border-gray py-4 px-4">
+				<h2 className="d-flex align-items-center font-weight-bold themeColor">
+					<img width="4%" src={location} alt="location" className="mr-2" />
+					Emplacement
+				</h2>
+				<h4 className="text-secondary mt-3 h3">Entrer l’emplacement</h4>
+				<div>
+					<iframe
+						title="map"
+						width="100%"
+						height="260"
+						frameBorder="0"
+						scrolling="no"
+						marginHeight="0"
+						marginWidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					></iframe>
+				</div>
+			</div>
+			{/* EMPLACEMENT MAP END */}
+
+			{/* LANGUAGES START */}
+			<div className="mt-5 mx-3 bg-white shadow borderRounded border-gray py-4 px-4">
+				<h2 className="font-weight-bold">Langues parlees</h2>
+				<div className="container-fluid px-0 mt-3">
+					<div className="row languageCheckboxes">
+						{data3.map((prev, i) => {
+							return (
+								<div key={i} className="col-6 mt-3 ">
+									<label class="container">
+										{prev}
+										<input type="checkbox" checked />
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+			</div>
+			{/* LANGUAGES END */}
+
+			<div className="text-center mt-5">
+				<button
+					onClick={() => history.goBack()}
+					className="themeBtn4 h3 m-0 py-3"
+				>
+					<svg
+						className="mr-2"
+						width="24"
+						height="24"
+						viewBox="0 0 26 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M4.875 24.375H14.625C15.0558 24.3746 15.4689 24.2032 15.7736 23.8986C16.0782 23.5939 16.2496 23.1808 16.25 22.75V20.3125H14.625V22.75H4.875V3.25H14.625V5.6875H16.25V3.25C16.2496 2.81916 16.0782 2.40608 15.7736 2.10143C15.4689 1.79677 15.0558 1.62543 14.625 1.625H4.875C4.44416 1.62543 4.03108 1.79677 3.72643 2.10143C3.42177 2.40608 3.25043 2.81916 3.25 3.25V22.75C3.25043 23.1808 3.42177 23.5939 3.72643 23.8986C4.03108 24.2032 4.44416 24.3746 4.875 24.375Z"
+							fill="white"
+						/>
+						<path
+							d="M18.3511 16.7261L21.2648 13.8125H9.75V12.1875H21.2648L18.3511 9.27387L19.5 8.125L24.375 13L19.5 17.875L18.3511 16.7261Z"
+							fill="white"
+						/>
+					</svg>
+					Se deconnecter
+				</button>
+			</div>
 		</div>
 	);
 };
