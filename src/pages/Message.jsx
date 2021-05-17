@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
+import BottomNav from "../components/BottomNav";
 import Messages from "../components/Messages";
+import MobileMessageList from "../components/MobileMessageList";
 
 const Message = () => {
 	return (
@@ -30,7 +32,7 @@ const Message = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
+				<MobileMessageList />
 				<br />
 				<br />
 				<br />
@@ -39,7 +41,7 @@ const Message = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav /> */}
+				<BottomNav />
 			</div>
 			{/* MOBILE END */}
 		</>

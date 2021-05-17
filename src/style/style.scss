@@ -1677,6 +1677,25 @@ html {
 
 /* === MA BOUTIQUE CONTAINER END === */
 
+/* === MESSAGE START === */
+.messageContainerMobile {
+	.heading {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.productImgContainer {
+		img {
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			border: 3px solid #fff;
+			object-fit: cover;
+		}
+	}
+}
+/* === MESSAGE END === */
+
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
 	background: url(../assets/bluredBg.jpg);
