@@ -2229,6 +2229,26 @@ html {
 					background: #fff;
 					cursor: pointer;
 				}
+
+				@media screen and (max-width: 300px) {
+					.cameraDiv2 {
+						position: absolute;
+						left: 6%;
+						bottom: 2%;
+						padding: 3px 7px;
+						font-size: 14px;
+						color: #077bc3;
+						box-shadow: 1px 1px 10px #ccc;
+						border-radius: 50%;
+						background: #fff;
+						cursor: pointer;
+					}
+
+					img {
+						width: 61px;
+						height: 61px;
+					}
+				}
 			}
 		}
 	}

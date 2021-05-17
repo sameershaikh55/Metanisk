@@ -44,6 +44,7 @@ const MobileMessageList = () => {
 						return (
 							<div
 								key={i}
+								onClick={() => history.push("/singleMessage")}
 								className="col-12 borderRounded p-0 bg-white d-flex mt-4 shadow"
 							>
 								<img style={imageStyling} src={prev.img} alt="client" />
