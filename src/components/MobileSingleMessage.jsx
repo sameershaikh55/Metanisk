@@ -13,47 +13,49 @@ const MobileSingleMessage = () => {
 
 	const bgColor = {
 		background: "#E9EAEB",
-		width: "74%",
+		width: "84%",
 	};
 	return (
 		<div>
 			{/* HEADER START */}
-			<div className="position-relative shadow bg-white pl-1 pr-4 pt-3 pb-1">
-				<RiArrowLeftSLine
-					className="position-absolute"
-					onClick={() => history.goBack()}
-					fontSize="3.8rem"
-					color="#067AC2"
-				/>
-				<div className="text-center">
-					<h2 className="font-weight-bold mt-3">Marie Bah</h2>
-					<h4>En ligne il y a 4 heures</h4>
-				</div>
-				<div className="productImgContainer2 my-4 d-flex justify-content-center align-items-center">
-					<img src={annonces1} alt="product" />
-					<div className="innerText pt-2 px-3">
-						<h3 className="font-weight-bold m-0">800 000 FG</h3>
-						<h5 className="themeColor m-0 font-weight-bold">
-							Chaussure Nike a vendre
-						</h5>
-						<h5 className="d-flex align-items-center">
-							<MdLocationOn color="#067AC2" className="mr-1" /> Conakry, Dixinn
-						</h5>
+			<div className="mobilMessageHeader">
+				<div className="position-relative shadow bg-white pl-1 pr-4 pt-3 pb-1">
+					<RiArrowLeftSLine
+						className="position-absolute"
+						onClick={() => history.goBack()}
+						fontSize="3.8rem"
+						color="#067AC2"
+					/>
+					<div className="text-center">
+						<h2 className="font-weight-bold mt-3">Marie Bah</h2>
+						<h4>En ligne il y a 4 heures</h4>
+					</div>
+					<div className="productImgContainer2 my-4 d-flex justify-content-center align-items-center">
+						<img src={annonces1} alt="product" />
+						<div className="innerText pt-2 px-3">
+							<h3 className="font-weight-bold m-0">800 000 FG</h3>
+							<h5 className="themeColor m-0 font-weight-bold">
+								Chaussure Nike a vendre
+							</h5>
+							<h5 className="d-flex align-items-center">
+								<MdLocationOn color="#067AC2" className="mr-1" /> Conakry,
+								Dixinn
+							</h5>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div style={{ height: "calc(100vh - 13.6vh)" }}>
-				<div className="messagesBody">
-					<div className="d-flex align-items-stretch mt-5 pl-2">
+			<div className="messagesBodyMobile">
+				<div>
+					<div className="singleMessage d-flex pl-4">
 						<img
-							width="10%"
-							className="mt-n5 rounded-circle"
+							className="userImg mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 ml-3 h5 incomingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 ml-3 h4 incomingMessage"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
 							perspiciatis quam mollitia deserunt dicta aut rerum aperiam vitae
@@ -61,47 +63,44 @@ const MobileSingleMessage = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch justify-content-end mt-3 pr-2">
+					<div className="singleMessage d-flex justify-content-end pr-4">
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 mr-3 h5 outGoingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 mr-3 h4 outGoingMessage"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
 							mollitia deserunt dicta aut rerum aperiam vitae
 						</div>
 						<img
-							width="10%"
-							className="mt-n5 rounded-circle"
+							className="userImg mt-2 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessage d-flex pl-4">
 						<img
-							width="10%"
-							className="rounded-circle"
+							className="userImg mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 ml-3 h5 incomingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 ml-3 h4 incomingMessage"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessage d-flex pl-4">
 						<img
-							width="10%"
-							className="rounded-circle"
+							className="userImg mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 ml-3 h5 incomingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 ml-3 h4 incomingMessage"
 						>
 							<div className="text-center mb-2">
 								<img src={annonces1} alt="annonces1" />
@@ -110,54 +109,109 @@ const MobileSingleMessage = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessage d-flex pl-4">
 						<img
-							width="10%"
-							className="rounded-circle"
+							className="userImg mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 ml-3 h5 incomingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 ml-3 h4 incomingMessage"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch justify-content-end mt-3 pr-2">
+					<div className="singleMessage d-flex justify-content-end pr-4">
 						<div
 							style={bgColor}
-							className="font-weight-bold mt-3 px-3 py-3 mr-3 h5 outGoingMessage"
+							className="font-weight-bold mt-3 px-3 py-3 mr-3 h4 outGoingMessage"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
 							mollitia deserunt dicta aut rerum aperiam vitae
 						</div>
 						<img
-							width="10%"
-							className="mt-n5 rounded-circle"
+							className=" userImg mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 					</div>
-				</div>
-
-				<div className="sendMessageSec position-relative">
-					<div>
-						<input
-							type="text"
-							className=""
-							placeholder="Ecrivez votre message"
-						/>
-						<HiEmojiHappy
-							className="icon themeColor pointer"
-							fontSize="2.5rem"
+					<div className="singleMessage d-flex justify-content-end pr-4">
+						<div
+							style={bgColor}
+							className="font-weight-bold mt-3 px-3 py-3 mr-3 h4 outGoingMessage"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+							mollitia deserunt dicta aut rerum aperiam vitae
+						</div>
+						<img
+							className=" userImg mt-3 rounded-circle"
+							src={client}
+							alt="client"
 						/>
 					</div>
+					<div className="singleMessage d-flex justify-content-end pr-4">
+						<div
+							style={bgColor}
+							className="font-weight-bold mt-3 px-3 py-3 mr-3 h4 outGoingMessage"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+							mollitia deserunt dicta aut rerum aperiam vitae
+						</div>
+						<img
+							className=" userImg mt-3 rounded-circle"
+							src={client}
+							alt="client"
+						/>
+					</div>
+					<div className="singleMessage d-flex justify-content-end pr-4">
+						<div
+							style={bgColor}
+							className="font-weight-bold mt-3 px-3 py-3 mr-3 h4 outGoingMessage"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+							mollitia deserunt dicta aut rerum aperiam vitae
+						</div>
+						<img
+							className=" userImg mt-3 rounded-circle"
+							src={client}
+							alt="client"
+						/>
+					</div>
+					<div className="singleMessage d-flex pl-4">
+						<img
+							className="userImg mt-3 rounded-circle"
+							src={client}
+							alt="client"
+						/>
+						<div
+							style={bgColor}
+							className="font-weight-bold mt-3 px-3 py-3 ml-3 h4 incomingMessage"
+						>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+						</div>
+					</div>
+				</div>
 
-					<div className="pl-4 px-1 d-flex">
-						<ImCamera className="themeColor mr-4 pointer" fontSize="2.5rem" />
-						<BsFillMicFill className="themeColor pointer" fontSize="2.5rem" />
+				<div className="sendMessageSec">
+					<div className="innerSendMessageSec position-relative">
+						<div>
+							<input
+								type="text"
+								className=""
+								placeholder="Ecrivez votre message"
+							/>
+							<HiEmojiHappy
+								className="icon themeColor pointer"
+								fontSize="2.5rem"
+							/>
+						</div>
+
+						<div className="pl-4 px-1 d-flex">
+							<ImCamera className="themeColor mr-4 pointer" fontSize="2.8rem" />
+							<BsFillMicFill className="themeColor pointer" fontSize="2.8rem" />
+						</div>
 					</div>
 				</div>
 			</div>

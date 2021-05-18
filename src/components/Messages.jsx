@@ -99,10 +99,10 @@ const Messages = () => {
 				</div>
 
 				<div className="messagesBody">
-					<div className="d-flex align-items-stretch mt-5 pl-2">
+					<div className="singleMessageD d-flex pl-2">
 						<img
 							width="10%"
-							className="mt-n5 rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
@@ -116,7 +116,7 @@ const Messages = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch justify-content-end mt-3 pr-2">
+					<div className="singleMessageD d-flex justify-content-end pr-2">
 						<div
 							style={bgColor}
 							className="font-weight-bold mt-3 px-3 py-3 mr-3 h5 outGoingMessage"
@@ -126,16 +126,16 @@ const Messages = () => {
 						</div>
 						<img
 							width="10%"
-							className="mt-n5 rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessageD d-flex pl-2">
 						<img
 							width="10%"
-							className="rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
@@ -147,10 +147,10 @@ const Messages = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessageD d-flex pl-2">
 						<img
 							width="10%"
-							className="rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
@@ -165,10 +165,10 @@ const Messages = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch pl-2 mt-3">
+					<div className="singleMessageD d-flex pl-2">
 						<img
 							width="10%"
-							className="rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>
@@ -180,7 +180,7 @@ const Messages = () => {
 						</div>
 					</div>
 
-					<div className="d-flex align-items-stretch justify-content-end mt-3 pr-2">
+					<div className="singleMessageD d-flex justify-content-end pr-2">
 						<div
 							style={bgColor}
 							className="font-weight-bold mt-3 px-3 py-3 mr-3 h5 outGoingMessage"
@@ -190,7 +190,7 @@ const Messages = () => {
 						</div>
 						<img
 							width="10%"
-							className="mt-n5 rounded-circle"
+							className="mt-3 rounded-circle"
 							src={client}
 							alt="client"
 						/>

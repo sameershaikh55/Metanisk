@@ -1050,9 +1050,10 @@ html {
 	border-top-left-radius: 22px;
 	border-bottom-left-radius: 28px;
 	img {
-		width: 50px;
+		width: 46px;
 		height: 46px;
 		border-radius: 50%;
+		object-fit: cover;
 	}
 }
 
@@ -1067,6 +1068,11 @@ html {
 .messagesBody {
 	height: 580px;
 	overflow: auto;
+	margin: 0.2rem 0rem;
+
+	.singleMessageD {
+		align-items: end;
+	}
 }
 
 .messagesBody::-webkit-scrollbar-track {
@@ -1695,6 +1701,61 @@ html {
 	}
 }
 /* === MESSAGE END === */
+
+/* === SINGLE MESSAGE START === */
+.mobilMessageHeader {
+	position: fixed;
+	top: 0%;
+	width: 100%;
+}
+
+.messagesBodyMobile {
+	height: calc(100vh - 19.4vh);
+	height: 100%;
+	overflow-y: auto;
+	margin: 18rem 0rem 8rem 0rem;
+
+	.singleMessage {
+		align-items: end;
+
+		.userImg {
+			object-fit: contain;
+			width: 10%;
+		}
+	}
+
+	.sendMessageSec {
+		position: fixed;
+		bottom: 0%;
+		left: 0%;
+		background-color: #f7f7f7;
+		right: 0%;
+
+		.innerSendMessageSec {
+			position: relative;
+			padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			input {
+				height: 4.5rem;
+				padding-left: 4.2rem;
+				font-size: 1.8rem;
+			}
+
+			.icon {
+				position: absolute;
+				left: 4%;
+				top: 24%;
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+/* === SINGLE MESSAGE END === */
 
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
