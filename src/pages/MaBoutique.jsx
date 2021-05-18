@@ -1,6 +1,7 @@
 import React from "react";
 import BoutiqueBody from "../components/BoutiqueBody";
 import Footer from "../components/Footer";
+import MaBoutiqueMobile from "../components/MaBoutiqueMobile";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 
@@ -30,16 +31,7 @@ const MaBoutique = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<BottomNav /> */}
+				<MaBoutiqueMobile />
 			</div>
 			{/* MOBILE END */}
 		</>
