@@ -1163,6 +1163,14 @@ html {
 /* ==== FAVORIS SECTION END ==== */
 
 /* ==== Vendeurs Card START ==== */
+.vendourMainContainer {
+	@media screen and (max-width: 992px) {
+		.userImg {
+			width: 65px;
+		}
+	}
+}
+
 .vendeursContainer {
 	width: 100%;
 	overflow: auto;
@@ -1201,6 +1209,12 @@ html {
 	right: 0.7%;
 	top: 10%;
 	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+	.dotsIcon {
+		font-size: 2rem;
+	}
 }
 /* ==== Vendeurs Card END ==== */
 

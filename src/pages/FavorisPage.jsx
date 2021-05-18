@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 import Favoris from "../components/Favoris";
+import BottomNav from "../components/BottomNav";
+import MobileFavoris from "../components/MobileFavoris";
 
 const FavorisPage = () => {
 	return (
@@ -19,9 +21,6 @@ const FavorisPage = () => {
 							</div>
 							<div className="col-9">
 								<Favoris />
-								{/* 
-								{notification && <Notifications />}
-								{mesAnnonces && <MesAnnonces />} */}
 							</div>
 						</div>
 					</div>
@@ -33,7 +32,7 @@ const FavorisPage = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
+				<MobileFavoris />
 				<br />
 				<br />
 				<br />
@@ -42,7 +41,7 @@ const FavorisPage = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav /> */}
+				<BottomNav />
 			</div>
 			{/* MOBILE END */}
 		</>

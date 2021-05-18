@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import PaginationC from "./PaginationC";
 
-const RecherchesTab = () => {
+const RecherchesTab = ({ mobile }) => {
 	const data = [
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -26,14 +26,20 @@ const RecherchesTab = () => {
 	return (
 		<div className="container-fluid my-4">
 			<div className="d-flex justify-content-between align-items-center">
-				<h1 className="font-weight-bold">Total: {posts.length} recherches</h1>
-				<div>
-					<PaginationC
-						totalPages={totalPages}
-						currentPage={currentPage}
-						handleChangePage={handleChangePage}
-					/>
-				</div>
+				{!mobile && (
+					<>
+						<h1 className="font-weight-bold">
+							Total: {posts.length} recherches
+						</h1>
+						<div>
+							<PaginationC
+								totalPages={totalPages}
+								currentPage={currentPage}
+								handleChangePage={handleChangePage}
+							/>
+						</div>
+					</>
+				)}
 			</div>
 			<div className="row px-4">
 				{currentPosts.map((prev, i) => {
