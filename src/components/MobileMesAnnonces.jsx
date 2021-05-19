@@ -1,169 +1,41 @@
-import React from "react";
-import { FaCamera } from "react-icons/fa";
-import userBg from "../assets/userBg.svg";
-import placeholderPerson from "../assets/placeholderPerson.svg";
-import { GrMap } from "react-icons/gr";
-import state1 from "../assets/state1.svg";
-import state2 from "../assets/state2.svg";
-import state3 from "../assets/state3.svg";
-import state4 from "../assets/state4.svg";
-import addIcon from "../assets/addIcon.svg";
+import React from 'react'
+import { BiFilterAlt, BiSortDown } from 'react-icons/bi';
+import { GoSearch } from 'react-icons/go';
+import { RiArrowLeftSLine } from 'react-icons/ri'
 import { useHistory } from "react-router-dom";
-import { RiArrowLeftSLine } from "react-icons/ri";
 import { BiPhone } from "react-icons/bi";
 import { FiEdit } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
 import annonces1 from "../assets/annonces1.svg";
 
-const MaBoutiqueMobile = () => {
+
+const MobileMesAnnonces = () => {
 	let history = useHistory();
 
-	const states = [
-		{
-			img: state1,
-			num: 50,
-			desc: "Articles Publiés",
-			bg: "linear-gradient(90deg, #4DBCEF 0%, #1B8ACC 98.04%), #FFFFFF",
-		},
-		{
-			img: state2,
-			num: 100,
-			desc: "Abonnés",
-			bg: " linear-gradient(270deg, #E66F01 0%, #FF9501 100%), #C4C4C4",
-		},
-		{
-			img: state3,
-			num: 50,
-			desc: "Vues",
-			bg: "linear-gradient(270deg, #4BC0CF 6.67%, #56E0E0 100%), #C4C4C4",
-		},
-		{
-			img: state4,
-			num: 150,
-			desc: "Commentaires",
-			bg: "linear-gradient(90deg, #FFD966 0%, #E9AF00 100%), #C4C4C4",
-		},
-	];
-	return (
-		<div className="mobilBoutiqueContainer">
-			{/* PROFILE TITLE START */}
-			<div className="userCard bg-white">
-				<div className="userBg">
-					<img width="100%" src={userBg} alt="userImage" />
-					<span className="cameraDiv">
-						<RiArrowLeftSLine
-							onClick={() => history.goBack()}
-							fontSize="3.8rem"
-							color="#067AC2"
-						/>
-					</span>
-					<span className="cameraDiv1">
-						<button className="themeBtn px-4">Modifier les informations</button>
-					</span>
-					<div className="userImage">
-						<img src={placeholderPerson} alt="placeholder" />
-						<span className="cameraDiv2">
-							<FaCamera />
-						</span>
-					</div>
+    return (
+        <div className="mesContainer">
+            {/* HEADER START */}
+			<div className="position-relative shadow bg-white pl-2 py-3">
+				<RiArrowLeftSLine
+					className="position-absolute"
+					onClick={() => history.goBack()}
+					fontSize="3.8rem"
+					color="#067AC2"
+				/>
+				<div>
+					<h2 className="font-weight-bold text-center mt-3">Mes Annonces</h2>
 				</div>
-				<div className="d-flex justify-content-center">
-					<div className="py-2 pl-5 ml-5">
-						<h1 className="themeColor font-weight-bold">Ernest Peguita</h1>
-						<h4 className="d-flex align-items-center px-2">
-							<GrMap className="mr-2" /> Conakry, Bambetto Marché
-						</h4>
-					</div>
-				</div>
-			</div>
-			{/* PROFILE TITLE END */}
-
-			{/* TWO BUTTONS START */}
-			<div className="d-flex w-100 px-3 mt-4 mb-5">
-				<button className="themeBtn w-100 px-0 mr-2 h3 m-0">
-					<img src={addIcon} alt="addIcon" className="mr-1" /> Poster un article
-				</button>
-				<button className="themeBtn w-100 px-0 ml-2">
-					<svg
-						className="mr-2"
-						width="22"
-						height="20"
-						viewBox="0 0 22 20"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M21.5 18.1667V15.8334H6.33333V18.1667H21.5ZM21.5 11.1667V8.83341H6.33333V11.1667H21.5ZM6.33333 4.16675H21.5V1.83341H6.33333V4.16675ZM1.66667 1.83341V4.16675H4V1.83341H1.66667ZM0.5 1.83341C0.5 1.524 0.622916 1.22725 0.841709 1.00846C1.0605 0.789665 1.35725 0.666748 1.66667 0.666748H4C4.30942 0.666748 4.60616 0.789665 4.82496 1.00846C5.04375 1.22725 5.16667 1.524 5.16667 1.83341V4.16675C5.16667 4.47617 5.04375 4.77291 4.82496 4.9917C4.60616 5.2105 4.30942 5.33341 4 5.33341H1.66667C1.35725 5.33341 1.0605 5.2105 0.841709 4.9917C0.622916 4.77291 0.5 4.47617 0.5 4.16675V1.83341ZM1.66667 8.83341V11.1667H4V8.83341H1.66667ZM0.5 8.83341C0.5 8.52399 0.622916 8.22725 0.841709 8.00846C1.0605 7.78966 1.35725 7.66675 1.66667 7.66675H4C4.30942 7.66675 4.60616 7.78966 4.82496 8.00846C5.04375 8.22725 5.16667 8.52399 5.16667 8.83341V11.1667C5.16667 11.4762 5.04375 11.7729 4.82496 11.9917C4.60616 12.2105 4.30942 12.3334 4 12.3334H1.66667C1.35725 12.3334 1.0605 12.2105 0.841709 11.9917C0.622916 11.7729 0.5 11.4762 0.5 11.1667V8.83341ZM1.66667 15.8334V18.1667H4V15.8334H1.66667ZM0.5 15.8334C0.5 15.524 0.622916 15.2272 0.841709 15.0085C1.0605 14.7897 1.35725 14.6667 1.66667 14.6667H4C4.30942 14.6667 4.60616 14.7897 4.82496 15.0085C5.04375 15.2272 5.16667 15.524 5.16667 15.8334V18.1667C5.16667 18.4762 5.04375 18.7729 4.82496 18.9917C4.60616 19.2105 4.30942 19.3334 4 19.3334H1.66667C1.35725 19.3334 1.0605 19.2105 0.841709 18.9917C0.622916 18.7729 0.5 18.4762 0.5 18.1667V15.8334Z"
-							fill="white"
-						/>
-					</svg>
-					Mes articles
-				</button>
-			</div>
-			{/* TWO BUTTONS END */}
-
-			{/* STATES START */}
-			<div className="mt-4">
-				<div className="d-flex justify-content-between px-4">
-					<h1 className="font-weight-bold">Statistiques</h1>
-					<h4>Voir tout</h4>
-				</div>
-				<div className="stateMobileContainer">
-					<div className="d-flex mr-5">
-						{states.map((prev, i) => {
-							const { img, num, desc, bg } = prev;
-							return (
-								<div
-									style={{ background: bg }}
-									className="statesCardMobile mx-3 d-flex flex-column justify-content-around text-white"
-								>
-									<img width="28%" src={img} alt="state" />
-									<div className="textContainer">
-										<h1 className="h1 font-weight-bolder text-center m-0">
-											{num}
-										</h1>
-										<h6 className="h5 text-center">{desc}</h6>
-									</div>
-								</div>
-							);
-						})}
-					</div>
-				</div>
-			</div>
-			{/* STATES END */}
-
-			{/* TWO BUTTONS START */}
-			<div className="px-3 my-5">
-				<h2 className="font-weight-bold">Signature vocale de la boutique</h2>
-				<div className="p-4 bg-white shadow borderRounded mt-2">
-					<h1>Recording</h1>
-				</div>
-			</div>
-			{/* TWO BUTTONS END */}
-
-			<div className="my-5 px-3">
-				<h2 className="font-weight-bold">Top Avis et Commentaires</h2>
-				{[1, 1].map((prev, i) => {
-					return (
-						<div
-							key={i}
-							className="topAvisContainer mt-4 d-flex justify-content-between"
-						>
-							<div className="d-flex align-items-center">
-								<img src={placeholderPerson} alt="person" />
-								<h5 className="ml-4 mb-0 w-75 font-weight-bold">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod
-								</h5>
-							</div>
-							<h6 className="m-0 themeColor pr-2 pt-2">12:00</h6>
-						</div>
-					);
-				})}
+                <div className="d-flex mt-3 px-3">
+                    <button className="themeBtn px-3 mr-3"><BiFilterAlt fontSize="2.2rem" /></button>
+                    <div className="inpContainer">
+                        <input type="text" placeholder="Clossure Nike" />
+                        <GoSearch className="searchIcon" color="#525252" />
+                    </div>
+                    <button className="themeBtn px-3 ml-3"><BiSortDown fontSize="2.2rem" /></button>
+                </div>
 			</div>
 
-			<div className="container-fluid my-5">
-				<h2 className="font-weight-bold">Top Articles</h2>
+            <div className="container-fluid my-3">
 				<div className="row px-4 my-1">
 					{[1, 1, 1, 1].map((prev, i) => {
 						return (
@@ -269,8 +141,10 @@ const MaBoutiqueMobile = () => {
 					})}
 				</div>
 			</div>
-		</div>
-	);
-};
 
-export default MaBoutiqueMobile;
+
+        </div>
+    )
+}
+
+export default MobileMesAnnonces

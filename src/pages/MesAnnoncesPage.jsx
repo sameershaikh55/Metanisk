@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 import MesAnnonces from "../components/MesAnnonces";
+import BottomNav from "../components/BottomNav";
+import MobileMesAnnonces from "../components/MobileMesAnnonces";
 
 const MesAnnoncesPage = () => {
 	return (
@@ -30,16 +32,7 @@ const MesAnnoncesPage = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<BottomNav /> */}
+				<MobileMesAnnonces />
 			</div>
 			{/* MOBILE END */}
 		</>

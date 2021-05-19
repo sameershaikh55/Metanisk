@@ -2462,28 +2462,26 @@ html {
       border-radius: 50%;
     }
   }
-
-  .articles {
-    .btnContainer {
-      button {
-        border: none;
-        outline: none;
-        height: 100%;
-        width: 60px;
-        color: #fff;
-        font-size: 1.4rem;
-      }
-      button:nth-child(1) {
-        background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
-        border-top-right-radius: 8px;
-      }
-      button:nth-child(2) {
-        background: linear-gradient(270deg, #e9eaeb 0%, #e4e4e4 100%);
-        color: $themeColor;
-      }
+}
+.articles {
+  .btnContainer {
+    button {
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 60px;
+      color: #fff;
+      font-size: 1.4rem;
+    }
+    button:nth-child(1) {
+      background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+      border-top-right-radius: 8px;
+    }
+    button:nth-child(2) {
+      background: linear-gradient(270deg, #e9eaeb 0%, #e4e4e4 100%);
+      color: $themeColor;
     }
   }
-
   .productImg {
     width: 36%;
     border-top-left-radius: 8px;
