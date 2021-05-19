@@ -31,7 +31,7 @@ const FavorisPage = () => {
 			{/* DESKTOP END */}
 
 			{/* MOBILE START */}
-			<div className="d-block d-lg-none">
+			<div className="mobile_container2 d-block d-lg-none">
 				<MobileFavoris />
 				<br />
 				<br />

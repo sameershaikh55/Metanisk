@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 import Notifications from "../components/Notifications";
+import BottomNav from "../components/BottomNav";
 
 const NotificationsPage = () => {
 	return (
@@ -30,7 +31,7 @@ const NotificationsPage = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
+				<Notifications mobile />
 				<br />
 				<br />
 				<br />
@@ -39,7 +40,7 @@ const NotificationsPage = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav /> */}
+				<BottomNav /> 
 			</div>
 			{/* MOBILE END */}
 		</>
