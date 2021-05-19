@@ -104,7 +104,6 @@ const MainHeader = () => {
 								<input
 									type="text"
 									className="form-control"
-									aria-label="Amount (to the nearest dollar)"
 									placeholder="Chercher"
 								/>
 								<div className="input-group-append">
@@ -222,7 +221,6 @@ const MainHeader = () => {
 						<input
 							type="text"
 							className="form-control"
-							aria-label="Amount (to the nearest dollar)"
 							placeholder="Chercher"
 						/>
 						<div className="input-group-append">

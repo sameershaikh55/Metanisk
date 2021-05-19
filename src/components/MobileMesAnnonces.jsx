@@ -39,7 +39,7 @@ const MobileMesAnnonces = () => {
 				<div className="row px-4 my-1">
 					{[1, 1, 1, 1].map((prev, i) => {
 						return (
-							<div className="articles col-12 px-0 my-3 bg-white shadow-lg borderRounded">
+							<div key={i} className="articles col-12 px-0 my-3 bg-white shadow-lg borderRounded">
 								<div className="d-flex flex-column">
 									<div className="d-flex justify-content-betweens">
 										<div className="d-flex">
