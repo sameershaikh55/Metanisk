@@ -83,7 +83,10 @@ const MaBoutiqueMobile = () => {
 				<button className="themeBtn w-100 px-0 mr-2 h3 m-0">
 					<img src={addIcon} alt="addIcon" className="mr-1" /> Poster un article
 				</button>
-				<button className="themeBtn w-100 px-0 ml-2">
+				<button
+					onClick={() => history.push("/articles")}
+					className="themeBtn w-100 px-0 ml-2 h3"
+				>
 					<svg
 						className="mr-2"
 						width="22"
@@ -114,6 +117,7 @@ const MaBoutiqueMobile = () => {
 							const { img, num, desc, bg } = prev;
 							return (
 								<div
+									key={i}
 									style={{ background: bg }}
 									className="statesCardMobile mx-3 d-flex flex-column justify-content-around text-white"
 								>
@@ -167,7 +171,10 @@ const MaBoutiqueMobile = () => {
 				<div className="row px-4 my-1">
 					{[1, 1, 1, 1].map((prev, i) => {
 						return (
-							<div className="articles col-12 px-0 my-3 bg-white shadow-lg borderRounded">
+							<div
+								key={i}
+								className="articles col-12 px-0 my-3 bg-white shadow-lg borderRounded"
+							>
 								<div className="d-flex flex-column">
 									<div className="d-flex justify-content-betweens">
 										<div className="d-flex">

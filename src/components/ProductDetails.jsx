@@ -49,11 +49,10 @@ const ProductDetails = () => {
 				<div className="imageGalleryContainer position-relative mt-2 w-100">
 					<ImageGalleryC
 						autoPlay={false}
-						showIndex={true}
+						showIndex={false}
 						showPlayButton={false}
 						items={images}
 						allowFullScreen={true}
-						showIndex={false}
 					/>
 					<div className="imgContainer">
 						<img src={music} alt="music" />

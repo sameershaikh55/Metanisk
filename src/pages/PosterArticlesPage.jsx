@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import PosterArticles from "../components/PosterArticles";
 import ProfileLeft from "../components/ProfileLeft";
+import MobilePosterArticles from "../components/MobilePosterArticles";
 
 const PosterArticlesPage = () => {
 	return (
@@ -30,16 +31,7 @@ const PosterArticlesPage = () => {
 
 			{/* MOBILE START */}
 			<div className="d-block d-lg-none">
-				{/* <MobileProfile />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <BottomNav /> */}
+				<MobilePosterArticles />
 			</div>
 			{/* MOBILE END */}
 		</>

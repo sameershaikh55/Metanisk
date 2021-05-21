@@ -217,7 +217,7 @@ const Connector = ({ openConnector, setOpenConnector }) => {
 									name="rappeler"
 									value="rappeler"
 								/>
-								<label className="h4 ml-2" for="rappeler">
+								<label className="h4 ml-2" htmlFor="rappeler">
 									Se rappeler de moi
 								</label>
 							</div>

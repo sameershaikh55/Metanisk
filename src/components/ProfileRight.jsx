@@ -61,10 +61,10 @@ const ProfileRight = () => {
 							{data3.map((prev, i) => {
 								return (
 									<div key={i} className="col-4 mt-3 ">
-										<label class="container">
+										<label className="container">
 											{prev}
 											<input type="checkbox" checked />
-											<span class="checkmark"></span>
+											<span className="checkmark"></span>
 										</label>
 									</div>
 								);

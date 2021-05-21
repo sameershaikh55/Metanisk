@@ -70,11 +70,10 @@ const PosterArticles2 = () => {
 							<div className="poster2Details col-12">
 								<ImageGalleryC
 									autoPlay={false}
-									showIndex={true}
+									showIndex={false}
 									showPlayButton={false}
 									items={images}
 									allowFullScreen={true}
-									showIndex={false}
 								/>
 								<div className="imgContainer">
 									<img src={music} alt="music" />
