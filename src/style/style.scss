@@ -90,6 +90,15 @@ html {
 	color: #fff;
 }
 
+.themeBtn5 {
+	background: linear-gradient(0deg, #dce5ec, #dce5ec), #1b8acc;
+	color: $themeColor;
+	padding: 0.8rem 4.2rem;
+	font-size: 1.4rem;
+	border: none;
+	border-radius: 6px;
+}
+
 .themeColor {
 	color: $themeColor;
 }
@@ -846,6 +855,16 @@ html {
 		max-height: 450px;
 		height: 450px;
 		background-color: #fff;
+	}
+
+	.imgContainer img {
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		padding: 1.5rem 1.4rem;
+		background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%),
+			#c4c4c4;
+		border-radius: 50%;
 	}
 }
 
@@ -1723,7 +1742,7 @@ html {
 }
 /* === MESSAGE END === */
 
-/* === SINGLE MESSAGE START === */
+/* === POSTERS START === */
 .mobilMessageHeader {
 	position: fixed;
 	top: 0%;
@@ -1776,7 +1795,39 @@ html {
 	}
 }
 
-/* === SINGLE MESSAGE END === */
+// POSTER 2 START
+.poster2Header {
+	background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.poster2Details {
+	.image-gallery-slide .image-gallery-image {
+		object-fit: fill;
+	}
+
+	.image-gallery-thumbnail .image-gallery-thumbnail-image {
+		height: 82px;
+	}
+
+	.image-gallery-content .image-gallery-slide .image-gallery-image {
+		max-height: 450px;
+		height: 450px;
+		background-color: #fff;
+	}
+	.imgContainer img {
+		position: absolute;
+		top: 2%;
+		right: 4%;
+		padding: 1.5rem 1.4rem;
+		background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%),
+			#c4c4c4;
+		border-radius: 50%;
+	}
+}
+
+/* === POSTERS END === */
 
 /* === POSTER PAGE START === */
 .posterInpContainer {

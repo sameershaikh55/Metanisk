@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
-import PosterArticles from "../components/PosterArticles";
+import PosterArticles2 from "../components/PosterArticles2";
 import ProfileLeft from "../components/ProfileLeft";
 
-const PosterArticlesPage = () => {
+const PosterArticlesPage2 = () => {
 	return (
 		<>
 			{/* DESKTOP START */}
@@ -18,7 +18,7 @@ const PosterArticlesPage = () => {
 								<ProfileLeft />
 							</div>
 							<div className="col-9">
-								<PosterArticles />
+								<PosterArticles2 />
 							</div>
 						</div>
 					</div>
@@ -46,4 +46,4 @@ const PosterArticlesPage = () => {
 	);
 };
 
-export default PosterArticlesPage;
+export default PosterArticlesPage2;

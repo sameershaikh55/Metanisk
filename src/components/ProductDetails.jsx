@@ -4,6 +4,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import annonces1 from "../assets/annonces1.svg";
 import annonces2 from "../assets/annonces2.svg";
 import annonces3 from "../assets/annonces3.svg";
+import music from "../assets/music.svg";
 
 const ProductDetails = () => {
 	const data = [
@@ -45,14 +46,18 @@ const ProductDetails = () => {
 		<>
 			{/* IMAGES SECTION START */}
 			<div>
-				<div className="imageGalleryContainer mt-2 w-100">
+				<div className="imageGalleryContainer position-relative mt-2 w-100">
 					<ImageGalleryC
 						autoPlay={false}
 						showIndex={true}
 						showPlayButton={false}
 						items={images}
 						allowFullScreen={true}
+						showIndex={false}
 					/>
+					<div className="imgContainer">
+						<img src={music} alt="music" />
+					</div>
 				</div>
 				<div className="mt-5 bg-white p-4 rounded">
 					<h2 className="font-weight-bold">Description</h2>

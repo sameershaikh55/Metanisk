@@ -22,6 +22,7 @@ import MesAnnoncesPage from "./pages/MesAnnoncesPage";
 import MaBoutique from "./pages/MaBoutique";
 import MobileSingleMessage from "./components/MobileSingleMessage";
 import PosterArticlesPage from "./pages/PosterArticlesPage";
+import PosterArticlesPage2 from "./pages/PosterArticlesPage2";
 
 function App() {
 	return (
@@ -40,6 +41,7 @@ function App() {
 				<Route exact path="/maBoutique" component={MaBoutique} />
 				<Route exact path="/singleMessage" component={MobileSingleMessage} />
 				<Route exact path="/articles" component={PosterArticlesPage} />
+				<Route exact path="/articles2" component={PosterArticlesPage2} />
 				{/* ONLY MOBILE ROUTES START */}
 				<Route exact path="/emplacement" component={EmplacementMap} />
 				<Route exact path="/categories1" component={Categories1} />
