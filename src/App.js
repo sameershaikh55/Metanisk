@@ -21,6 +21,7 @@ import NotificationsPage from "./pages/NotificationsPage";
 import MesAnnoncesPage from "./pages/MesAnnoncesPage";
 import MaBoutique from "./pages/MaBoutique";
 import MobileSingleMessage from "./components/MobileSingleMessage";
+import PosterArticlesPage from "./pages/PosterArticlesPage";
 
 function App() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 				<Route exact path="/mesAnnonces" component={MesAnnoncesPage} />
 				<Route exact path="/maBoutique" component={MaBoutique} />
 				<Route exact path="/singleMessage" component={MobileSingleMessage} />
+				<Route exact path="/articles" component={PosterArticlesPage} />
 				{/* ONLY MOBILE ROUTES START */}
 				<Route exact path="/emplacement" component={EmplacementMap} />
 				<Route exact path="/categories1" component={Categories1} />

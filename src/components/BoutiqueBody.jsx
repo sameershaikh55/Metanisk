@@ -5,6 +5,7 @@ import placeholderPerson from "../assets/placeholderPerson.svg";
 import { NavLink } from "react-router-dom";
 import States from "./States";
 import location from "../assets/location.svg";
+import selectTick from "../assets/selectTick.svg";
 
 const BoutiqueBody = () => {
 	const data2 = [
@@ -75,7 +76,7 @@ const BoutiqueBody = () => {
 						</NavLink>
 						<NavLink
 							activeClassName="active"
-							to="/non"
+							to="/articles"
 							className="text-decoration-none"
 						>
 							<li className="mt-3 px-5 h4 m-0">Mes Articles</li>
@@ -170,22 +171,12 @@ const BoutiqueBody = () => {
 															<option value="Electronique">Electronique</option>
 															<option value="Electronique">Electronique</option>
 															<option value="Electronique">Electronique</option>
-														</select>{" "}
-														<svg
+														</select>
+														<img
+															src={selectTick}
+															alt="selectTick"
 															className="selectIcon"
-															width="24"
-															height="24"
-															viewBox="0 0 24 24"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																fill-rule="evenodd"
-																clip-rule="evenodd"
-																d="M5 8L12 16L19 8H5Z"
-																fill="#22A1DC"
-															/>
-														</svg>
+														/>
 													</div>
 												</>
 											)}{" "}

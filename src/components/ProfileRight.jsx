@@ -76,7 +76,7 @@ const ProfileRight = () => {
 			{/* LANGUAGES END */}
 
 			{/* EMPLACEMENT MAP START */}
-			<div className="bg-white mt-5 p-3">
+			<div className="bg-white shadow borderRounded mt-5 p-3">
 				<h2 className="d-flex align-items-center font-weight-bold themeColor">
 					<img width="2%" src={location} alt="location" className="mr-2" />
 					Emplacement
