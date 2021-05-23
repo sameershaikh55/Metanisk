@@ -17,7 +17,7 @@ const Footer = () => {
 	};
 	const socialWidth = {
 		width: "16%",
-		marginRight: "6px",
+		marginRight: "10px",
 	};
 	return (
 		<div className="footer_container d-none d-lg-block">
@@ -29,7 +29,7 @@ const Footer = () => {
 							<h4 className="mt-3">
 								Le plus grand marché publique en ligne de Guinée
 							</h4>
-							<div className="d-flex justify-content-between mt-4">
+							<div className="d-flex mt-4">
 								<img style={socialWidth} src={yt} alt="yt" />
 								<img style={socialWidth} src={fb} alt="fb" />
 								<img style={socialWidth} src={twit} alt="twit" />
@@ -56,21 +56,21 @@ const Footer = () => {
 									</div>
 								</div>
 								<div className="col-3">
-									<h3 className="mb-3 font-weight-bold">Services</h3>
-									<h4 className="mb-2">Aide et Support</h4>
-									<h4 className="mb-2">Politique de confidentialité</h4>
-									<h4 className="mb-2">Conditions Générales d’Utilisations</h4>
+									<h3 className="mb-4 font-weight-bold">Services</h3>
+									<h4 className="mb-3">Aide et Support</h4>
+									<h4 className="mb-3">Politique de confidentialité</h4>
+									<h4 className="mb-3">Conditions Générales d’Utilisations</h4>
 								</div>
 								<div className="col-2">
-									<h3 className="mb-3 font-weight-bold">Liens rapides</h3>
-									<h4 className="mb-2">Se connecter</h4>
-									<h4 className="mb-2">S’enregistrer</h4>
-									<h4 className="mb-2">Mon Profile</h4>
-									<h4 className="mb-2">Ma Boutique</h4>
-									<h4 className="mb-2">Mes annonces</h4>
+									<h3 className="mb-4 font-weight-bold">Liens rapides</h3>
+									<h4 className="mb-3">Se connecter</h4>
+									<h4 className="mb-3">S’enregistrer</h4>
+									<h4 className="mb-3">Mon Profile</h4>
+									<h4 className="mb-3">Ma Boutique</h4>
+									<h4 className="mb-3">Mes annonces</h4>
 								</div>
 								<div className="col-3 text-center">
-									<h3 className="mb-3 font-weight-bold">
+									<h3 className="mb-4 font-weight-bold">
 										L’Application Makiti+
 									</h3>
 									<img className="w-75 mb-3" src={appStore} alt="appStore" />
@@ -86,7 +86,7 @@ const Footer = () => {
 			<br />
 			<div className="footerText">
 				<div className="container-fluid">
-					<h4 className="text-secondary">
+					<h4 className="themeColor2">
 						© 2021 Makitiplus SAS. Tous droits réservés.
 					</h4>
 				</div>

@@ -16,8 +16,7 @@ const FeatureSection = () => {
 		{
 			img: feature1,
 			title: "Electronique et informatique",
-			bg:
-				"linear-gradient(129.88deg, #D2F6AC -0.76%, #B8F6D2 103.14%), #FFFFFF",
+			bg: "linear-gradient(129.88deg, #D2F6AC -0.76%, #B8F6D2 103.14%), #FFFFFF",
 		},
 		{
 			img: feature2,
@@ -84,7 +83,7 @@ const FeatureSection = () => {
 										return (
 											<div key={i} className="col-4">
 												<div
-													className="featureCard d-flex justify-content-center align-items-center p-2 m-1"
+													className="featureCard d-flex justify-content-between align-items-center p-2 m-1"
 													style={{
 														background: prev.bg,
 													}}
@@ -93,9 +92,12 @@ const FeatureSection = () => {
 														style={{ width: "45%" }}
 														src={prev.img}
 														alt="feature"
-														className="mr-2"
+														className="mr-3"
 													/>
-													<h5 className="text-break"> {prev.title} </h5>
+													<h5 className="text-break font-weight-bold">
+														{" "}
+														{prev.title}{" "}
+													</h5>
 												</div>
 											</div>
 										);

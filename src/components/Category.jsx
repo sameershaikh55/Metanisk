@@ -32,14 +32,14 @@ const Category = () => {
 				<div className="mt-3">
 					<h4 className="font-weight-bold">Electronique et informatique</h4>
 					<ul className="list-unstyled">
-						<li className="h5 mt-2">Transport</li>
-						<li className="h5 mt-2">immobiliers</li>
-						<li className="h5 mt-2">Vêtements</li>
-						<li className="h5 mt-2">Aliments</li>
-						<li className="h5 mt-2">Électroménagers</li>
-						<li className="h5 mt-2">Emplois</li>
-						<li className="h5 mt-2">Services</li>
-						<li className="h5 mt-2">Divers</li>
+						<li className="h5 mt-2 font-weight-bold">Transport</li>
+						<li className="h5 mt-2 font-weight-bold">immobiliers</li>
+						<li className="h5 mt-2 font-weight-bold">Vêtements</li>
+						<li className="h5 mt-2 font-weight-bold">Aliments</li>
+						<li className="h5 mt-2 font-weight-bold">Électroménagers</li>
+						<li className="h5 mt-2 font-weight-bold">Emplois</li>
+						<li className="h5 mt-2 font-weight-bold">Services</li>
+						<li className="h5 mt-2 font-weight-bold">Divers</li>
 					</ul>
 				</div>
 			</div>

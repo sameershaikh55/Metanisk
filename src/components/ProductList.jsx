@@ -56,7 +56,9 @@ const ProductList = () => {
 				<div className="d-flex justify-content-between align-items-center">
 					<div className="d-flex align-items-center">
 						<h1 className="font-weight-bold mb-3 mr-4">Chaussure Nike</h1>
-						<h3>1032 annonces trouvées</h3>
+						<h3 className="font-weight-bold themeColor2">
+							1032 annonces trouvées
+						</h3>
 					</div>
 					<div className="d-flex">
 						<button className="themeBtn d-flex justify-content-center align-items-center py-2 px-4 mr-4">
