@@ -1974,6 +1974,7 @@ html {
 	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .mobile_container2 {
 	background-color: #e5e6e7;
@@ -2186,9 +2187,10 @@ html {
 		left: 50%;
 		width: fit-content;
 		transform: translate(-50%);
+		cursor: pointer;
 
 		span {
-			background-color: #007bff;
+			background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
 			padding: 10px 14px 14px 13px;
 			border-radius: 50%;
 			font-size: 2.5rem;

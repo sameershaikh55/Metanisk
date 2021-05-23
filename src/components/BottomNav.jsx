@@ -11,25 +11,45 @@ const BottomNav = () => {
 			<div className="bottomNav_container">
 				<div className="main_container">
 					<div className="main_div">
-						<NavLink exact activeClassName="active" to="/">
+						<NavLink
+							className="text-decoration-none"
+							exact
+							activeClassName="active"
+							to="/"
+						>
 							<div className="each_navigation">
 								<CgHome className="NavIcon" />
 								Accueil
 							</div>
 						</NavLink>
-						<NavLink exact activeClassName="active" to="/searchMap">
+						<NavLink
+							className="text-decoration-none"
+							exact
+							activeClassName="active"
+							to="/searchMap"
+						>
 							<div className="each_navigation">
 								<IoLocationOutline className="NavIcon" />
 								Carte
 							</div>
 						</NavLink>
-						<NavLink exact activeClassName="active" to="/favoris">
+						<NavLink
+							className="text-decoration-none"
+							exact
+							activeClassName="active"
+							to="/favoris"
+						>
 							<div className="each_navigation">
 								<AiOutlineStar className="NavIcon" />
 								Favoris
 							</div>
 						</NavLink>
-						<NavLink exact activeClassName="active" to="/profile">
+						<NavLink
+							className="text-decoration-none"
+							exact
+							activeClassName="active"
+							to="/profile"
+						>
 							<div className="each_navigation">
 								<AiOutlineUser className="NavIcon" />
 								Profile
