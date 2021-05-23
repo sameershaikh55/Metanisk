@@ -14,11 +14,13 @@ import message from "../assets/message2.svg";
 import UserModal from "../components/UserModal";
 import MessageModal from "./MessageModal";
 import CallModal from "./CallModal";
+import CommentModal from "./CommentModal";
 
 const UserDetails = () => {
 	const [userModal, setUserModal] = useState(false);
 	const [messageModal, setMessageModal] = useState(false);
 	const [callModal, setCallModal] = useState(false);
+	const [commentModal, setCommentModal] = useState(false);
 
 	const handleClickOpenUser = () => {
 		setUserModal(true);
@@ -32,6 +34,10 @@ const UserDetails = () => {
 		setCallModal(true);
 	};
 
+	const handleClickOpenComment = () => {
+		setCommentModal(true);
+	};
+
 	return (
 		<>
 			{/* MODALS START */}
@@ -41,6 +47,10 @@ const UserDetails = () => {
 				setMessageModal={setMessageModal}
 			/>
 			<CallModal callModal={callModal} setCallModal={setCallModal} />
+			<CommentModal
+				commentModal={commentModal}
+				setCommentModal={setCommentModal}
+			/>
 			{/* MODALS EMD */}
 
 			<div className="bg-white p-4">
@@ -124,7 +134,10 @@ const UserDetails = () => {
 					1000
 				</span>
 			</div>
-			<button className="themeBtn py-2 px-0 w-100">
+			<button
+				onClick={handleClickOpenComment}
+				className="themeBtn py-2 px-0 w-100"
+			>
 				<img src={flag} alt="flag" className="mr-2" />
 				Signaler cette annonce
 			</button>
