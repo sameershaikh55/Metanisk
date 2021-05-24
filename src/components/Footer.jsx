@@ -15,8 +15,6 @@ import RegisterModal from "./modals/RegisterModal";
 
 const Footer = () => {
 	// MODALS DETAILS START
-	const [user, setUser] = useState(false);
-	const [categories, setCategories] = useState(false);
 	const [openConnector, setOpenConnector] = useState(false);
 	const [openRegister, setOpenRegister] = useState(false);
 	let history = useHistory();

@@ -84,7 +84,7 @@ const MainHeader = () => {
 							</div>
 							<button
 								onClick={() => setCategories(!categories)}
-								className="headerCategory d-flex align-items-center justify-content-center"
+								className="headerCategory d-flex align-items-center justify-content-center border-0"
 							>
 								<img
 									style={{ width: "18%" }}
