@@ -1,18 +1,18 @@
 import React from "react";
 import { RiArrowRightSLine } from "react-icons/ri";
-import category1 from "../assets/category1.svg";
-import category2 from "../assets/category2.svg";
-import category3 from "../assets/category3.svg";
-import category4 from "../assets/category4.svg";
-import category5 from "../assets/category5.svg";
-import category6 from "../assets/category6.svg";
-import category7 from "../assets/category7.svg";
-import category8 from "../assets/category8.svg";
-import category9 from "../assets/category9.svg";
-import category10 from "../assets/category10.svg";
-import category11 from "../assets/category11.svg";
-import category12 from "../assets/category12.svg";
-import category13 from "../assets/category13.svg";
+import category1 from "../assets/category1.webp";
+import category2 from "../assets/category2.webp";
+import category3 from "../assets/category3.webp";
+import category4 from "../assets/category4.webp";
+import category5 from "../assets/category5.webp";
+import category6 from "../assets/category6.webp";
+import category7 from "../assets/category7.webp";
+import category8 from "../assets/category8.webp";
+import category9 from "../assets/category9.webp";
+import category10 from "../assets/category10.webp";
+import category11 from "../assets/category11.webp";
+import category12 from "../assets/category12.webp";
+import category13 from "../assets/category13.webp";
 import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
 
 const CategoriesList = () => {

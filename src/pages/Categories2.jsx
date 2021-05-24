@@ -1,10 +1,10 @@
 import React from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
-import category10 from "../assets/category10.svg";
-import category11 from "../assets/category11.svg";
-import category12 from "../assets/category12.svg";
-import category13 from "../assets/category13.svg";
+import category10 from "../assets/category10.webp";
+import category11 from "../assets/category11.webp";
+import category12 from "../assets/category12.webp";
+import category13 from "../assets/category13.webp";
 import mobileCategoryIcon from "../assets/mobileCategoryIcon.svg";
 
 const Categories2 = () => {
