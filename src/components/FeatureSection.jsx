@@ -1,15 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import feature1 from "../assets/feature1.svg";
-import feature2 from "../assets/feature2.svg";
-import feature3 from "../assets/feature3.svg";
-import feature4 from "../assets/feature4.svg";
-import feature5 from "../assets/feature5.svg";
-import feature6 from "../assets/feature6.svg";
-import feature7 from "../assets/feature7.svg";
-import feature8 from "../assets/feature8.svg";
-import feature9 from "../assets/feature9.svg";
-import homeSlider from "../assets/homeSlider.svg";
+import feature1 from "../assets/feature1.webp";
+import feature2 from "../assets/feature2.webp";
+import feature3 from "../assets/feature3.webp";
+import feature4 from "../assets/feature4.webp";
+import feature5 from "../assets/feature5.webp";
+import feature6 from "../assets/feature6.webp";
+import feature7 from "../assets/feature7.webp";
+import feature8 from "../assets/feature8.webp";
+import feature9 from "../assets/feature9.webp";
+import homeSlider from "../assets/homeSlider.webp";
 
 const FeatureSection = () => {
 	const data = [

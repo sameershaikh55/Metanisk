@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import category from "../assets/categoryIcon.svg";
-import banner from "../assets/homeBanner.svg";
+import banner from "../assets/homeBanner.webp";
 import add from "../assets/addIcon.svg";
 import heart from "../assets/heartIcon.svg";
 import placeholder from "../assets/placeholderPerson.svg";

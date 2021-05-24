@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCamera } from "react-icons/fa";
-import userBg from "../assets/userBg.svg";
+import userBg from "../assets/userBg.webp";
 import placeholderPerson from "../assets/placeholderPerson.svg";
 import { GrMap } from "react-icons/gr";
 import state1 from "../assets/state1.svg";

@@ -1,6 +1,6 @@
 import React from "react";
 import placeholderPerson from "../assets/placeholderPerson.svg";
-import annonces3 from "../assets/annonces3.svg";
+import annonces3 from "../assets/annonces3.webp";
 import bellIcon from "../assets/bellIcon.svg";
 import { IoPersonAddOutline } from "react-icons/io5";
 import { FiMessageSquare, FiSettings } from "react-icons/fi";

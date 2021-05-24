@@ -6,7 +6,7 @@ import ratingStar from "../assets/ratingStar.svg";
 import addUser from "../assets/addUser.svg";
 import share from "../assets/share.svg";
 import fb2 from "../assets/fb2.svg";
-import insta2 from "../assets/insta2.svg";
+import insta2 from "../assets/insta2.webp";
 import twit2 from "../assets/twit2.svg";
 import eye from "../assets/eye.svg";
 import flag from "../assets/flag.svg";

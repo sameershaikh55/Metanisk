@@ -1,5 +1,5 @@
 import React from "react";
-import userBg from "../assets/userBg.svg";
+import userBg from "../assets/userBg.webp";
 import addIcon from "../assets/addIcon.svg";
 import placeholderPerson from "../assets/placeholderPerson.svg";
 import { NavLink } from "react-router-dom";
