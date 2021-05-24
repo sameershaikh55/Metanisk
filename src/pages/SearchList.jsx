@@ -1,13 +1,14 @@
 import React from "react";
 import MainHeader from "../components/headers/MainHeader";
-import searchBanner from "../assets/searchBanner.webp";
-import searchBanner1 from "../assets/searchBanner1.webp";
+// import searchBanner from "../assets/searchBanner.webp";
+// import searchBanner1 from "../assets/searchBanner1.webp";
 import Category from "../components/Category";
 import ProductList from "../components/ProductList";
 import Footer from "../components/Footer";
 import BottomNav from "../components/BottomNav";
 import SearchHeaderMobile from "../components/headers/SearchHeaderMobile";
 import SearchListBodyMobile from "../components/SearchListBodyMobile";
+import { searchBanner, searchBanner1 } from "../assets/base64";
 
 const SearchList = () => {
 	return (

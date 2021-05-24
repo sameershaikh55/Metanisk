@@ -145,16 +145,16 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="innerFooter container-fluid d-flex">
-					<a href="https://youtube.com/">
+					<a target="_blank" href="https://youtube.com/" rel="noreferrer">
 						<img style={socialWidth} src={yt} alt="yt" />
 					</a>
-					<a href="http://facebook.com/">
+					<a target="_blank" href="http://facebook.com/" rel="noreferrer">
 						<img style={socialWidth} src={fb} alt="fb" />
 					</a>
-					<a href="https://twitter.com/">
+					<a target="_blank" href="https://twitter.com/" rel="noreferrer">
 						<img style={socialWidth} src={twit} alt="twit" />
 					</a>
-					<a href="https://www.instagram.com/">
+					<a target="_blank" href="https://www.instagram.com/" rel="noreferrer">
 						<img style={socialWidth} src={insta} alt="ints" />
 					</a>
 				</div>

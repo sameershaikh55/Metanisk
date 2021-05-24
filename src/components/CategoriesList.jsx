@@ -14,8 +14,9 @@ import category11 from "../assets/category11.webp";
 import category12 from "../assets/category12.webp";
 import category13 from "../assets/category13.webp";
 import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
+import { motion } from "framer-motion";
 
-const CategoriesList = () => {
+const CategoriesList = ({ categories }) => {
 	const data = [
 		{
 			img: category1,
@@ -126,14 +127,77 @@ const CategoriesList = () => {
 	];
 
 	return (
-		<div className="categoriesList_container">
-			<div className="container-fluid">
-				<div className="row">
-					<div className="col-4">
-						<div className="row">
-							{data.map((prev, i) => {
+		<motion.div
+			animate={{ height: categories ? 710 : 0 }}
+			transition={{ duration: 0.1 }}
+			className="categoriesList_container"
+		>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 0.2 }}
+			>
+				<div className="container-fluid">
+					<div className="row">
+						<div className="col-4">
+							<div className="row">
+								{data.map((prev, i) => {
+									return (
+										<div key={i} className="col-12 mb-4">
+											<div className="categoryCard d-flex justify-content-between align-items-center">
+												<div className="d-flex align-items-center">
+													<img
+														src={prev.img}
+														alt="category1"
+														className="mr-3"
+													/>
+													<h4 className="text-dark font-weight-bold">
+														{prev.title}
+													</h4>
+												</div>
+												<div className="d-flex justify-content-between align-items-center">
+													<h4 className="w-75"> {prev.desc} </h4>
+													<RiArrowRightSLine
+														fontSize="2.5rem"
+														color="#067AC2"
+													/>
+												</div>
+											</div>
+										</div>
+									);
+								})}
+							</div>
+						</div>
+						<div className="col-4">
+							<h2 className="mb-4 font-weight-bold">
+								Electroniques et Informatique
+							</h2>
+							{data2.map((prev, i) => {
 								return (
-									<div key={i} className="col-12 mb-4">
+									<div key={i} className="col-12 px-0 mb-4">
+										<div className="categoryCard d-flex justify-content-between align-items-center">
+											<div className="d-flex align-items-center">
+												<img src={prev.img} alt="category1" className="mr-3" />
+												<h4 className="text-dark font-weight-bold">
+													{prev.title}
+												</h4>
+											</div>
+											<div className="d-flex justify-content-between align-items-center">
+												<h4 className="w-75"> {prev.desc} </h4>
+												<RiArrowRightSLine fontSize="2.5rem" color="#067AC2" />
+											</div>
+										</div>
+									</div>
+								);
+							})}
+						</div>
+						<div className="col-4">
+							<h2 className="mb-4 font-weight-bold">
+								Smartphone, Tablettes, Objets...
+							</h2>
+							{data3.map((prev, i) => {
+								return (
+									<div key={i} className="col-12 px-0 mb-4">
 										<div className="categoryCard d-flex justify-content-between align-items-center">
 											<div className="d-flex align-items-center">
 												<img src={prev.img} alt="category1" className="mr-3" />
@@ -151,55 +215,9 @@ const CategoriesList = () => {
 							})}
 						</div>
 					</div>
-					<div className="col-4">
-						<h2 className="mb-4 font-weight-bold">
-							Electroniques et Informatique
-						</h2>
-						{data2.map((prev, i) => {
-							return (
-								<div key={i} className="col-12 px-0 mb-4">
-									<div className="categoryCard d-flex justify-content-between align-items-center">
-										<div className="d-flex align-items-center">
-											<img src={prev.img} alt="category1" className="mr-3" />
-											<h4 className="text-dark font-weight-bold">
-												{prev.title}
-											</h4>
-										</div>
-										<div className="d-flex justify-content-between align-items-center">
-											<h4 className="w-75"> {prev.desc} </h4>
-											<RiArrowRightSLine fontSize="2.5rem" color="#067AC2" />
-										</div>
-									</div>
-								</div>
-							);
-						})}
-					</div>
-					<div className="col-4">
-						<h2 className="mb-4 font-weight-bold">
-							Smartphone, Tablettes, Objets...
-						</h2>
-						{data3.map((prev, i) => {
-							return (
-								<div key={i} className="col-12 px-0 mb-4">
-									<div className="categoryCard d-flex justify-content-between align-items-center">
-										<div className="d-flex align-items-center">
-											<img src={prev.img} alt="category1" className="mr-3" />
-											<h4 className="text-dark font-weight-bold">
-												{prev.title}
-											</h4>
-										</div>
-										<div className="d-flex justify-content-between align-items-center">
-											<h4 className="w-75"> {prev.desc} </h4>
-											<RiArrowRightSLine fontSize="2.5rem" color="#067AC2" />
-										</div>
-									</div>
-								</div>
-							);
-						})}
-					</div>
 				</div>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 };
 

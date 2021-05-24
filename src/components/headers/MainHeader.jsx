@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Logo from "../../assets/logo.svg";
+// import Logo from "../../assets/logo.svg";
 import category from "../../assets/categoryIcon.svg";
 import banner from "../../assets/homeBanner.webp";
 import add from "../../assets/addIcon.svg";
@@ -14,6 +14,8 @@ import CategoriesList from "../CategoriesList";
 import Connector from "../Connector";
 import RegisterModal from "../modals/RegisterModal";
 import Sidebar from "./Sidebar";
+import { logo } from "../../assets/base64";
+import { motion } from "framer-motion";
 
 const MainHeader = () => {
 	const [user, setUser] = useState(false);
@@ -78,7 +80,7 @@ const MainHeader = () => {
 								className="logo_container mr-2 mr-lg-4"
 								onClick={() => history.push("/")}
 							>
-								<img src={Logo} alt="logo" />
+								<img src={logo} alt="logo" />
 							</div>
 							<button
 								onClick={() => setCategories(!categories)}
@@ -140,8 +142,17 @@ const MainHeader = () => {
 									style={{ cursor: "pointer" }}
 								/>
 								{user && (
-									<div className="userInfoDD">
-										<ul className="list-unstyled mb-0">
+									<motion.div
+										animate={{ height: user ? 264 : 0 }}
+										transition={{ duration: 0.1 }}
+										className="userInfoDD"
+									>
+										<motion.ul
+											initial={{ opacity: 0 }}
+											animate={{ opacity: 1 }}
+											transition={{ delay: 0.1 }}
+											className="list-unstyled mb-0"
+										>
 											<NavLink activeClassName="active" to="/profile">
 												<li className="d-flex align-items-center">
 													<AiOutlineUser className="mr-2" /> Profile
@@ -184,13 +195,13 @@ const MainHeader = () => {
 											<li className="deconnector d-flex justify-content-center align-items-center">
 												Se deconnecter
 											</li>
-										</ul>
-									</div>
+										</motion.ul>
+									</motion.div>
 								)}
 							</div>
 						</div>
 					</div>
-					{categories && <CategoriesList />}
+					{categories && <CategoriesList categories={categories} />}
 				</div>
 			</div>
 			{/* <!-- ======== NAVBAR END =========== --> */}
@@ -202,7 +213,7 @@ const MainHeader = () => {
 						<Sidebar />
 					</div>
 					<div className="logoContainer mx-2">
-						<img src={Logo} alt="logo" />
+						<img src={logo} alt="logo" />
 					</div>
 					<div className="ml-2">
 						<img src={placeholder} alt="person" />

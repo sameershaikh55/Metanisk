@@ -9,7 +9,7 @@ import feature6 from "../assets/feature6.webp";
 import feature7 from "../assets/feature7.webp";
 import feature8 from "../assets/feature8.webp";
 import feature9 from "../assets/feature9.webp";
-import homeSlider from "../assets/homeSlider.webp";
+import { homeSlider } from "../assets/base64/index";
 
 const FeatureSection = () => {
 	const data = [

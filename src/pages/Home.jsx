@@ -1,11 +1,12 @@
 import React from "react";
 import FeatureSection from "../components/FeatureSection";
 import MainHeader from "../components/headers/MainHeader";
-import banner from "../assets/mainBodyImg.webp";
+// import banner from "../assets/mainBodyImg.webp";
 import TopAnnonces from "../components/TopAnnonces";
 import AnnoncesRecentes from "../components/AnnoncesRecentes";
 import Footer from "../components/Footer";
 import BottomNav from "../components/BottomNav.jsx";
+import { mainBodyImg } from "../assets/base64/index";
 
 const Home = () => {
 	return (
@@ -19,7 +20,7 @@ const Home = () => {
 					<div className="container-fluid">
 						<div className="row">
 							<div style={{ marginTop: "4rem" }} className="col-3">
-								<img src={banner} alt="banner" />
+								<img src={mainBodyImg} alt="banner" />
 							</div>
 							<div className="col-9">
 								<TopAnnonces />

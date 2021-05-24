@@ -206,6 +206,7 @@ html {
 		margin-right: auto;
 
 		.categoriesList_container {
+			height: 0;
 			margin-top: 3rem;
 
 			.categoryCard {
@@ -325,6 +326,7 @@ html {
 		background-color: #fff;
 		border-radius: 4px;
 		box-shadow: 0px 0px 10px rgb(231, 231, 231);
+		height: 0;
 
 		ul {
 			.active {
