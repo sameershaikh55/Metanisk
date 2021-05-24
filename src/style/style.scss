@@ -560,6 +560,13 @@ html {
 		max-width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
+
+		.pointer {
+			transition: 0.4s;
+			&:hover {
+				color: $themeColor;
+			}
+		}
 	}
 }
 .footerText {

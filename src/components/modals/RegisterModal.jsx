@@ -141,7 +141,7 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 						</div>
 						<button className="themeBtn mt-3 w-100">Se connecter</button>
 						<div className="mt-5 mt-4">
-							<h5 className="text-center h4">
+							<div className="text-center">
 								<h4 className="text-secondary">ou se connecter avec</h4>
 								<div className="modalIcons d-flex justify-content-center align-content-center">
 									<div className="icon-container">
@@ -172,7 +172,7 @@ const RegisterModal = ({ openRegister, setOpenRegister }) => {
 										</a>
 									</div>
 								</div>
-							</h5>
+							</div>
 						</div>
 						<hr />
 						<div className="mt-3">

@@ -63,7 +63,7 @@ const ProfileRight = () => {
 									<div key={i} className="col-4 mt-3 ">
 										<label className="container">
 											{prev}
-											<input type="checkbox" checked />
+											<input type="checkbox" />
 											<span className="checkmark"></span>
 										</label>
 									</div>

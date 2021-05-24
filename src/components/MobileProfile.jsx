@@ -107,6 +107,7 @@ const MobileProfile = () => {
 							const { img, num, desc, bg } = prev;
 							return (
 								<div
+									key={i}
 									style={{ background: bg }}
 									className="statesCardMobile mx-3 d-flex flex-column justify-content-around text-white"
 								>
@@ -212,7 +213,7 @@ const MobileProfile = () => {
 								<div key={i} className="col-6 mt-3 ">
 									<label className="container">
 										{prev}
-										<input type="checkbox" checked />
+										<input type="checkbox" />
 										<span className="checkmark"></span>
 									</label>
 								</div>
