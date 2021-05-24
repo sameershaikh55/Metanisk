@@ -70,9 +70,12 @@ const CommentModal = ({ commentModal, setCommentModal }) => {
 
 					{/* MODAL BODY END */}
 					<div className="commentModalBody p-4">
-						{[1, 1, 1, 1].map(() => {
+						{[1, 1, 1, 1].map((prev, i) => {
 							return (
-								<div className="cardComment borderRounded shadow px-4 pt-3 pb-1 my-4">
+								<div
+									key={i}
+									className="cardComment borderRounded shadow px-4 pt-3 pb-1 my-4"
+								>
 									<div className="d-flex justify-content-between align-items-center">
 										<div className="d-flex align-items-center">
 											<img

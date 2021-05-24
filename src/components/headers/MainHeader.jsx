@@ -37,6 +37,15 @@ const MainHeader = () => {
 		setOpenRegister(true);
 	};
 
+	const handleClickCategories = () => {
+		setCategories(!categories);
+		setUser(false);
+	};
+	const handleClickUser = () => {
+		setUser(!user);
+		setCategories(false);
+	};
+
 	return (
 		<>
 			{/* MODALS START */}
@@ -83,7 +92,7 @@ const MainHeader = () => {
 								<img src={logo} alt="logo" />
 							</div>
 							<button
-								onClick={() => setCategories(!categories)}
+								onClick={handleClickCategories}
 								className="headerCategory d-flex align-items-center justify-content-center border-0"
 							>
 								<img
@@ -136,7 +145,7 @@ const MainHeader = () => {
 							</button>
 							<div className="placeholderImg position-relative">
 								<img
-									onClick={() => setUser(!user)}
+									onClick={handleClickUser}
 									src={placeholder}
 									alt="placeholder"
 									style={{ cursor: "pointer" }}

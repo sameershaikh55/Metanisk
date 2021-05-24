@@ -1,14 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
-import feature1 from "../assets/feature1.webp";
-import feature2 from "../assets/feature2.webp";
-import feature3 from "../assets/feature3.webp";
-import feature4 from "../assets/feature4.webp";
-import feature5 from "../assets/feature5.webp";
-import feature6 from "../assets/feature6.webp";
-import feature7 from "../assets/feature7.webp";
-import feature8 from "../assets/feature8.webp";
-import feature9 from "../assets/feature9.webp";
+import {
+	feature1,
+	feature2,
+	feature3,
+	feature4,
+	feature5,
+	feature6,
+	feature7,
+	feature8,
+	feature9,
+} from "../assets/base64/index";
 import { homeSlider } from "../assets/base64/index";
 
 const FeatureSection = () => {
@@ -92,9 +94,8 @@ const FeatureSection = () => {
 														style={{ width: "45%" }}
 														src={prev.img}
 														alt="feature"
-														className="mr-3"
 													/>
-													<h5 className="text-break font-weight-bold">
+													<h5 className="text-center text-break font-weight-bold">
 														{" "}
 														{prev.title}{" "}
 													</h5>
