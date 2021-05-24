@@ -1,8 +1,8 @@
 import React from "react";
 import { BsFillMicFill, BsSearch } from "react-icons/bs";
 import { HiOutlineFilter } from "react-icons/hi";
-import cross from "../assets/cross.svg";
-import heart from "../assets/heartIcon.svg";
+import cross from "../../assets/cross.svg";
+import heart from "../../assets/heartIcon.svg";
 
 const SearchMapHeader = () => {
 	return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../../assets/placeholderPerson.svg";
 import { ImCamera, ImCross } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 import { BiMessageAltDetail } from "react-icons/bi";

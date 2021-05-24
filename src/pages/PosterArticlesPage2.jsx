@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import PosterArticles2 from "../components/PosterArticles2";
 import ProfileLeft from "../components/ProfileLeft";
 

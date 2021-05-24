@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import hamburger from "../assets/hamburger.svg";
-import person from "../assets/placeholderPerson.svg";
-import addIcon from "../assets/addIcon.svg";
+import hamburger from "../../assets/hamburger.svg";
+import person from "../../assets/placeholderPerson.svg";
+import addIcon from "../../assets/addIcon.svg";
 import {
 	AiOutlineUser,
 	AiOutlineStar,

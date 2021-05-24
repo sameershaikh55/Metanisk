@@ -1,12 +1,12 @@
 import React from "react";
 import Category from "../components/Category";
 import Footer from "../components/Footer";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import searchBanner1 from "../assets/searchBanner1.webp";
 import searchBanner from "../assets/searchBanner.webp";
 import MapSection from "../components/MapSection";
 import UnderProductList from "../components/UnderProductList";
-import SearchMapHeader from "../components/SearchMapHeader";
+import SearchMapHeader from "../components/headers/SearchMapHeader";
 import BottomNav from "../components/BottomNav";
 
 const SearchMap = () => {

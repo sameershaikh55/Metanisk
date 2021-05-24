@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureSection from "../components/FeatureSection";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import banner from "../assets/mainBodyImg.webp";
 import TopAnnonces from "../components/TopAnnonces";
 import AnnoncesRecentes from "../components/AnnoncesRecentes";

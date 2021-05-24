@@ -11,10 +11,10 @@ import twit2 from "../assets/twit2.svg";
 import eye from "../assets/eye.svg";
 import flag from "../assets/flag.svg";
 import message from "../assets/message2.svg";
-import UserModal from "../components/UserModal";
-import MessageModal from "./MessageModal";
-import CallModal from "./CallModal";
-import CommentModal from "./CommentModal";
+import UserModal from "../components/modals/UserModal";
+import MessageModal from "../components/modals/MessageModal";
+import CallModal from "../components/modals/CallModal";
+import CommentModal from "../components/modals/CommentModal";
 
 const UserDetails = () => {
 	const [userModal, setUserModal] = useState(false);

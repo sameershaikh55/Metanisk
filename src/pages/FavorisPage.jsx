@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 import Favoris from "../components/Favoris";
 import BottomNav from "../components/BottomNav";

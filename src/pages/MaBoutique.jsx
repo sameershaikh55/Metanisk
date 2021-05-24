@@ -2,7 +2,7 @@ import React from "react";
 import BoutiqueBody from "../components/BoutiqueBody";
 import Footer from "../components/Footer";
 import MaBoutiqueMobile from "../components/MaBoutiqueMobile";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 
 const MaBoutique = () => {

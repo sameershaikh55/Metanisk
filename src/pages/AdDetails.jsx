@@ -1,5 +1,5 @@
 import React from "react";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import Footer from "../components/Footer";
 import searchBanner from "../assets/searchBanner.webp";
 import ProductDetails from "../components/ProductDetails";

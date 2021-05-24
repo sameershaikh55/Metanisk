@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Logo from "../assets/logo.svg";
-import category from "../assets/categoryIcon.svg";
-import banner from "../assets/homeBanner.webp";
-import add from "../assets/addIcon.svg";
-import heart from "../assets/heartIcon.svg";
-import placeholder from "../assets/placeholderPerson.svg";
+import Logo from "../../assets/logo.svg";
+import category from "../../assets/categoryIcon.svg";
+import banner from "../../assets/homeBanner.webp";
+import add from "../../assets/addIcon.svg";
+import heart from "../../assets/heartIcon.svg";
+import placeholder from "../../assets/placeholderPerson.svg";
 import { AiOutlineUser, AiOutlineStar, AiOutlineShop } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
 import { BsFillMicFill, BsSearch } from "react-icons/bs";
-import CategoriesList from "./CategoriesList";
-import Connector from "./Connector";
-import RegisterModal from "./RegisterModal";
+import CategoriesList from "../CategoriesList";
+import Connector from "../Connector";
+import RegisterModal from "../modals/RegisterModal";
 import Sidebar from "./Sidebar";
 
 const MainHeader = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import MainHeader from "../components/MainHeader";
+import MainHeader from "../components/headers/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
 import Notifications from "../components/Notifications";
 import BottomNav from "../components/BottomNav";
@@ -40,7 +40,7 @@ const NotificationsPage = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav /> 
+				<BottomNav />
 			</div>
 			{/* MOBILE END */}
 		</>

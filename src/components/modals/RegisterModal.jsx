@@ -3,9 +3,9 @@ import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 import { FaPhoneAlt, FaUnlockAlt } from "react-icons/fa";
 import { AiFillEye } from "react-icons/ai";
-import connectIcon1 from "../assets/connectIcon1.svg";
-import connectIcon2 from "../assets/connectIcon2.svg";
-import connectIcon3 from "../assets/connectIcon3.svg";
+import connectIcon1 from "../../assets/connectIcon1.svg";
+import connectIcon2 from "../../assets/connectIcon2.svg";
+import connectIcon3 from "../../assets/connectIcon3.svg";
 import ReactCodeInput from "react-verification-code-input";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
