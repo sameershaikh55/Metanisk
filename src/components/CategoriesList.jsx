@@ -1,56 +1,72 @@
 import React from "react";
 import { RiArrowRightSLine } from "react-icons/ri";
-import category1 from "../assets/category1.webp";
-import category2 from "../assets/category2.webp";
-import category3 from "../assets/category3.webp";
-import category4 from "../assets/category4.webp";
-import category5 from "../assets/category5.webp";
-import category6 from "../assets/category6.webp";
-import category7 from "../assets/category7.webp";
-import category8 from "../assets/category8.webp";
-import category9 from "../assets/category9.webp";
-import category10 from "../assets/category10.webp";
-import category11 from "../assets/category11.webp";
-import category12 from "../assets/category12.webp";
-import category13 from "../assets/category13.webp";
-import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
+// import category1 from "../assets/category1.webp";
+// import category2 from "../assets/category2.webp";
+// import category3 from "../assets/category3.webp";
+// import category4 from "../assets/category4.webp";
+// import category5 from "../assets/category5.webp";
+// import category6 from "../assets/category6.webp";
+// import category7 from "../assets/category7.webp";
+// import category8 from "../assets/category8.webp";
+// import category9 from "../assets/category9.webp";
+// import category10 from "../assets/category10.webp";
+// import category11 from "../assets/category11.webp";
+// import category12 from "../assets/category12.webp";
+// import category13 from "../assets/category13.webp";
+import {
+	category14,
+	category2,
+	category4,
+	category5,
+	category6,
+	category7,
+	category8,
+	category9,
+	category10,
+	category11,
+	category12,
+	category13,
+	category1,
+	placeHolderCategory,
+} from "../assets/base64/index";
+// import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
 import { motion } from "framer-motion";
 
 const CategoriesList = ({ categories }) => {
 	const data = [
 		{
-			img: category1,
+			img: category14,
 			title: "Electroniques et Informatique",
 			desc: "10.6K Annonces",
 		},
 		{
+			img: category1,
+			title: "Transport",
+			desc: "10.6K Annonces",
+		},
+		{
 			img: category2,
-			title: "Transport",
-			desc: "10.6K Annonces",
-		},
-		{
-			img: category3,
-			title: "Transport",
-			desc: "10.6K Annonces",
-		},
-		{
-			img: category4,
 			title: "Immobiliers",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category5,
+			img: category4,
 			title: "Vêtements",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category6,
+			img: category5,
 			title: "Aliments",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category7,
+			img: category6,
 			title: "Electromenagers",
+			desc: "10.6K Annonces",
+		},
+		{
+			img: category7,
+			title: "Emplois",
 			desc: "10.6K Annonces",
 		},
 		{
@@ -90,37 +106,37 @@ const CategoriesList = ({ categories }) => {
 
 	const data3 = [
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Téléphones Portables",
 			desc: "5 400 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Tablettes",
 			desc: "1 056 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Montres et Bracelets Intelligents",
 			desc: "562 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Pieces détachées de téléphones",
 			desc: "145 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Housses",
 			desc: "278 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Objets connectés",
 			desc: "146 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Accessoires",
 			desc: "56 Annonces",
 		},
