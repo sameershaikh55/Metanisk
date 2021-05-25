@@ -7,6 +7,8 @@ import location from "../assets/location.svg";
 import selectTick from "../assets/selectTick.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import { useHistory } from "react-router-dom";
+import { BsFillMicFill } from "react-icons/bs";
+import UploadImage from "./UploadImage";
 
 const PosterArticles = () => {
 	let history = useHistory();
@@ -23,6 +25,9 @@ const PosterArticles = () => {
 								<img src={poster1} alt="poster1" className="mr-2" />
 								Ajouter les photos <small>(2 minimum)</small>
 							</h4>
+							<div>
+								<UploadImage />
+							</div>
 						</div>
 					</div>
 					<div className="col-4 bg-white borderRounded shadow p-3">
@@ -30,7 +35,12 @@ const PosterArticles = () => {
 							<img src={poster2} alt="poster2" className="mr-2" />
 							Enregistrer la description audio
 						</h4>
-						<h1 className="text-center my-3">Recording</h1>
+						<div className="text-center mt-3 mb-4 pointer">
+							<BsFillMicFill
+								className="micRedBg text-white rounded-circle"
+								fontSize="10rem"
+							/>
+						</div>
 						<div
 							style={{
 								padding: "0.9rem 0rem 0.1rem 0rem",

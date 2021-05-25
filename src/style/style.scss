@@ -1943,6 +1943,11 @@ button {
 	}
 }
 
+.micRedBg {
+	background-color: #ff0000;
+	padding: 2rem;
+}
+
 // POSTER 2 START
 .poster2Header {
 	background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
@@ -2038,6 +2043,37 @@ button {
 	width: 45%;
 }
 /* === POSTER PAGE END === */
+
+/* === UPLOAD IMAGE START === */
+.uploadedImg {
+	img {
+		width: 165px;
+		height: 140px;
+	}
+
+	.greenTick {
+		img {
+			position: absolute;
+			height: 35px;
+			width: 35px;
+			bottom: -3%;
+			background-color: #fff;
+			border-radius: 60%;
+		}
+	}
+
+	.removeBtn {
+		img {
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			top: -10%;
+			right: -1%;
+		}
+	}
+}
+
+/* === UPLOAD IMAGE END === */
 
 // ================= MOBILE STYLING START ========================
 .homeMobile_container {
