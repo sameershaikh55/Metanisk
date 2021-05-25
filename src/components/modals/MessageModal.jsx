@@ -48,8 +48,10 @@ const MessageModal = ({ messageModal, setMessageModal }) => {
 					<div className="messageList"></div>
 					<div className="messageModalContainer">
 						<div className="btnContainer d-flex justify-content-between align-items-center">
-							<button>Ou est situe votre boutique?</button>
-							<button>Quand puis passer voir ?</button>
+							<button className="mr-2 mr-md-0">
+								Ou est situe votre boutique?
+							</button>
+							<button className="mr-2 mr-md-0">Quand puis passer voir ?</button>
 							<button>L’article est toujours disponible</button>
 						</div>
 						<hr />

@@ -43,13 +43,17 @@ const CallModal = ({ callModal, setCallModal }) => {
 					<hr />
 
 					{/* MODAL BODY END */}
-					<div className="callModalBody">
-						<div className="btnContainer d-flex justify-content-center align-items-center">
-							<button className="mr-1">Français</button>
-							<button className="mx-2">Sousou</button>
-							<button className="mx-2">Poular</button>
-							<button className="mx-2">Kpelle</button>
-							<button className="ml-1">Malinke</button>
+					<div className="callModalBody px-2">
+						<div className="btnContainer text-center d-flex justify-content-center align-items-center flex-wrap">
+							<div className="mb-3 mb-md-0">
+								<button className="mr-1">Français</button>
+								<button className="mx-2">Sousou</button>
+								<button className="mx-2 mt-3 mt-md-0">Poular</button>
+							</div>
+							<div>
+								<button className="mx-2">Kpelle</button>
+								<button className="ml-1">Malinke</button>
+							</div>
 						</div>
 
 						<h1 className="numberHead mt-5 py-5 text-center font-weight-bold">

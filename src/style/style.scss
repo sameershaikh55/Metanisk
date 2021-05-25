@@ -1506,6 +1506,12 @@ button {
 			border-radius: 6px;
 			font-size: 1.2rem;
 		}
+
+		@media screen and (max-width: 475px) {
+			button {
+				padding: 4px 0px;
+			}
+		}
 	}
 	.textField {
 		background: #fff;
