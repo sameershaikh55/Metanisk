@@ -8,12 +8,15 @@ import state2 from "../assets/state2.svg";
 import state3 from "../assets/state3.svg";
 import state4 from "../assets/state4.svg";
 import addIcon from "../assets/addIcon.svg";
+import jumpingMusic from "../assets/jumpingMusic.svg";
+import music from "../assets/music.svg";
 import { useHistory } from "react-router-dom";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { BiPhone } from "react-icons/bi";
 import { FiEdit } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
 import annonces1 from "../assets/annonces1.webp";
+import { BsFillMicFill } from "react-icons/bs";
 
 const MaBoutiqueMobile = () => {
 	let history = useHistory();
@@ -85,7 +88,7 @@ const MaBoutiqueMobile = () => {
 				</button>
 				<button
 					onClick={() => history.push("/articles")}
-					className="themeBtn w-100 px-0 ml-2 h3"
+					className="themeBtn w-100 px-0 ml-2 mb-0 h3"
 				>
 					<svg
 						className="mr-4"
@@ -139,8 +142,23 @@ const MaBoutiqueMobile = () => {
 			{/* TWO BUTTONS START */}
 			<div className="px-3 my-5">
 				<h2 className="font-weight-bold">Signature vocale de la boutique</h2>
-				<div className="p-4 bg-white shadow borderRounded mt-2">
-					<h1>Recording</h1>
+				<div className="d-flex justify-content-start align-items-center bg-white shadow borderRounded">
+					<div className="recordingContainer d-flex pl-4 bg-white borderRounded">
+						<div className="pl-3 d-flex align-content-center justify-content-between">
+							<div className="d-flex justify-content-center align-items-center">
+								<img
+									className="musicPlayer p-3 rounded-circle mr-5 pointer"
+									src={music}
+									alt="music"
+									width="100%"
+								/>
+							</div>
+							<img width="85%" src={jumpingMusic} alt="" />
+						</div>
+						<button className="ml-5 recordingBtn ml-4 d-flex flex-column align-items-center justify-content-center text-white px-3 h5 mb-0">
+							<BsFillMicFill fontSize="2.2rem" className="mb-1" /> Modifier
+						</button>
+					</div>
 				</div>
 			</div>
 			{/* TWO BUTTONS END */}
