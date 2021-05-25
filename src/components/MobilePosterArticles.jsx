@@ -9,14 +9,16 @@ import selectTick from "../assets/selectTick.svg";
 import location from "../assets/location.svg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import { BsFillMicFill } from "react-icons/bs";
+import UploadImageMobile from "./UploadImageMobile";
 
 const MobilePosterArticles = () => {
 	let history = useHistory();
 
 	return (
 		<div>
-			{/* HEADER START */}
 			<div className="mobilMessageHeader">
+				{/* HEADER START */}
 				<div className="position-relative shadow bg-white pl-1 pr-4 pt-3 pb-1">
 					<RiArrowLeftSLine
 						className="position-absolute"
@@ -29,23 +31,37 @@ const MobilePosterArticles = () => {
 					</div>
 				</div>
 			</div>
+			{/* HEADER END */}
+
 			<div className="container-fluid mt-5">
 				<div className="row">
+					{/* IMAGE UPLOAD START */}
 					<div className="col-12 px-3">
 						<div className="bg-white borderRounded shadow p-3">
 							<h4 className="themeColor font-weight-bold">
 								<img src={poster1} alt="poster1" className="mr-2" />
 								Ajouter les photos <small>(2 minimum)</small>
 							</h4>
+							<div>
+								<UploadImageMobile />
+							</div>
 						</div>
 					</div>
+					{/* IMAGE UPLOAD END */}
+
+					{/* VOICE RECORDING START */}
 					<div className="col-12 px-3 mt-4">
 						<div className="bg-white borderRounded shadow px-3 py-3">
 							<h4 className="themeColor font-weight-bold">
 								<img src={poster2} alt="poster2" className="mr-2" />
 								Enregistrer la description audio
 							</h4>
-							<h1 className="text-center my-3">Recording</h1>
+							<div className="text-center mt-3 mb-4 pointer">
+								<BsFillMicFill
+									className="micRedBg text-white rounded-circle"
+									fontSize="10rem"
+								/>
+							</div>
 							<div
 								style={{
 									padding: "0.9rem 0rem 0.1rem 0rem",
@@ -62,6 +78,9 @@ const MobilePosterArticles = () => {
 							</div>
 						</div>
 					</div>
+					{/* VOICE RECORDING END */}
+
+					{/* INFORMATION SECTION START */}
 					<div className="col-12 px-3 mt-4">
 						<div className="bg-white borderRounded shadow p-3">
 							<h4 className="themeColor font-weight-bold">
@@ -102,6 +121,7 @@ const MobilePosterArticles = () => {
 							</div>
 						</div>
 					</div>
+
 					<div className="col-12 px-3 mt-4">
 						<div className="bg-white borderRounded shadow p-3 ">
 							<h4 className="themeColor font-weight-bold">
@@ -174,6 +194,7 @@ const MobilePosterArticles = () => {
 							</div>
 						</div>
 					</div>
+					{/* INFORMATION SECTION END */}
 
 					{/* EMPLACEMENT MAP START */}
 					<div className="col-12 mt-5 px-3">
@@ -208,6 +229,7 @@ const MobilePosterArticles = () => {
 					</div>
 					{/* EMPLACEMENT MAP END */}
 
+					{/* CONTINUE BTN START */}
 					<div className="col-12 position-relative mb-5 mt-5">
 						<button className="themeBtn w-100 h2">Continue</button>
 						<IoIosArrowForward
@@ -217,6 +239,7 @@ const MobilePosterArticles = () => {
 							color="#fff"
 						/>
 					</div>
+					{/* CONTINUE BTN END */}
 				</div>
 			</div>
 		</div>

@@ -144,6 +144,10 @@ button {
 	}
 }
 
+.musicPlayer {
+	background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%), #c4c4c4;
+}
+
 .infoSelectBox {
 	width: 100%;
 	select {
@@ -166,8 +170,6 @@ button {
 		position: absolute;
 		right: -1%;
 	}
-	/* apply CSS to the select tag of 
-         .dropdown-container div*/
 
 	select {
 		/* for Firefox */
@@ -2072,7 +2074,6 @@ button {
 		}
 	}
 }
-
 /* === UPLOAD IMAGE END === */
 
 // ================= MOBILE STYLING START ========================
@@ -2932,6 +2933,20 @@ button {
 		}
 	}
 }
+
+.recordingContainer {
+	height: 70px;
+
+	.recordingBtn {
+		background: transparent;
+		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
+		border: none;
+		outline: none;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+}
+
 .articles {
 	.topDiv1 {
 		width: 80%;
@@ -3070,7 +3085,42 @@ button {
 		transform: rotate(45deg);
 	}
 }
-
 // POSTER MOBILE END
+
+/* === UPLOAD IMAGE START === */
+.uploadedImgMobile {
+	img {
+		max-width: 135px;
+		width: 100%;
+		border-radius: 12px;
+	}
+
+	.greenTick {
+		img {
+			position: absolute;
+			height: 25px;
+			width: 25px;
+			bottom: -3%;
+			background-color: #fff;
+			border-radius: 60%;
+		}
+	}
+
+	.removeBtn {
+		img {
+			position: absolute;
+			height: 28px;
+			width: 28px;
+			top: -10%;
+			right: -1%;
+		}
+	}
+}
+.uploadImgPMobile {
+	img {
+		width: 100%;
+	}
+}
+/* === UPLOAD IMAGE END === */
 
 // ================= MOBILE STYLING END ========================

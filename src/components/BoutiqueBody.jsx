@@ -6,6 +6,9 @@ import { NavLink } from "react-router-dom";
 import States from "./States";
 import location from "../assets/location.svg";
 import selectTick from "../assets/selectTick.svg";
+import jumpingMusic from "../assets/jumpingMusic.svg";
+import music from "../assets/music.svg";
+import { BsFillMicFill } from "react-icons/bs";
 
 const BoutiqueBody = () => {
 	const data2 = [
@@ -104,7 +107,24 @@ const BoutiqueBody = () => {
 				<h2 className="font-weight-bold mb-3">
 					Signature vocale de la boutique
 				</h2>
-				<div className="bg-white borderRounded h1 p-4">Recording</div>
+				<div className="d-flex justify-content-start align-items-center">
+					<div className="recordingContainer d-flex pl-4 bg-white borderRounded">
+						<div className="pl-3 d-flex align-content-center justify-content-between">
+							<div className="d-flex justify-content-center align-items-center">
+								<img
+									className="musicPlayer p-3 rounded-circle mr-5 pointer"
+									src={music}
+									alt="music"
+									width="100%"
+								/>
+							</div>
+							<img src={jumpingMusic} alt="" />
+						</div>
+						<button className="recordingBtn ml-4 d-flex flex-column align-items-center justify-content-center text-white px-3 h5 mb-0">
+							<BsFillMicFill fontSize="2.2rem" className="mb-1" /> Modifier
+						</button>
+					</div>
+				</div>
 			</div>
 			{/* RECORDING END */}
 

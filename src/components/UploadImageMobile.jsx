@@ -4,7 +4,7 @@ import greenImgTick from "../assets/greenImgTick.svg";
 import removeIcon from "../assets/removeIcon.svg";
 import ImageUploading from "react-images-uploading";
 
-const UploadImage = () => {
+const UploadImageMobile = () => {
 	const [images, setImages] = React.useState([]);
 	const maxNumber = 69;
 	const onChange = (imageList, addUpdateIndex) => {
@@ -29,12 +29,12 @@ const UploadImage = () => {
 					dragProps,
 				}) => (
 					// write your building UI
-					<div className="d-flex pb-4">
+					<div className="d-flex justify-content-between pb-4">
 						<div className="mt-4">
 							{imageList.length && imageList[0].data_url ? (
-								<div className="uploadedImg position-relative">
+								<div className="uploadedImgMobile mr-2 position-relative">
 									<img
-										className="px-3 borderRounded"
+										className="borderRounded"
 										src={imageList[0].data_url}
 										alt=""
 										width="100"
@@ -53,22 +53,24 @@ const UploadImage = () => {
 									</div>
 								</div>
 							) : (
-								<img
-									src={uploadImg}
-									alt="lol"
-									style={isDragging ? { color: "red" } : null}
-									className="px-3 pointer"
-									onClick={onImageUpload}
-									{...dragProps}
-								/>
+								<div className="uploadImgPMobile mr-2">
+									<img
+										src={uploadImg}
+										alt="lol"
+										style={isDragging ? { color: "red" } : null}
+										className="pointer"
+										onClick={onImageUpload}
+										{...dragProps}
+									/>
+								</div>
 							)}
 						</div>
 
 						<div className="mt-4">
 							{imageList.length >= 2 && imageList[1].data_url ? (
-								<div className="uploadedImg position-relative">
+								<div className="uploadedImgMobile mx-1 position-relative">
 									<img
-										className="px-3 borderRounded"
+										className="borderRounded"
 										src={imageList[1].data_url}
 										alt=""
 										width="100"
@@ -87,22 +89,23 @@ const UploadImage = () => {
 									</div>
 								</div>
 							) : (
-								<img
-									src={uploadImg}
-									alt="lol"
-									style={isDragging ? { color: "red" } : null}
-									className="px-3 pointer"
-									onClick={onImageUpload}
-									{...dragProps}
-								/>
+								<div className="uploadImgPMobile mx-1">
+									<img
+										src={uploadImg}
+										alt="placeholderImg"
+										style={isDragging ? { color: "red" } : null}
+										className="pointer"
+										onClick={onImageUpload}
+										{...dragProps}
+									/>
+								</div>
 							)}
 						</div>
-
 						<div className="mt-4">
 							{imageList.length >= 3 && imageList[2].data_url ? (
-								<div className="uploadedImg position-relative">
+								<div className="uploadedImgMobile ml-2 position-relative">
 									<img
-										className="px-3 borderRounded"
+										className="borderRounded"
 										src={imageList[2].data_url}
 										alt=""
 										width="100"
@@ -121,14 +124,16 @@ const UploadImage = () => {
 									</div>
 								</div>
 							) : (
-								<img
-									src={uploadImg}
-									alt="lol"
-									style={isDragging ? { color: "red" } : null}
-									className="px-3 pointer"
-									onClick={onImageUpload}
-									{...dragProps}
-								/>
+								<div className="uploadImgPMobile ml-2">
+									<img
+										src={uploadImg}
+										alt="lol"
+										style={isDragging ? { color: "red" } : null}
+										className="pointer"
+										onClick={onImageUpload}
+										{...dragProps}
+									/>
+								</div>
 							)}
 						</div>
 					</div>
@@ -138,4 +143,4 @@ const UploadImage = () => {
 	);
 };
 
-export default UploadImage;
+export default UploadImageMobile;
