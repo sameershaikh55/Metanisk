@@ -142,8 +142,8 @@ const MaBoutiqueMobile = () => {
 			{/* TWO BUTTONS START */}
 			<div className="px-3 my-5">
 				<h2 className="font-weight-bold">Signature vocale de la boutique</h2>
-				<div className="d-flex justify-content-start align-items-center bg-white shadow borderRounded">
-					<div className="recordingContainer d-flex pl-4 bg-white borderRounded">
+				<div className="d-flex justify-content-start align-items-center recordingBg shadow borderRounded">
+					<div className="recordingContainer d-flex pl-4 borderRounded">
 						<div className="pl-3 d-flex align-content-center justify-content-between">
 							<div className="d-flex justify-content-center align-items-center">
 								<img
