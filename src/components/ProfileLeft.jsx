@@ -30,14 +30,14 @@ const ProfileLeft = () => {
 				<div className="d-flex justify-content-end">
 					<div className="py-3">
 						<h3 className="d-flex align-items-center h4 ml-5 font-weight-bold">
-							Ernest Peguita <img src={badge} alt="badge" className="ml-1" />
+							Ernest Peguita <img src={badge} alt="badge" className="ml-2" />
 						</h3>
 						<h5 className="px-2">Sur Makiti+ depuis Avril 2020</h5>
-						<div className="d-flex justify-content-around">
+						<div className="d-flex justify-content-around align-items-center">
 							<h4 className="d-flex align-items-center font-weight-bold">
 								5 <img src={filledStar} alt="filledStar" className="ml-1" />
 							</h4>
-							<h4 className="h4 themeColor">12 publications</h4>
+							<h4 className="h5 mb-0 themeColor">12 publications</h4>
 						</div>
 					</div>
 				</div>

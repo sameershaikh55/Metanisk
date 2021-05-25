@@ -86,7 +86,7 @@ const Favoris = () => {
 					onChangeIndex={handleChangeIndex}
 				>
 					<TabPanel value={value} index={0} dir={theme.direction}>
-						<AnnoncesTab />
+						<AnnoncesTab favorisD />
 					</TabPanel>
 					<TabPanel value={value} index={1} dir={theme.direction}>
 						<RecherchesTab />

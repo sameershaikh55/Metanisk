@@ -24,11 +24,11 @@ const RecherchesTab = ({ mobile }) => {
 	};
 
 	return (
-		<div className="container-fluid my-4">
+		<div className="xScrollbarHide container-fluid px-0 my-4">
 			<div className="d-flex justify-content-between align-items-center">
 				{!mobile && (
 					<>
-						<h1 className="font-weight-bold">
+						<h1 className="font-weight-bold ml-1">
 							Total: {posts.length} recherches
 						</h1>
 						<div>

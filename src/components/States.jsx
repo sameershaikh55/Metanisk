@@ -34,11 +34,11 @@ const States = () => {
 	return (
 		<>
 			{/* STATES START */}
-			<div className="row">
+			<div className="row px-2">
 				{data.map((prev, i) => {
 					const { img, num, desc, bg } = prev;
 					return (
-						<div key={i} className="col-3">
+						<div key={i} className="col-3 px-3">
 							<div
 								style={{ background: bg }}
 								className="statesCard d-flex justify-content-around align-items-center text-white px-3"

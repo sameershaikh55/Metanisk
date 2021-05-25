@@ -7,23 +7,23 @@ const MapSection = () => {
 	return (
 		<div className="d-none d-lg-block">
 			<div className="searchTags d-flex mb-3">
-				<div className="position-relative mr-4 pointer">
+				<div className="position-relative mr-4 pointer shadow-sm">
 					Prix
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4 pointer">
+				<div className="position-relative mr-4 pointer shadow-sm">
 					Sous-Categorie
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4 pointer">
+				<div className="position-relative mr-4 pointer shadow-sm">
 					Condition
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4 pointer">
+				<div className="position-relative mr-4 pointer shadow-sm">
 					Classement
 					<img src={cross} alt="cross" />
 				</div>
-				<div className="position-relative mr-4 pointer">
+				<div className="position-relative mr-4 pointer shadow-sm">
 					Vendeur
 					<img src={cross} alt="cross" />
 				</div>
@@ -31,7 +31,9 @@ const MapSection = () => {
 			<div className="d-flex justify-content-between align-items-center">
 				<div className="d-flex align-items-center">
 					<h1 className="font-weight-bold mb-3 mr-4">Chaussure Nike</h1>
-					<h3>1032 annonces trouvées</h3>
+					<h3 className="themeColor2 font-weight-bold">
+						1032 annonces trouvées
+					</h3>
 				</div>
 				<div className="d-flex">
 					<button className="themeBtn d-flex justify-content-center align-items-center py-2 px-4 mr-4">

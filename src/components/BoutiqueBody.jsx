@@ -163,7 +163,7 @@ const BoutiqueBody = () => {
 											{title}
 										</h5>
 										<h4>
-											{i === 1 && (
+											{(i === 1 && (
 												<>
 													<div className="infoSelectBox position-relative">
 														<select className="font-weight-bold pb-1">
@@ -179,8 +179,13 @@ const BoutiqueBody = () => {
 														/>
 													</div>
 												</>
-											)}{" "}
-											{desc}{" "}
+											)) || (
+												<input
+													type="text"
+													value={desc}
+													className="w-100 border-left-0 border-right-0 border-top-0 h3 py-2 px-0"
+												/>
+											)}
 										</h4>
 									</div>
 								);
@@ -192,12 +197,16 @@ const BoutiqueBody = () => {
 			{/* PROFILE (INFORMATION) END */}
 
 			{/* EMPLACEMENT MAP START */}
-			<div className="bg-white mt-5 p-3">
+			<div className="bg-white mt-5 p-3 shadow borderRounded">
 				<h2 className="d-flex align-items-center font-weight-bold themeColor">
 					<img width="2%" src={location} alt="location" className="mr-2" />
 					Emplacement
 				</h2>
-				<h4 className="text-secondary">Entrer l’emplacement</h4>
+				<input
+					type="text"
+					placeholder="Entrer l’emplacement"
+					className="w-50 border-left-0 border-right-0 border-top-0 h4 py-1 px-0 lightPlaceholderInp"
+				/>
 				<div>
 					<iframe
 						title="map"

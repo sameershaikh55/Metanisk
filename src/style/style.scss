@@ -93,7 +93,7 @@ html {
 .themeBtn5 {
 	background: linear-gradient(0deg, #dce5ec, #dce5ec), #1b8acc;
 	color: $themeColor;
-	padding: 0.8rem 4.2rem;
+	padding: 0.8rem 6.2rem;
 	font-size: 1.4rem;
 	border: none;
 	border-radius: 6px;
@@ -105,6 +105,36 @@ html {
 
 .themeColor2 {
 	color: #969696;
+}
+
+.contentMax {
+	width: max-content;
+}
+
+.xScrollbarHide {
+	overflow-x: hidden;
+}
+
+.descriptionText {
+	word-spacing: 8px;
+	line-height: 22px;
+}
+
+.lightPlaceholderInp {
+	&::placeholder {
+		color: #969696;
+	}
+}
+
+input {
+	border-bottom: 1px solid #bbbbbb;
+	transition: 0.5s;
+
+	&:focus {
+		outline: none;
+		border: none;
+		border-bottom: 1px solid #000;
+	}
 }
 
 .infoSelectBox {
@@ -481,15 +511,14 @@ html {
 /* ==== FEATURE SECTION END ==== */
 
 /* ==== MAIN BODY START ==== */
+.favorisTab {
+	width: 100% !important;
+}
 .annoncesCard {
 	background: #fff;
 	box-shadow: 1px 1px 10px #ccc;
 	border-radius: 8px;
 	width: 182px;
-
-	h5 {
-		color: $themeColor;
-	}
 
 	.imgContainer {
 		cursor: pointer;
@@ -838,20 +867,11 @@ html {
 		border-radius: 6px;
 		background-color: #fff;
 	}
-	.image-gallery-image,
-	.image-gallery-index,
-	.image-gallery-thumbnail .image-gallery-thumbnail-image {
-		border-radius: 6px;
-	}
 
 	.image-gallery-thumbnail.active,
 	.image-gallery-thumbnail:hover,
 	.image-gallery-thumbnail:focus {
 		background: linear-gradient(90deg, #4dbcef 0%, #1b8acc 98.04%), #ffffff;
-	}
-
-	.image-gallery-thumbnail {
-		border-radius: 10px;
 	}
 
 	.image-gallery-slide .image-gallery-image {
@@ -1070,9 +1090,11 @@ html {
 	border-top-left-radius: 22px;
 	border-bottom-left-radius: 28px;
 	img {
-		width: 50px;
-		height: 46px;
+		width: 47px;
+		height: 47px;
 		border-radius: 50%;
+		object-fit: fill;
+		border: 3px solid #fff;
 	}
 }
 
@@ -1102,6 +1124,18 @@ html {
 
 	.singleMessageD {
 		align-items: end;
+
+		img {
+			width: 40px;
+			height: 40px;
+			object-fit: fill;
+		}
+
+		.sentImg {
+			height: 100%;
+			width: 100%;
+			max-height: 200px;
+		}
 	}
 }
 
@@ -1158,6 +1192,7 @@ html {
 		}
 	}
 }
+
 /* ==== MESSAGE SECTION IN PROFILE END ==== */
 
 /* ==== FAVORIS SECTION START ==== */
@@ -1627,8 +1662,8 @@ html {
 .notificationContainer {
 	.imgContainer {
 		img {
-			width: 66px;
-			height: 60px;
+			width: 72px;
+			height: 71px;
 			border-radius: 50%;
 		}
 	}
@@ -1815,10 +1850,13 @@ html {
 
 	.topAvisContainer {
 		background: linear-gradient(90deg, #e9e9e9 10.27%, #ffffff 100%), #c4c4c4;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
 		img {
-			width: 46px;
-			height: 46px;
+			width: 48px;
+			height: 48px;
 			border-radius: 50%;
+			border: 3px solid #fff;
 		}
 	}
 }
@@ -1916,11 +1954,22 @@ html {
 		position: absolute;
 		top: 2%;
 		right: 4%;
-		padding: 1.5rem 1.4rem;
+		padding: 1.1rem 1.1rem;
+		height: 64px;
 		background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%),
 			#c4c4c4;
 		border-radius: 50%;
 	}
+}
+
+.continueBtnIcon {
+	top: 14%;
+	right: 1%;
+}
+
+.backBtnIcon {
+	top: 14%;
+	left: 2%;
 }
 
 /* === POSTERS END === */

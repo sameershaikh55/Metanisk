@@ -75,7 +75,7 @@ const PosterArticles2 = () => {
 									items={images}
 									allowFullScreen={true}
 								/>
-								<div className="imgContainer">
+								<div className="imgContainer pointer">
 									<img src={music} alt="music" />
 								</div>
 							</div>
@@ -83,7 +83,7 @@ const PosterArticles2 = () => {
 
 							<div className="col-11 mx-auto mt-5">
 								<h2 className="m-0 mb-2 font-weight-bold">Description</h2>
-								<h4 className="m-0 text-justify">
+								<h4 className="m-0 text-justify descriptionText">
 									La première Air Max lifestyle de Nike vous offre style et
 									confort à travers la Nike Air Max 270. Ce modèle s'inspire des
 									chaussures Air Max emblématiques en intégrant les meilleures
@@ -127,11 +127,19 @@ const PosterArticles2 = () => {
 							</div>
 
 							<div className="col-12 d-flex justify-content-between mt-5">
-								<button className="themeBtn5 pl-5">
-									<IoIosArrowBack fontSize="2rem" /> Retour
+								<button className="themeBtn5 position-relative py-2 h4 font-weight-bold">
+									<IoIosArrowBack
+										className="backBtnIcon position-absolute"
+										fontSize="2rem"
+									/>
+									Retour
 								</button>
-								<button className="themeBtn pr-5">
-									Publier l’article <IoIosArrowForward fontSize="2rem" />
+								<button className="themeBtn position-relative py-2 h4">
+									Publier l’article
+									<IoIosArrowForward
+										className="continueBtnIcon position-absolute"
+										fontSize="2rem"
+									/>
 								</button>
 							</div>
 						</div>

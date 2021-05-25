@@ -56,7 +56,7 @@ const UserDetails = () => {
 			<div className="bg-white p-4">
 				<div className="text-center mb-5">
 					<h2 className="font-weight-bold text-uppercase">
-						ContacteR Le vendeur
+						ContacteR <br /> Le vendeur
 					</h2>
 				</div>
 
@@ -84,13 +84,13 @@ const UserDetails = () => {
 						alt="placeholderPerson"
 					/>
 					<div className="mt-3">
-						<h3 className="d-flex justify-content-center align-items-center">
+						<h3 className="d-flex justify-content-center align-items-center font-weight-bold">
 							Ernest Peguita
 							<img src={badge} alt="badge" className="ml-2" />
 						</h3>
 						<h4>Sur Makiti+ depuis Avril 2020</h4>
-						<div className="d-flex justify-content-center align-items-center">
-							<h2 className="font-weight-bold mr-2">5</h2>
+						<div className="d-flex justify-content-center align-items-center my-3">
+							<h2 className="font-weight-bold mr-2 mb-0">5</h2>
 							<div className="d-flex align-items-center">
 								<img className="w-100" src={ratingStar} alt="ratingStar" />
 								<img className="w-100" src={ratingStar} alt="ratingStar" />
@@ -116,7 +116,7 @@ const UserDetails = () => {
 							</button>
 						</div>
 						<div className="mt-3">
-							<h2>Partager</h2>
+							<h2 className="font-weight-bold">Partager</h2>
 							<div className="d-flex align-items-center justify-content-center">
 								<img className="mr-3" src={share} alt="share" />
 								<img className="mr-3" src={fb2} alt="fb" />
@@ -128,7 +128,7 @@ const UserDetails = () => {
 				</div>
 			</div>
 			<div className="eyeBtn h5 d-flex justify-content-between my-4">
-				<span>№ 1874353645</span>
+				<span className="font-weight-bold">№ 1874353645</span>
 				<span className="d-flex align-items-center">
 					<img src={eye} alt="eye" />
 					1000
@@ -136,15 +136,16 @@ const UserDetails = () => {
 			</div>
 			<button
 				onClick={handleClickOpenComment}
-				className="themeBtn py-2 px-0 w-100"
+				className="themeBtn py-2 px-0 w-100 h4"
 			>
 				<img src={flag} alt="flag" className="mr-2" />
 				Signaler cette annonce
 			</button>
-			<button className="themeBtn3 py-3 px-0 mt-3 w-100">
+			<button className="themeBtn3 py-3 px-0 mt-3 w-100 h4 mb-0">
 				<img src={message} alt="flag" className="mr-2" />
 				Laisser un commentaire
 			</button>
+			<div style={{ height: "68.8rem" }} className="w-100 bg-white mt-5"></div>
 		</>
 	);
 };

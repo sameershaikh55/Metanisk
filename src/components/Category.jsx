@@ -63,7 +63,7 @@ const Category = () => {
 					<div className="w-100 mr-4">
 						<h4 className="m-0">Min</h4>
 						<input
-							className="w-100"
+							className="w-100 border"
 							type="number"
 							name=""
 							id=""
@@ -73,7 +73,7 @@ const Category = () => {
 					<div className="w-100">
 						<h4 className="m-0">Max</h4>
 						<input
-							className="w-100"
+							className="w-100 border"
 							type="number"
 							name=""
 							id=""

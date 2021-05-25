@@ -6,7 +6,7 @@ import annonces3 from "../assets/annonces3.webp";
 import annonces4 from "../assets/annonces4.svg";
 import MobileAnnoncesCard from "./MobileAnnoncesCard";
 
-const AnnoncesTab = ({ mobile }) => {
+const AnnoncesTab = ({ mobile, favorisD }) => {
 	const data = [
 		annonces1,
 		annonces2,
@@ -18,14 +18,24 @@ const AnnoncesTab = ({ mobile }) => {
 	return (
 		<>
 			<div className="container-fluid my-4">
-				{!mobile && <h1 className="font-weight-bold">Total: 8 annonces</h1>}
+				{!mobile && (
+					<h1 className="font-weight-bold ml-n3">Total: 8 annonces</h1>
+				)}
 				{/* DESKTOP START */}
 				{!mobile && (
 					<div className="row">
 						{data.map((prev, i) => {
 							return (
-								<div key={i} className="col-4 my-4">
-									<AnnoncesCard prev={prev} />
+								<div
+									key={i}
+									className={`${
+										(i === 0 && "pl-0 pr-5") ||
+										(i === 2 && "pl-5 pr-0") ||
+										(i === 3 && "pl-0 pr-5") ||
+										(i === 5 && "pl-5 pr-0")
+									} col-4 my-4`}
+								>
+									<AnnoncesCard favorisD={favorisD} prev={prev} />
 								</div>
 							);
 						})}

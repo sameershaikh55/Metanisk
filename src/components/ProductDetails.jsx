@@ -60,12 +60,12 @@ const ProductDetails = () => {
 				</div>
 				<div className="mt-5 bg-white p-4 rounded">
 					<h2 className="font-weight-bold">Description</h2>
-					<h3>
+					<h4 className="descriptionText">
 						La première Air Max lifestyle de Nike vous offre style et confort à
 						travers la Nike Air Max 270. Ce modèle s'inspire des chaussures Air
 						Max emblématiques en intégrant les meilleures innovations de Nike,
 						avec sa grande fenêtre et une nouvelle gamme de couleurs.
-					</h3>
+					</h4>
 				</div>
 				<div className="mt-5 bg-white p-4 rounded">
 					<h2 className="font-weight-bold">Information Additionnelle</h2>

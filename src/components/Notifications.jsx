@@ -66,9 +66,10 @@ const Notifications = ({ mobile }) => {
 											<h4 className="m-0 mb-1 text-secondary">
 												Ali Camara s’est abonné à votre boutique
 											</h4>
-											<h5 className="themeColor font-weight-bold">
+											<br />
+											<h6 className="themeColor mb-0 font-weight-bold">
 												Aujourd’hui - 12:00
-											</h5>
+											</h6>
 										</div>
 									</div>
 									<div className="notificationIcon">{prev.icons}</div>

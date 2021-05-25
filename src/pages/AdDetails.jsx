@@ -66,7 +66,7 @@ const AdDetails = () => {
 								</div>
 							</div>
 							<div className="col-3 text-center align-self-center">
-								<h1 className="font-weight-bold">1 999 000 000 FG</h1>
+								<h1 className="font-weight-bolder">1 999 000 000 FG</h1>
 							</div>
 
 							<div className="col-2"></div>
@@ -83,10 +83,10 @@ const AdDetails = () => {
 								<div className="bg-white w-100 h-100"></div>
 							</div>
 
-							<div className="col-10 mt-5">
+							<div className="col-9 mt-5">
 								<AnnoncesRecentes />
 							</div>
-							<div className="col-2 mt-5">
+							<div className="col-3 mt-5 pt-5 pb-4">
 								<div className="bg-white w-100 h-100"></div>
 							</div>
 						</div>

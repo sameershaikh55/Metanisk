@@ -5,7 +5,7 @@ import poster3 from "../assets/poster3.svg";
 import poster4 from "../assets/poster4.svg";
 import location from "../assets/location.svg";
 import selectTick from "../assets/selectTick.svg";
-import { BiChevronRight } from "react-icons/bi";
+import { IoIosArrowForward } from "react-icons/io";
 import { useHistory } from "react-router-dom";
 
 const PosterArticles = () => {
@@ -98,11 +98,11 @@ const PosterArticles = () => {
 								<img src={poster4} alt="poster" /> Informations Suplémentaires
 							</h4>
 							<div className="d-flex justify-content-between flex-wrap">
-								{[1, 1, 1, 1].map((prev, i) => {
+								{[1, 1, 1, 1, 1, 1, 1].map((prev, i) => {
 									return (
 										<div
 											key={i}
-											className="posterSelectContainer d-flex justify-content-between my-4"
+											className="posterSelectContainer d-flex justify-content-between my-3"
 										>
 											<div className="posterInpContainer d-flex justify-content-between">
 												<h4 className="mb-0 font-weight-bold">Etat</h4>
@@ -173,7 +173,11 @@ const PosterArticles = () => {
 							<img width="2%" src={location} alt="location" className="mr-2" />
 							Emplacement
 						</h2>
-						<h4 className="text-secondary">Entrer l’emplacement</h4>
+						<input
+							type="text"
+							placeholder="Entrer l’emplacement"
+							className="w-50 border-left-0 border-right-0 border-top-0 h4 py-1 px-0 lightPlaceholderInp"
+						/>
 						<div>
 							<iframe
 								title="map"
@@ -193,9 +197,13 @@ const PosterArticles = () => {
 					<div className="col-12 px-0 text-right mt-4">
 						<button
 							onClick={() => history.push("/articles2")}
-							className="themeBtn"
+							className="themeBtn position-relative py-2 h3"
 						>
-							Continuer <BiChevronRight fontSize="2.2rem" />
+							Continuer
+							<IoIosArrowForward
+								className="position-absolute continueBtnIcon"
+								fontSize="2.2rem"
+							/>
 						</button>
 					</div>
 					{/* SECTION 6 END */}

@@ -92,7 +92,9 @@ const Footer = () => {
 									<div className="col-3">
 										<h3 className="mb-4 font-weight-bold">Services</h3>
 										<h4 className="mb-3">Aide et Support</h4>
-										<h4 className="mb-3">Politique de confidentialité</h4>
+										<h4 className="mb-3 contentMax">
+											Politique de confidentialité
+										</h4>
 										<h4 className="mb-3">
 											Conditions Générales d’Utilisations
 										</h4>
