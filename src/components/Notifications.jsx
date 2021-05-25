@@ -1,5 +1,5 @@
 import React from "react";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../assets/placeholderPerson.webp";
 import annonces3 from "../assets/annonces3.webp";
 import bellIcon from "../assets/bellIcon.svg";
 import { IoPersonAddOutline } from "react-icons/io5";

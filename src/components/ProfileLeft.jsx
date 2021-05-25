@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCamera } from "react-icons/fa";
 import userBg from "../assets/userBg.webp";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../assets/placeholderPerson.webp";
 import badge from "../assets/badge.svg";
 import filledStar from "../assets/filledStar.svg";
 import { AiOutlineShop, AiOutlineStar, AiOutlineUser } from "react-icons/ai";

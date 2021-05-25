@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-// import Logo from "../../assets/logo.svg";
-import category from "../../assets/categoryIcon.svg";
 import banner from "../../assets/homeBanner.webp";
-import add from "../../assets/addIcon.svg";
-import heart from "../../assets/heartIcon.svg";
-import placeholder from "../../assets/placeholderPerson.svg";
-import { AiOutlineUser, AiOutlineStar, AiOutlineShop } from "react-icons/ai";
+import { placeholderPerson } from "../../assets/base64";
+import {
+	AiOutlineUser,
+	AiOutlineStar,
+	AiOutlineShop,
+	AiOutlineHeart,
+} from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
-import { MdViewDay } from "react-icons/md";
+import { MdAddCircleOutline, MdViewDay } from "react-icons/md";
 import { RiMicLine } from "react-icons/ri";
-import { BsFillMicFill, BsSearch } from "react-icons/bs";
+import { BsFillMicFill, BsGrid, BsSearch } from "react-icons/bs";
 import CategoriesList from "../CategoriesList";
 import Connector from "../Connector";
 import RegisterModal from "../modals/RegisterModal";
@@ -96,12 +97,7 @@ const MainHeader = () => {
 								onClick={handleClickCategories}
 								className="headerCategory d-flex align-items-center justify-content-center border-0"
 							>
-								<img
-									style={{ width: "18%" }}
-									src={category}
-									className="mr-2"
-									alt="category"
-								/>
+								<BsGrid className="mr-2" fontSize="2.2rem" />
 								Catégories
 							</button>
 						</div>
@@ -120,34 +116,28 @@ const MainHeader = () => {
 								/>
 								<div className="input-group-append">
 									<span className="input-group-text px-3">
-										<BsFillMicFill fontSize="20px" color="white" />
+										<BsFillMicFill fontSize="2rem" color="white" />
 									</span>
 								</div>
 							</div>
 						</div>
 						<div className="column3 d-flex justify-content-end">
-							<button className="headerPoster d-flex align-items-center justify-content-center mr-1 mr-lg-3">
-								<img
-									style={{ width: "12%" }}
-									src={add}
-									className="mr-2"
-									alt="category"
-								/>
+							<button className="headerPoster px-3 d-flex align-items-center justify-content-center mr-1 mr-lg-3">
+								<MdAddCircleOutline className="mr-2" fontSize="2.5rem" />
 								Poster une annonce
 							</button>
 							<button className="headerHeart d-flex align-items-center justify-content-center mr-1 mr-lg-3">
-								<img
-									style={{ width: "20%" }}
-									src={heart}
+								<AiOutlineHeart
 									className="mr-2"
-									alt="category"
+									color="red"
+									fontSize="2.4rem"
 								/>
 								Favoris
 							</button>
 							<div className="placeholderImg position-relative">
 								<img
 									onClick={handleClickUser}
-									src={placeholder}
+									src={placeholderPerson}
 									alt="placeholder"
 									style={{ cursor: "pointer" }}
 								/>
@@ -226,7 +216,7 @@ const MainHeader = () => {
 						<img src={logo} alt="logo" />
 					</div>
 					<div className="ml-2">
-						<img src={placeholder} alt="person" />
+						<img src={placeholderPerson} alt="person" />
 					</div>
 				</div>
 			</div>

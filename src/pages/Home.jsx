@@ -1,12 +1,18 @@
 import React from "react";
-import FeatureSection from "../components/FeatureSection";
+// import Loadable from "react-loadable";
 import MainHeader from "../components/headers/MainHeader";
-// import banner from "../assets/mainBodyImg.webp";
+import FeatureSection from "../components/FeatureSection";
 import TopAnnonces from "../components/TopAnnonces";
 import AnnoncesRecentes from "../components/AnnoncesRecentes";
 import Footer from "../components/Footer";
 import BottomNav from "../components/BottomNav.jsx";
 import { mainBodyImg } from "../assets/base64/index";
+
+// LOADABLE START
+// const MainHeaderL = Loadable({
+// 	loader: () => import("../components/headers/MainHeader"),
+// 	loading: <MainHeader />,
+// });
 
 const Home = () => {
 	return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCamera } from "react-icons/fa";
 import userBg from "../assets/userBg.webp";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../assets/placeholderPerson.webp";
 import { GrMap } from "react-icons/gr";
 import state1 from "../assets/state1.svg";
 import state2 from "../assets/state2.svg";

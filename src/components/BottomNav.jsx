@@ -23,7 +23,7 @@ const BottomNav = () => {
 							</div>
 						</NavLink>
 						<NavLink
-							className="text-decoration-none"
+							className="text-decoration-none mr-4"
 							exact
 							activeClassName="active"
 							to="/searchMap"
@@ -34,7 +34,7 @@ const BottomNav = () => {
 							</div>
 						</NavLink>
 						<NavLink
-							className="text-decoration-none"
+							className="text-decoration-none ml-4"
 							exact
 							activeClassName="active"
 							to="/favoris"
@@ -57,7 +57,7 @@ const BottomNav = () => {
 						</NavLink>
 					</div>
 					<div className="addBtn">
-						<span className="shadow-lg">
+						<span>
 							<GoPlus />
 						</span>
 					</div>

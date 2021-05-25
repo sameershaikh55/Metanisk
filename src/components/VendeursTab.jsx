@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import placeholder from "../assets/placeholderPerson.svg";
+import placeholder from "../assets/placeholderPerson.webp";
 import badge from "../assets/badgeWhite.svg";
 import product from "../assets/annonces1.webp";
 import { BsThreeDotsVertical } from "react-icons/bs";

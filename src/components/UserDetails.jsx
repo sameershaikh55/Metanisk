@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../assets/placeholderPerson.webp";
 import badge from "../assets/badge.svg";
 import ratingStar from "../assets/ratingStar.svg";
 import addUser from "../assets/addUser.svg";

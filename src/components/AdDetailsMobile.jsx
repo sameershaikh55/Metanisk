@@ -12,7 +12,7 @@ import annonces3 from "../assets/annonces3.webp";
 import annonces4 from "../assets/annonces4.svg";
 import banner from "../assets/homeBanner.webp";
 import music from "../assets/music.svg";
-import placeholderPerson from "../assets/placeholderPerson.svg";
+import placeholderPerson from "../assets/placeholderPerson.webp";
 import badge from "../assets/badge.svg";
 import filledStar from "../assets/filledStar.svg";
 import Accordion from "@material-ui/core/Accordion";
