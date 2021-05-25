@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import heart from "../assets/heartIcon.svg";
 import music from "../assets/music.svg";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
+import MessageModal from "./modals/MessageModal";
+import CallModal from "./modals/CallModal";
 
 const AnnoncesCard = ({ prev, favorisD }) => {
+	const [messageModal, setMessageModal] = useState(false);
+	const [callModal, setCallModal] = useState(false);
+
+	const handleClickOpenMessage = () => {
+		setMessageModal(true);
+	};
+
+	const handleClickOpenCall = () => {
+		setCallModal(true);
+	};
+
 	let history = useHistory();
 
 	return (
 		<>
-			<div
-				onClick={() => history.push("/adDetails")}
-				className={`annoncesCard ${(favorisD && "w-100") || ""}`}
-			>
+			{/* MODALS START */}
+			<MessageModal
+				messageModal={messageModal}
+				setMessageModal={setMessageModal}
+			/>
+			<CallModal callModal={callModal} setCallModal={setCallModal} />
+			{/* MODALS EMD */}
+
+			<div className={`annoncesCard ${(favorisD && "w-100") || ""}`}>
 				<div className="imgContainer">
 					<img
+						onClick={() => history.push("/adDetails")}
 						style={{ width: "100%" }}
 						className="productImg"
 						src={prev}
@@ -38,11 +57,17 @@ const AnnoncesCard = ({ prev, favorisD }) => {
 					</h5>
 					<h5 className="px-3">Aujourd’hui - 12:00</h5>
 					<div className="cardBtns d-flex mt-4">
-						<button className="d-flex align-items-center justify-content-center w-100 text-white py-3">
+						<button
+							onClick={handleClickOpenCall}
+							className="d-flex align-items-center justify-content-center w-100 text-white py-3"
+						>
 							<FaPhoneAlt className="mr-2" />
 							Appeler
 						</button>
-						<button className="d-flex align-items-center justify-content-center w-100 text-white py-3">
+						<button
+							onClick={handleClickOpenMessage}
+							className="d-flex align-items-center justify-content-center w-100 text-white py-3"
+						>
 							<FaTelegramPlane className="mr-2" fontSize="1.8rem" />
 							Ecrire
 						</button>

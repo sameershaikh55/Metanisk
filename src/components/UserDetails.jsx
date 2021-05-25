@@ -134,14 +134,14 @@ const UserDetails = () => {
 					1000
 				</span>
 			</div>
-			<button
-				onClick={handleClickOpenComment}
-				className="themeBtn py-2 px-0 w-100 h4"
-			>
+			<button className="themeBtn py-2 px-0 w-100 h4">
 				<img src={flag} alt="flag" className="mr-2" />
 				Signaler cette annonce
 			</button>
-			<button className="themeBtn3 py-3 px-0 mt-3 w-100 h4 mb-0">
+			<button
+				onClick={handleClickOpenComment}
+				className="themeBtn3 py-3 px-0 mt-3 w-100 h4 mb-0"
+			>
 				<img src={message} alt="flag" className="mr-2" />
 				Laisser un commentaire
 			</button>

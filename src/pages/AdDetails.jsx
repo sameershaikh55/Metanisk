@@ -96,6 +96,7 @@ const AdDetails = () => {
 				<Footer />
 			</div>
 			{/* DESKTOP END */}
+
 			{/* MOBILE START */}
 			<div className="home_container d-block d-lg-none">
 				<AdDetailsMobile />
