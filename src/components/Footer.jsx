@@ -98,6 +98,18 @@ const Footer = () => {
 										<h4 className="mb-3">
 											Conditions Générales d’Utilisations
 										</h4>
+										<h4
+											onClick={() => history.push("/searchList")}
+											className="mb-3 pointer"
+										>
+											Search Result
+										</h4>
+										<h4
+											onClick={() => history.push("/searchMap")}
+											className="mb-3 pointer"
+										>
+											Search Map
+										</h4>
 									</div>
 									<div className="col-2">
 										<h3 className="mb-4 font-weight-bold">Liens rapides</h3>
