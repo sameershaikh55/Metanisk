@@ -1884,17 +1884,18 @@ input {
 
 /* === POSTERS START === */
 .messagesBodyMobile {
-	height: calc(100vh - 19.4vh);
+	height: calc(100vh - 20.4vh);
 	height: 100%;
 	overflow-y: auto;
-	margin: 18rem 0rem 8rem 0rem;
+	// margin: 18rem 0rem 8rem 0rem;
 
 	.singleMessage {
 		align-items: end;
 
 		.userImg {
-			object-fit: contain;
-			width: 10%;
+			object-fit: fill;
+			height: 37px;
+			width: 37px;
 		}
 	}
 
@@ -2128,10 +2129,6 @@ input {
 	background: #fff;
 	box-shadow: 1px 1px 10px #ccc;
 	border-radius: 8px;
-
-	h5 {
-		color: $themeColor;
-	}
 
 	.imgContainer {
 		position: relative;
@@ -2887,13 +2884,17 @@ input {
 	}
 }
 .articles {
+	.topDiv1 {
+		width: 80%;
+	}
 	.btnContainer {
+		width: 20%;
 		button {
 			border: none;
 			outline: none;
 			height: 100%;
-			width: 60px;
 			color: #fff;
+			width: 100%;
 			font-size: 1.4rem;
 		}
 		button:nth-child(1) {
@@ -2906,7 +2907,7 @@ input {
 		}
 	}
 	.productImg {
-		width: 36%;
+		width: 34%;
 		border-top-left-radius: 8px;
 	}
 	.bottomSection {

@@ -1,52 +1,54 @@
 import React from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
-import category1 from "../assets/category1.webp";
-import category2 from "../assets/category2.webp";
-import category3 from "../assets/category3.webp";
-import category4 from "../assets/category4.webp";
-import category5 from "../assets/category5.webp";
-import category6 from "../assets/category6.webp";
-import category7 from "../assets/category7.webp";
-import category8 from "../assets/category8.webp";
-import category9 from "../assets/category9.webp";
+import {
+	category14,
+	category2,
+	category4,
+	category5,
+	category6,
+	category7,
+	category8,
+	category9,
+	category1,
+} from "../assets/base64";
 
 const Categories1 = () => {
 	let history = useHistory();
 	const data = [
 		{
-			img: category1,
+			img: category14,
 			title: "Electroniques et Informatique",
 			desc: "10.6K Annonces",
 		},
 		{
+			img: category1,
+			title: "Transport",
+			desc: "10.6K Annonces",
+		},
+		{
 			img: category2,
-			title: "Transport",
-			desc: "10.6K Annonces",
-		},
-		{
-			img: category3,
-			title: "Transport",
-			desc: "10.6K Annonces",
-		},
-		{
-			img: category4,
 			title: "Immobiliers",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category5,
+			img: category4,
 			title: "Vêtements",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category6,
+			img: category5,
 			title: "Aliments",
 			desc: "10.6K Annonces",
 		},
 		{
-			img: category7,
+			img: category6,
 			title: "Electromenagers",
+			desc: "10.6K Annonces",
+		},
+		{
+			img: category7,
+			title: "Emplois",
 			desc: "10.6K Annonces",
 		},
 		{

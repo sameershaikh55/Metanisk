@@ -187,7 +187,11 @@ const MobilePosterArticles = () => {
 								/>
 								Emplacement
 							</h2>
-							<h4 className="text-secondary mt-3 h3">Entrer l’emplacement</h4>
+							<input
+								type="text"
+								placeholder="Entrer l’emplacement"
+								className="w-50 border-left-0 border-right-0 border-top-0 h4 py-1 px-0 lightPlaceholderInp"
+							/>
 							<div>
 								<iframe
 									title="map"

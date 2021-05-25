@@ -24,7 +24,11 @@ const RecherchesTab = ({ mobile }) => {
 	};
 
 	return (
-		<div className="xScrollbarHide container-fluid px-0 my-4">
+		<div
+			className={`xScrollbarHide container-fluid ${
+				(mobile && "px-3") || "px-0"
+			} my-4`}
+		>
 			<div className="d-flex justify-content-between align-items-center">
 				{!mobile && (
 					<>

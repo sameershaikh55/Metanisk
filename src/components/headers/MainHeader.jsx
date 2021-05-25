@@ -9,6 +9,7 @@ import placeholder from "../../assets/placeholderPerson.svg";
 import { AiOutlineUser, AiOutlineStar, AiOutlineShop } from "react-icons/ai";
 import { BiMessageDetail, BiBell, BiSliderAlt } from "react-icons/bi";
 import { MdViewDay } from "react-icons/md";
+import { RiMicLine } from "react-icons/ri";
 import { BsFillMicFill, BsSearch } from "react-icons/bs";
 import CategoriesList from "../CategoriesList";
 import Connector from "../Connector";
@@ -245,7 +246,7 @@ const MainHeader = () => {
 						/>
 						<div className="input-group-append">
 							<span className="input-group-text px-3">
-								<BsFillMicFill fontSize="20px" color="white" />
+								<RiMicLine fontSize="3rem" color="white" />
 							</span>
 						</div>
 					</div>

@@ -1,11 +1,13 @@
 import React from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
-import category10 from "../assets/category10.webp";
-import category11 from "../assets/category11.webp";
-import category12 from "../assets/category12.webp";
-import category13 from "../assets/category13.webp";
 import mobileCategoryIcon from "../assets/mobileCategoryIcon.svg";
+import {
+	category10,
+	category11,
+	category12,
+	category13,
+} from "../assets/base64/index";
 
 const Categories2 = () => {
 	let history = useHistory();

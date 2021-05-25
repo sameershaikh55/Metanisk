@@ -134,22 +134,35 @@ const MobileProfile = () => {
 				</div>
 				<div className="mt-3">
 					<h4 className="themeColor font-weight-bold">Prenom</h4>
-					<h2 className="m-0">Ernest</h2>
+					<input
+						type="text"
+						value="Ernest"
+						className="w-100 border-left-0 border-right-0 border-top-0 h3 py-2 px-0"
+					/>
 				</div>
-				<hr />
 				<div className="mt-4">
 					<h4 className="themeColor font-weight-bold">Nom de famille</h4>
-					<h2 className="m-0">Peguita</h2>
+					<input
+						type="text"
+						value="Peguita"
+						className="w-100 border-left-0 border-right-0 border-top-0 h3 py-2 px-0"
+					/>
 				</div>
-				<hr />
 				<div className="mt-4">
 					<h4 className="themeColor font-weight-bold">E-mail</h4>
-					<h2 className="m-0">info@makitiplus.com</h2>
+					<input
+						type="text"
+						value="info@makitiplus.com"
+						className="w-100 border-left-0 border-right-0 border-top-0 h3 py-2 px-0"
+					/>
 				</div>
-				<hr />
 				<div className="mt-4">
 					<h4 className="themeColor font-weight-bold">Phone Number</h4>
-					<h2 className="m-0">+224 666 66 66 66</h2>
+					<input
+						type="text"
+						value="+224 666 66 66 66"
+						className="w-100 border-left-0 border-right-0 border-top-0 h3 py-2 px-0"
+					/>
 				</div>
 			</div>
 			{/* INFORMATION END */}
@@ -187,7 +200,11 @@ const MobileProfile = () => {
 					<img width="4%" src={location} alt="location" className="mr-2" />
 					Emplacement
 				</h2>
-				<h4 className="text-secondary mt-3 h3">Entrer l’emplacement</h4>
+				<input
+					type="text"
+					placeholder="Entrer l’emplacement"
+					className="w-50 border-left-0 border-right-0 border-top-0 h4 py-1 px-0 lightPlaceholderInp"
+				/>
 				<div>
 					<iframe
 						title="map"

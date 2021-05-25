@@ -1,7 +1,7 @@
 import React from "react";
 import heart from "../assets/heartIcon.svg";
 import music from "../assets/music.svg";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 
 const MobileAnnoncesCard = ({ prev }) => {
@@ -33,7 +33,7 @@ const MobileAnnoncesCard = ({ prev }) => {
 
 				<div className="pt-3">
 					<h3 className="mb-0 font-weight-bold px-3">800 000 FG</h3>
-					<h5 className="mb-1 font-weight-bold px-3">
+					<h5 className="mb-1 font-weight-bold px-3 themeColor">
 						Chaussure Nike a vendre
 					</h5>
 					<h5 className="px-3">Aujourd’hui - 12:00</h5>
@@ -43,8 +43,8 @@ const MobileAnnoncesCard = ({ prev }) => {
 							Appeler
 						</button>
 						<button className="d-flex align-items-center justify-content-center w-100 text-white py-3">
-							<FaPhoneAlt className="mr-2" />
-							Appeler
+							<FaTelegramPlane className="mr-2" fontSize="1.8rem" />
+							Ecrire
 						</button>
 					</div>
 				</div>

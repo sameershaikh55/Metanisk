@@ -1,18 +1,5 @@
 import React from "react";
 import { RiArrowRightSLine } from "react-icons/ri";
-// import category1 from "../assets/category1.webp";
-// import category2 from "../assets/category2.webp";
-// import category3 from "../assets/category3.webp";
-// import category4 from "../assets/category4.webp";
-// import category5 from "../assets/category5.webp";
-// import category6 from "../assets/category6.webp";
-// import category7 from "../assets/category7.webp";
-// import category8 from "../assets/category8.webp";
-// import category9 from "../assets/category9.webp";
-// import category10 from "../assets/category10.webp";
-// import category11 from "../assets/category11.webp";
-// import category12 from "../assets/category12.webp";
-// import category13 from "../assets/category13.webp";
 import {
 	category14,
 	category2,
@@ -29,7 +16,6 @@ import {
 	category1,
 	placeHolderCategory,
 } from "../assets/base64/index";
-// import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
 import { motion } from "framer-motion";
 
 const CategoriesList = ({ categories }) => {

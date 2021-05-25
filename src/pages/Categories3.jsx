@@ -1,8 +1,8 @@
 import React from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import categoryPlaceholder from "../assets/categoryPlaceholder.svg";
 import { useHistory } from "react-router-dom";
 import mobileCategoryIcon from "../assets/mobileCategoryIcon.svg";
+import { placeHolderCategory } from "../assets/base64/index";
 
 const Categories3 = () => {
 	let history = useHistory();
@@ -14,37 +14,37 @@ const Categories3 = () => {
 			desc: "5 400 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Téléphones Portables",
 			desc: "5 400 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Tablettes",
 			desc: "1 056 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Montres et Bracelets Intelligents",
 			desc: "562 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Pieces détachées de téléphones",
 			desc: "145 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Housses",
 			desc: "278 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Objets connectés",
 			desc: "146 Annonces",
 		},
 		{
-			img: categoryPlaceholder,
+			img: placeHolderCategory,
 			title: "Accessoires",
 			desc: "56 Annonces",
 		},

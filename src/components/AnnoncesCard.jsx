@@ -1,7 +1,7 @@
 import React from "react";
 import heart from "../assets/heartIcon.svg";
 import music from "../assets/music.svg";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 
 const AnnoncesCard = ({ prev, favorisD }) => {
@@ -43,8 +43,8 @@ const AnnoncesCard = ({ prev, favorisD }) => {
 							Appeler
 						</button>
 						<button className="d-flex align-items-center justify-content-center w-100 text-white py-3">
-							<FaPhoneAlt className="mr-2" />
-							Appeler
+							<FaTelegramPlane className="mr-2" fontSize="1.8rem" />
+							Ecrire
 						</button>
 					</div>
 				</div>

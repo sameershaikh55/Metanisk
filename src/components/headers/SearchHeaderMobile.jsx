@@ -1,6 +1,7 @@
 import React from "react";
-import { BsFillMicFill, BsSearch } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 import { HiOutlineFilter } from "react-icons/hi";
+import { RiMicLine } from "react-icons/ri";
 import cross from "../../assets/cross.svg";
 import heart from "../../assets/heartIcon.svg";
 
@@ -52,7 +53,7 @@ const SearchHeaderMobile = () => {
 							/>
 							<div className="input-group-append">
 								<span className="input-group-text px-3">
-									<BsFillMicFill fontSize="20px" color="white" />
+									<RiMicLine fontSize="3rem" color="white" />
 								</span>
 							</div>
 						</div>
@@ -65,15 +66,15 @@ const SearchHeaderMobile = () => {
 						Filtre
 					</button>
 					<div className="searchTagsMobile d-flex ml-4">
-						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer">
+						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer border">
 							Prix
 							<img width="15%" src={cross} alt="cross" />
 						</div>
-						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer">
+						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer border">
 							Sous
 							<img width="15%" src={cross} alt="cross" />
 						</div>
-						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer">
+						<div className="position-relative d-flex justify-content-center align-items-center bg-white shadow mr-4 pointer border">
 							Condition
 							<img width="16%" src={cross} alt="cross" />
 						</div>

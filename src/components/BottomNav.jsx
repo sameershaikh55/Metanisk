@@ -57,7 +57,7 @@ const BottomNav = () => {
 						</NavLink>
 					</div>
 					<div className="addBtn">
-						<span>
+						<span className="shadow-lg">
 							<GoPlus />
 						</span>
 					</div>
