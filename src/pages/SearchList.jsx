@@ -5,7 +5,7 @@ import MainHeader from "../components/headers/MainHeader";
 import Category from "../components/Category";
 import ProductList from "../components/ProductList";
 import Footer from "../components/Footer";
-import BottomNav from "../components/BottomNav";
+import BottomNav2 from "../components/BottomNav2";
 import SearchHeaderMobile from "../components/headers/SearchHeaderMobile";
 import SearchListBodyMobile from "../components/SearchListBodyMobile";
 import { searchBanner, searchBanner1 } from "../assets/base64";
@@ -54,7 +54,7 @@ const SearchList = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav />
+				<BottomNav2 />
 			</div>
 			{/* MOBILE END */}
 		</>

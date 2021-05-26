@@ -4,8 +4,11 @@ import { HiOutlineFilter } from "react-icons/hi";
 import { RiMicLine } from "react-icons/ri";
 import cross from "../../assets/cross.svg";
 import heart from "../../assets/heartIcon.svg";
+import { useHistory } from "react-router-dom";
 
-const SearchMapHeader = () => {
+const SearchMapHeader = ({ link }) => {
+	let history = useHistory();
+
 	return (
 		<>
 			<div className="searchHeaderContainer bg-white shadow d-flex flex-column py-3 pb-4">
@@ -27,7 +30,9 @@ const SearchMapHeader = () => {
 								<rect x="11.5" y="0.5" width="7" height="7" stroke="#067AC2" />
 							</svg>
 						</div>
-						<h5 className="mt-1">Mode Liste</h5>
+						<h5 onClick={() => history.push(link)} className="mt-1">
+							Mode Liste
+						</h5>
 					</div>
 					<div className="inpContainer d-flex justify-content-center mx-2 mx-lg-3">
 						<div className="input-group">

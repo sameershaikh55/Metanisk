@@ -1,5 +1,5 @@
 import React from "react";
-import BottomNav from "../components/BottomNav";
+import BottomNav2 from "../components/BottomNav2";
 import Footer from "../components/Footer";
 import MainHeader from "../components/headers/MainHeader";
 import ProfileLeft from "../components/ProfileLeft";
@@ -41,7 +41,7 @@ const MenuProfile = () => {
 				<br />
 				<br />
 				<br />
-				<BottomNav />
+				<BottomNav2 />
 			</div>
 			{/* MOBILE END */}
 		</>

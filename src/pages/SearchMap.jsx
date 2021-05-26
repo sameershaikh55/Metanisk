@@ -7,7 +7,7 @@ import searchBanner from "../assets/searchBanner.webp";
 import MapSection from "../components/MapSection";
 import UnderProductList from "../components/UnderProductList";
 import SearchMapHeader from "../components/headers/SearchMapHeader";
-import BottomNav from "../components/BottomNav";
+import BottomNav2 from "../components/BottomNav2";
 
 const SearchMap = () => {
 	return (
@@ -46,21 +46,9 @@ const SearchMap = () => {
 			{/* DESKTOP END */}
 
 			{/* MOBILE START */}
-			<div className="home_container d-block d-lg-none">
-				<SearchMapHeader />
-				<div style={{ height: "calc(100vh - 18vh)" }}>
-					<iframe
-						title="map"
-						width="100%"
-						height="100%"
-						frameBorder="0"
-						scrolling="no"
-						marginHeight="0"
-						marginWidth="0"
-						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-					></iframe>
-				</div>
-				<BottomNav />
+			<div className="home_container searchMapCont d-block d-lg-none">
+				<SearchMapHeader link="/searchPrice" />
+				<BottomNav2 />
 			</div>
 			{/* MOBILE END */}
 		</>

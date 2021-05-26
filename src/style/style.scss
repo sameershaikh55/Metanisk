@@ -902,9 +902,12 @@ button {
 	}
 
 	.image-gallery-content .image-gallery-slide .image-gallery-image {
-		max-height: 450px;
-		height: 450px;
+		max-height: calc(100vh - 100px);
 		background-color: #fff;
+	}
+
+	.image-gallery-icon {
+		z-index: 1;
 	}
 
 	.imgContainer img {
@@ -2316,6 +2319,69 @@ button {
 }
 // BOTTOM NAVIGATION END\
 
+// BOTTOM NAVIGATION 2 START
+.bottomNav_container2 {
+	position: fixed;
+	width: 100%;
+	left: 0%;
+	bottom: 0%;
+
+	.main_container {
+		position: relative;
+		width: 100%;
+	}
+
+	.main_div {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 2rem;
+		padding: 1rem 0rem 0.5rem 0rem;
+		background: #fff;
+		box-shadow: 0px 0px 10px #ccc;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+
+		.active {
+			color: $themeColor;
+		}
+
+		a {
+			color: #000;
+			font-size: 1.5rem;
+		}
+
+		.each_navigation {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.NavIcon {
+				padding: 0.4rem;
+				border-radius: 50%;
+				font-size: 3.5rem;
+			}
+		}
+	}
+
+	.addBtn {
+		margin-top: 0.5rem;
+		width: fit-content;
+		cursor: pointer;
+
+		span {
+			background: linear-gradient(180deg, #1b8acc 0%, #209edb 100%), #c4c4c4;
+			padding: 10px 14px 12px 13px;
+			border-radius: 50%;
+			font-size: 2.5rem;
+			color: #fff;
+			box-shadow: 1px 2px 8px #ccc;
+		}
+	}
+}
+// BOTTOM NAVIGATION 2 END
+
 // SIDE BAR START
 .sidebarHeadContainer {
 	height: 180px;
@@ -3133,5 +3199,74 @@ button {
 	}
 }
 /* === UPLOAD IMAGE END === */
+
+/* === MAP PAGES IMAGE START === */
+.searchMapCont,
+.searchPriceCont,
+.searchProductViewCont {
+	background-image: url(../assets/map1.svg);
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: contain;
+}
+
+.searchPriceCont {
+	background-image: url(../assets/map2.svg);
+}
+
+.searchProductViewCont {
+	background-image: url(../assets/map3.svg);
+}
+/* === MAP PAGES IMAGE END === */
+
+/* === PRODUCT SEARCH PAGE START === */
+.searchProduct {
+	margin-bottom: -2rem;
+
+	.productImg {
+		width: 100%;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		position: relative;
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.7) 100%
+		);
+	}
+
+	.icons {
+		position: absolute;
+		top: 3%;
+		right: 2%;
+
+		.icon1 {
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 50%;
+			padding: 0.8rem;
+		}
+		.icon2 {
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 50%;
+			padding: 0.8rem;
+		}
+	}
+	.textContainer {
+		position: absolute;
+		bottom: 16%;
+		left: 0%;
+	}
+	.soundIcon {
+		background: linear-gradient(201.8deg, #22a1dc 14.29%, #067ac2 97.14%),
+			#c4c4c4;
+		position: absolute;
+		bottom: 35%;
+		right: 2%;
+		padding: 1.3rem;
+		border-radius: 50%;
+	}
+}
+/* === PRODUCT SEARCH PAGE END === */
 
 // ================= MOBILE STYLING END ========================
