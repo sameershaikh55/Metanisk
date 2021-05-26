@@ -6,7 +6,7 @@ import { GoPlus } from "react-icons/go";
 import { CgHome } from "react-icons/cg";
 import { ImShare2 } from "react-icons/im";
 import music from "../assets/music.svg";
-import searchProduct from "../assets/searchProduct.svg";
+import searchProduct from "../assets/searchProduct.jpeg";
 
 const BottomNav2 = ({ product }) => {
 	return (
